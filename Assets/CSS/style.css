@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Oswald&display=swap: 100,200,300,400,500,600,700,800,900');
 
-/*-----------------------Navbar---------------------------*/
+/*-----------------------------------Colors-------------------------*/
+.bg-navbar-color {
+    background-color: #fff;
+}
+
+/*-------------------------------Reusable Components----------------*/
+
+.fitness-color {
+    color: #e20714;
+}
+
+/*-----------------------Navbar---------------------------------------*/
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+}
+
 
 .gym-logo {
     height: 50px;
@@ -15,12 +32,9 @@
 
 }
 
-.navbar h2 span {
-    color: #e20714;
-}
+
 
 .navbar-light .navbar-nav .nav-link {
-    color:#222222;
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
@@ -28,22 +42,63 @@
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
-    
-}
 
-.navbar-light .navbar-nav .nav-link:hover {
-    color:#e20714;
-}
-
-.navbar-light .navbar-toggler{
-   border-color:#222222;
 }
 
 
+.navbar-light .navbar-nav .nav-link:link,
+.navbar-light .navbar-nav .nav-link:visited {
+    color: #222222;
+    border-color: #222222;
+}
 
-/*-----------------------------------Colors-------------------------*/
-.bg-navbar-color {
-    background-color: #fff;
+
+.navbar-light .navbar-toggler:hover,
+.navbar-light .navbar-toggler:active,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active {
+    color: #e20714;
+    border-color: #e20714;
+}
+
+/*------------------------callout section--------------------------*/
+
+.callout-container {
+
+    height: 100vh;
+    background: url('../Images/background-image-milestomeproject.jpg') no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.jumbotron-header {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*----------------------Modal Contact Form-------------------------*/
+.error {
+    color: #e20714;
 }
 
 /*------------------------------------------Media Quries-----------*/
