@@ -11,13 +11,16 @@
     color: #e20714;
 }
 
-/*-----------------------Navbar---------------------------------------*/
-.navbar {
-    margin-bottom: 0;
-    border: 0;
-    width: 100%;
+.uppercase {
+    text-transform: uppercase;
 }
 
+/*-----------------------Navbar---------------------------------------*/
+
+.navbar{
+    padding: 0;
+    border: 0;
+}
 
 .gym-logo {
     height: 50px;
@@ -33,8 +36,9 @@
 }
 
 
-
+.btn-cta,
 .navbar-light .navbar-nav .nav-link {
+    margin-right: 4px;
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
@@ -45,7 +49,7 @@
 
 }
 
-
+.btn-cta,
 .navbar-light .navbar-nav .nav-link:link,
 .navbar-light .navbar-nav .nav-link:visited {
     color: #222222;
@@ -66,7 +70,7 @@
 .callout-container {
 
     height: 100vh;
-    background: url('../Images/background-image-milestomeproject.jpg') no-repeat  fixed;
+    background: url('../Images/background-image-milestomeproject.jpg') no-repeat fixed;
     background-position-x: 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -95,15 +99,36 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
-.offer-text{
+.offer-text {
     color: #e20714;
-    font-size:1.7rem;
-    font-weight:900;
+    font-size: 1.7rem;
+    font-weight: 900;
     letter-spacing: 1px;
 }
+
+/*-----------------------------------buttons-------------------------*/
+ .btn-cta {
+    background-color:#e20714;
+    color:#fff;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    border: 2px solid  #222222;
+   }
+
+.btn-callout{
+    margin: 0px 0px 15px 10px;
+
+}
+  
+   .btn-modal{
+       margin-top: 7px;
+   }
+
 
 /*----------------------Modal Contact Form-------------------------*/
 .error {
@@ -113,14 +138,14 @@
 /*------------------------------------------Media Quries-----------*/
 
 /*--To make navbar responsive  on large deviecs and above---------------*/
-@media(min-width:767px) {
+@media(min-width:991px) {
     .gym-logo {
-        height:80px;
+        height: 80px;
         width: auto;
     }
 
     .navbar h2 {
         letter-spacing: 2px;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 }
