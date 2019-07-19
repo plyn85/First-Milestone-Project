@@ -66,7 +66,8 @@
 .callout-container {
 
     height: 100vh;
-    background: url('../Images/background-image-milestomeproject.jpg') no-repeat bottom right fixed;
+    background: url('../Images/background-image-milestomeproject.jpg') no-repeat  fixed;
+    background-position-x: 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -78,9 +79,10 @@
 }
 
 .jumbotron-header {
-    color: white;
+    color: #fff;
     font-weight: 700;
     margin-bottom: 30px;
+    letter-spacing: 1px;
 }
 
 .jumbotron {
@@ -93,7 +95,14 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+.offer-text{
+    color: #e20714;
+    font-size:1.7rem;
+    font-weight:900;
+    letter-spacing: 1px;
 }
 
 /*----------------------Modal Contact Form-------------------------*/
@@ -103,15 +112,15 @@
 
 /*------------------------------------------Media Quries-----------*/
 
-/*--To make navbar responsive  on ipad and desktop---------------*/
+/*--To make navbar responsive  on large deviecs and above---------------*/
 @media(min-width:767px) {
     .gym-logo {
-        height: 100px;
+        height:80px;
         width: auto;
     }
 
     .navbar h2 {
-        letter-spacing: 3px;
-        font-size: 3rem;
+        letter-spacing: 2px;
+        font-size: 2.5rem;
     }
 }
