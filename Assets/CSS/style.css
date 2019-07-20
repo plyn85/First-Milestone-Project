@@ -119,6 +119,7 @@ h2 {
 
 /*-----------------------------------buttons-------------------------*/
 .btn-cta {
+     padding: 3px 12px 3px 12px;
     background-color: #e20714;
     color: #fff;
     border-radius: 30px;
@@ -162,4 +163,10 @@ h2 {
         letter-spacing: 2px;
         font-size: 2.5rem;
     }
+}
+
+@media(max-width:991px){
+  .navbar  .btn-cta{
+     padding:0;
+ }
 }
