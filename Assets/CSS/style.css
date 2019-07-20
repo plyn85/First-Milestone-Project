@@ -70,7 +70,7 @@
 .callout-container {
 
     height: 100vh;
-    background: url('../Images/background-image-milestomeproject.jpg') no-repeat fixed;
+    background: url('../Images/background-image-milestomeproject.jpg') no-repeat;
     background-position-x: 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
