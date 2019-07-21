@@ -2,7 +2,7 @@
 
 /*-----------------------------------Colors-------------------------*/
 .bg-navbar-color {
-    background-color:  #f2f2f2; 
+    background-color: #f2f2f2;
 }
 
 /*-------------------------------Reusable Components----------------*/
@@ -21,9 +21,26 @@ p {
 
 }
 
-/*-----------------------Navbar---------------------------------------*/
+.hr-style {
+    border-top: 2px solid #e20714;
+    width: 100px;
+}
 
-.navbar {
+/*-----------------------Navbar---------------------------------------*/
+.navbar-toggler {
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    margin-bottom: 3px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0px 8px;
+}
+
+.navbar-expand-lg,
+.container-fluid {
     padding: 0;
     border: 0;
 }
@@ -62,7 +79,7 @@ h2 {
 .navbar-light .navbar-nav .nav-link:visited {
     color: #222222;
     border-color: #222222;
-    
+
 }
 
 
@@ -74,7 +91,7 @@ h2 {
     border-color: #e20714;
     text-decoration: underline;
     font-style: italic;
-    
+
 }
 
 /*------------------------callout section--------------------------*/
@@ -94,11 +111,11 @@ h2 {
     position: relative;
 }
 
-.jumboton-gymname{
+.jumboton-gymname {
     color: #e1e1e1;
-    font-size: 4rem;
-    letter-spacing: 3px;
-    margin: 100px 0px 40px; 
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin: 100px 0px 40px;
     font-weight: 900;
 }
 
@@ -131,11 +148,33 @@ h2 {
     margin-top: 30px;
 }
 
+/*-----------------------------------About section-------------------------*/
+.about-header {
+    font-size: 2rem;
+}
 
+.about-img-div {
+    text-align: center;
+}
+
+.about-img {
+    height: 50%;
+    width: 70%;
+    margin-top: 12rem;
+}
+
+.first-about-img {}
+
+.second-about-img {}
+
+.about-text {
+    line-height: 2em;
+    font-weight: 600;
+}
 
 /*-----------------------------------buttons-------------------------*/
 .btn-cta {
-     padding: 3px 12px 3px 12px;
+    padding: 3px 12px 3px 12px;
     background-color: #e20714;
     color: #fff;
     border-radius: 30px;
@@ -146,8 +185,8 @@ h2 {
 }
 
 .btn-callout {
-    
-    padding: 10px; 
+
+    padding: 10px;
     display: block;
     margin: 0 auto;
     margin-top: 20px;
@@ -158,14 +197,14 @@ h2 {
     margin-top: 7px;
 }
 
+#navbar-btn {
+    margin-top: 3px;
+}
 
 /*----------------------Modal Contact Form-------------------------*/
 .error {
     color: #e20714;
 }
-
-/*----------------------About Section-------------------------*/
-
 
 /*------------------------------------------Media Quries-----------*/
 
@@ -181,16 +220,26 @@ h2 {
         font-size: 2.5rem;
     }
 }
-/*--------------Target Navbar when in toggle---------------------*/
-@media(max-width:991px){
-  .navbar  .btn-cta{
-     padding:10px;
- }
 
- .navbar-nav .nav-link{
-    text-align: center;
- }
+/*------------for desktop-------------------------------------------*/
+@media(min-width:1025px) {
+    .navbar-nav {
+        margin-left: 100px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0px 10px;
+
+    }
 }
 
+/*--------------Target Navbar items when in toggle---------------------*/
+@media(max-width:991px) {
+    .navbar .btn-cta {
+        padding: 10px;
+    }
 
-
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+}

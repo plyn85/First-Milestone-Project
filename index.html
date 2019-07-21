@@ -14,25 +14,28 @@
     </script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-    <link rel='stylesheet' href='Assets\CSS\style.css' type='text/css'>
+    <link rel='stylesheet' href='Assets/CSS/style.css' type='text/css'>
 </head>
 
 <body>
 
     <!----------------------------------------------------------------------Navbar-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-navbar-color shadow fixed-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar-color shadow sticky-top">
+
         <div class="container-fluid navbar-section">
 
-            <a class="navbar-brand" href="#"><img class="gym-logo" src="Assets\Images\Nav-image-logo.jpg"
+            <a class="navbar-brand" href="#"><img class="gym-logo" src="Assets/Images/Nav-image-logo.jpg"
                     alt="a gym logo of a man lifting a dumbell"></a>
             <h2 class="mr-3">Dumbell <span class="fitness-color">Fitness</span></h2>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto mynavlinks">
+                <ul class="navbar-nav  mynavlinks">
                     <li class="nav-item  active">
                         <a class="nav-link" href="#">Home
                             <span class="sr-only">(current)</span>
@@ -50,29 +53,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>
                     </li>
-                    <li class="nav-item text-center">
-                        <button class="btn btn-cta btn-md  float-shadow" data-toggle="modal"
+                    <li class="nav-item text-center hvr-wobble-horizontal">
+                        <button class="btn btn-cta navbar-section btn-md" id="navbar-btn" data-toggle="modal"
                             data-target="#signUpModal">join
                             us</button>
-
                     </li>
                 </ul>
             </div>
-
+        </div>
     </nav>
 
     <!-----------------------------------------------------------------------------/Navbar-->
 
     <!-------------------------------------------------------------------------------Callout-->
+
     <div class="container-fluid callout-container">
         <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                   <h1 class="jumboton-gymname uppercase">Dumbell <span class="fitness-color">Fitness</span></h1>
+                    <h1 class="jumboton-gymname uppercase">Dumbell <span class="fitness-color">Fitness</span></h1>
                     <h2 class="jumbotron-quote"><q>Be the hero of your own story</q></h2>
-                    <p class="offer-text d-none d-sm-inline"> Start your journey today <br>from $19.99/month</p>
-                    <button class="btn btn-callout btn-cta  btn-lg" data-toggle="modal" data-target="#signUpModal">Join
+                    <p class="offer-text d-none d-sm-inline uppercase"> Start your journey today <br>from $19.99/month
+                    </p>
+                    <button class="btn btn-callout btn-cta  hvr-wobble-horizontal btn-lg" data-toggle="modal"
+                        data-target="#signUpModal">Join
                         us</button>
 
                 </section>
@@ -80,29 +85,36 @@
         </div>
     </div>
 
-    <section class="about">
+    <section class="about-section">
         <div class="container">
-            <div class="row mt-5">
-                <div class="col-12 col-md-6">
-                    <h2 class="text-center">About us</h2>
+            <div class="row">
+                <div class="col-12 col-md-4 about-img-div"><img class="first-about-img about-img"
+                        src="Assets\Images\DUMBELL FITNESS (3).png"></div>
 
+                <div class="col-12 col-md-4 mt-5">
+                    <h2 class="text-center about-header">About us</h2>
+                    <hr class="hr-style">
                     <div class="text-justify mt-5">
-                        <p class="about-para"> Here at the Barbell fitness we are dedicated to the pursuit of peak
+                        <p class="about-text"> Here at the Barbell fitness we are dedicated to the pursuit of peak
                             performance for all
                             of our members.
                             We cater for everyone's individual goals with our offering of personal training,
                             classes,
                             training programs and open gym use. Boasting the best selection of free weights in
                             Dublin's city center. Our training methods are world famous. Please explore our website,
-                            Get in touch and take a
-                            look at our example video to view our training methods.
+                            Get in touch join our mailing list where you gain access to news, mailings and events.
+                            Check out our 12 week spartan challenge.
+
                         </p>
                     </div>
                 </div>
+                <div class="col-12 col-md-4 about-img-div"><img class="second-about-img about-img"
+                        src="Assets\Images\DUMBELL FITNESS (1).png"></div>
+
             </div>
         </div>
-        </div>
-        </div>
+
+
     </section>
 
     <section class="facilites">
