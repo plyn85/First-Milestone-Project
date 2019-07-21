@@ -113,7 +113,7 @@ h2 {
 
 .jumboton-gymname {
     color: #e1e1e1;
-    font-size: 3.5rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
     margin: 100px 0px 40px;
     font-weight: 900;
@@ -123,8 +123,8 @@ h2 {
     color: #fff;
     font-style: italic;
     font-weight: 700;
-    margin: 40px;
-    letter-spacing: 1px;
+    margin: 30px;
+    
 }
 
 .jumbotron {
@@ -158,9 +158,10 @@ h2 {
 }
 
 .about-img {
-    height: 50%;
-    width: 70%;
-    margin-top: 12rem;
+    height: 60%;
+    width: 80%;
+    margin-top: 30px;
+
 }
 
 .first-about-img {}
@@ -170,6 +171,10 @@ h2 {
 .about-text {
     line-height: 2em;
     font-weight: 600;
+}
+
+.about-section-head-paragraph{
+    margin-top: -40px;
 }
 
 /*-----------------------------------buttons-------------------------*/
@@ -241,5 +246,24 @@ h2 {
 
     .navbar-nav .nav-link {
         text-align: center;
+    }
+}
+
+/*--------------Target on ipad pro an above---------------------*/
+
+@media(min-width:768px){
+    .about-img {
+        height: 50%;
+        width: 70%;
+        margin-top: 12rem;
+    }
+  
+    .jumboton-gymname{
+        font-size: 3.5rem;
+        
+    }
+
+    .jumbotron-quote{
+        letter-spacing: 1px;
     }
 }
