@@ -22,7 +22,7 @@ p {
 }
 
 .hr-style {
-    border-top: 2px solid #e20714;
+    border-top: 2px solid #98ff98;
     width: 100px;
 }
 
@@ -86,8 +86,8 @@ p {
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:active {
-    color: #e20714;
-    border-color: #e20714;
+    color: #98ff98;
+    border-color: #98ff98;
     text-decoration: underline;
     font-style: italic;
 
@@ -144,23 +144,27 @@ p {
 }
 
 .offer-text {
-    color:#98ff98;
+    color: #98ff98;
     font-size: 1.7rem;
     font-weight: 900;
     letter-spacing: 1px;
     margin-top: 30px;
 }
 
-img {
+.offer-img {
     height: 50%;
     width: 70%;
 }
 
-.offer-img{
-   border-radius: 20px; 
-}
+
 
 /*-----------------------------------About section-------------------------*/
+.about-section-container{
+    background-color: #484747ad;
+  
+}
+
+
 .about-header {
     color: #222222;
     font-size: 2rem;
@@ -172,9 +176,9 @@ img {
 }
 
 .about-img {
-    height: 60%;
-    width: 80%;
-    margin-top: 30px;
+    width: 100%;
+    height: 80%;
+    margin-top: 40px;
 
 }
 
@@ -219,6 +223,81 @@ img {
 /*----------------------Modal Contact Form-------------------------*/
 .error {
     color: #e20714;
+}
+
+/*--------pricing section-----------------------------------------*/
+section.pricing {
+    background: #98ff98;
+  }
+
+
+section.pricing {
+    background: #98ff98;
+
+}
+
+.pricing .card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+    border-top: 2px solid #98ff98;
+    margin: 1.5rem 0;
+   
+}
+
+.pricing .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.pricing .card-price {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.pricing .card-price .period {
+    font-size: 0.8rem;
+}
+
+.pricing ul li {
+    margin-bottom: 1rem;
+}
+
+
+
+
+.pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.last-list-item{
+    margin-bottom: 10px;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    .pricing .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
 }
 
 /*------------------------------------------Media Quries--------------------*/
@@ -303,8 +382,10 @@ img {
 
 /*-------target ipad only------*/
 
-@media(min-width:767px) and (max-width:1023px){
-    .about-img-div{
+@media(min-width:767px) and (max-width:1023px) {
+    .about-img-div {
+        width: 100%;
+        height: 100%;
         margin-top: -110px;
     }
 }
