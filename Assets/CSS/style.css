@@ -115,7 +115,11 @@ p {
     position: relative;
 }
 
-.jumboton-gymname {
+.jumbotron{
+
+}
+
+.jumbotron-gymname {
     color: #e1e1e1;
     font-size: 1.8rem;
     letter-spacing: 2px;
@@ -150,6 +154,11 @@ p {
     font-weight: 900;
     letter-spacing: 1px;
     margin-top: 30px;
+}
+
+img{
+    height:50%;
+    width: 70%;
 }
 
 /*-----------------------------------About section-------------------------*/
@@ -264,8 +273,8 @@ p {
         margin-top: 12rem;
     }
   
-    .jumboton-gymname{
-        font-size: 3.5rem;
+    .jumbotron-gymname{
+        font-size: 3rem;
         
     }
 
