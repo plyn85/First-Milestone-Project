@@ -144,7 +144,7 @@ p {
 }
 
 .offer-text {
-    color: #22f292ba;
+    color:#98ff98;
     font-size: 1.7rem;
     font-weight: 900;
     letter-spacing: 1px;
@@ -154,6 +154,10 @@ p {
 img {
     height: 50%;
     width: 70%;
+}
+
+.offer-img{
+   border-radius: 20px; 
 }
 
 /*-----------------------------------About section-------------------------*/
@@ -294,5 +298,13 @@ img {
         height: 50%;
         width: 70%;
         margin-top: 12rem;
+    }
+}
+
+/*-------target ipad only------*/
+
+@media(min-width:767px) and (max-width:1023px){
+    .about-img-div{
+        margin-top: -110px;
     }
 }
