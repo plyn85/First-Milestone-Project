@@ -2,7 +2,7 @@
 
 /*-----------------------------------Colors-------------------------*/
 .bg-navbar-color {
-    background-color:rgba(10, 10, 10, 0.849);
+    background-color: rgba(10, 10, 10, 0.849);
 }
 
 /*-------------------------------Reusable Components----------------*/
@@ -50,7 +50,7 @@ p {
     width: auto;
 }
 
-.nav-heading  {
+.nav-heading {
 
     font-size: 1.5rem;
     font-family: 'Oswald', sans-serif;
@@ -75,13 +75,12 @@ p {
 }
 
 .btn-cta,
-
 .navbar .navbar-nav .nav-link:link,
 .navbar .navbar-nav .nav-link:visited,
 .navbar .navbar-toggler:hover,
 .navbar .navbar-toggler:active {
-    color:  #f2f2f2;
-    border-color:  #f2f2f2;
+    color: #f2f2f2;
+    border-color: #f2f2f2;
 
 }
 
@@ -94,7 +93,7 @@ p {
 
 }
 
- .span .nav-bar .toggler-icon:active{
+.span .nav-bar .toggler-icon {
     border-color: white;
 }
 
@@ -115,10 +114,6 @@ p {
     position: relative;
 }
 
-.jumbotron{
-
-}
-
 .jumbotron-gymname {
     color: #e1e1e1;
     font-size: 1.8rem;
@@ -132,7 +127,7 @@ p {
     font-style: italic;
     font-weight: 700;
     margin: 30px;
-    
+
 }
 
 .jumbotron {
@@ -149,15 +144,15 @@ p {
 }
 
 .offer-text {
-    color:#22f292ba;
+    color: #22f292ba;
     font-size: 1.7rem;
     font-weight: 900;
     letter-spacing: 1px;
     margin-top: 30px;
 }
 
-img{
-    height:50%;
+img {
+    height: 50%;
     width: 70%;
 }
 
@@ -179,16 +174,12 @@ img{
 
 }
 
-.first-about-img {}
-
-.second-about-img {}
-
 .about-text {
     line-height: 2em;
     font-weight: 600;
 }
 
-.about-section-head-paragraph{
+.about-section-head-paragraph {
     margin-top: -40px;
 }
 
@@ -226,9 +217,12 @@ img{
     color: #e20714;
 }
 
-/*------------------------------------------Media Quries-----------*/
+/*------------------------------------------Media Quries--------------------*/
 
-/*--To make navbar responsive  on large deviecs and above---------------*/
+/*--To make navbar responsive on large deviecs and above----*/
+
+/*------navbar------------*/
+
 @media(min-width:767px) {
     .gym-logo {
         height: 80px;
@@ -241,7 +235,10 @@ img{
     }
 }
 
-/*------------for desktop-------------------------------------------*/
+/*------------for desktop---------------------*/
+
+/*------navbar-----------*/
+
 @media(min-width:1025px) {
     .navbar-nav {
         margin-left: 100px;
@@ -251,9 +248,20 @@ img{
         margin: 0px 10px;
 
     }
+
+    /*----callout-container-----------*/
+
+    .special-img-one {
+        margin-left: 7rem;
+    }
+
+    .offer-img {
+        margin-top: 160px;
+    }
 }
 
-/*--------------Target Navbar items when in toggle---------------------*/
+/*----Target Navbar items when in toggle--*/
+
 @media(max-width:991px) {
     .navbar .btn-cta {
         padding: 10px;
@@ -264,21 +272,27 @@ img{
     }
 }
 
-/*--------------Target on ipad pro an above---------------------*/
+/*----------Target on ipad an above--------------*/
 
-@media(min-width:768px){
+/*-------callout section-------*/
+
+@media(min-width:768px) {
+    .jumbotron-gymname {
+        font-size: 3rem;
+
+    }
+
+    .jumbotron-quote {
+        letter-spacing: 1px;
+    }
+}
+
+/*-------about section----*/
+
+@media(min-width:768px) {
     .about-img {
         height: 50%;
         width: 70%;
         margin-top: 12rem;
-    }
-  
-    .jumbotron-gymname{
-        font-size: 3rem;
-        
-    }
-
-    .jumbotron-quote{
-        letter-spacing: 1px;
     }
 }
