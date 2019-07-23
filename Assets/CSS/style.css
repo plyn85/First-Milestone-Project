@@ -5,6 +5,11 @@
     background-color: rgba(10, 10, 10, 0.849);
 }
 
+.about-section-container {
+    background-color: #f2f2f2;
+
+}
+
 /*-------------------------------Reusable Components----------------*/
 /*------mintgreen---#98ff98;---------*/
 .fitness-color {
@@ -36,7 +41,7 @@ p {
 .main-header {
     color: white;
     font-size: 125px;
-    text-shadow: 0 0 13px rgba(0,0,0,.88);
+    text-shadow: 0 0 13px rgba(0, 0, 0, .88);
 }
 
 
@@ -107,7 +112,7 @@ p {
 
 }
 
- .navbar-toggler  {
+.navbar-toggler {
     background-color: #bf051e;
 }
 
@@ -171,41 +176,36 @@ p {
     width: 70%;
 }
 
-
-
 /*-----------------------------------About section-------------------------*/
-.about-header{
+
+.about-header {
     border: 16px solid #bf051e;
+    margin-top: 20px;
+    font-size: 45px;
 }
-
-.about-section-container {
-    background-color: #f2f2f2;
-
-}
-
 
 .about-img-div {
     text-align: center;
 }
 
 .about-img {
-    width: 100%;
-    height: 80%;
-    margin-top: 40px;
-
+    height: 60%;
+    width: 90%;
+    margin-top: 1rem;
 }
 
 .about-text {
     font-size: 1.7rem;
     color: #212529;
     font-style: italic;
-    line-height: 2em;
+    line-height: 1.3em;
     font-weight: 600;
+    margin-top: -70px
 }
+
 
 .about-text-info {
     display: block;
-    text-align: center;
     margin-top: 20px;
     font-size: 2rem;
     font-weight: 700;
@@ -229,7 +229,7 @@ p {
 /*-----------------------------------buttons-------------------------*/
 .btn-cta {
     padding: 3px 12px 3px 12px;
-    background-color:#bf051e;
+    background-color: #bf051e;
     color: #fff;
     border-radius: 30px;
     font-weight: 700;
@@ -261,11 +261,15 @@ p {
 }
 
 /*--------pricing section-----------------------------------------*/
-.pricing-header{
+
+.pricing-header {
     border: 16px solid #98ff98;
-    margin-bottom: 40px;
+    font-size: 35px;
 }
 
+.our-price-plans-div {
+    margin-bottom: 40px;
+}
 
 section.pricing {
     background: #222222;
@@ -338,47 +342,6 @@ section.pricing {
 
 /*------------------------------------------Media Quries--------------------*/
 
-/*--To make navbar responsive on large deviecs and above----*/
-
-/*------navbar------------*/
-
-@media(min-width:767px) {
-    .gym-logo {
-        height: 80px;
-        width: auto;
-    }
-
-    .navbar h2 {
-        letter-spacing: 2px;
-        font-size: 2.5rem;
-    }
-}
-
-/*------------for desktop---------------------*/
-
-/*------navbar-----------*/
-
-@media(min-width:1025px) {
-    .navbar-nav {
-        margin-left: 100px;
-    }
-
-    .navbar-nav .nav-item {
-        margin: 0px 10px;
-
-    }
-
-    /*----callout-container-----------*/
-
-    .special-img-one {
-        margin-left: 7rem;
-    }
-
-    .offer-img {
-        margin-top: 160px;
-    }
-}
-
 /*----Target Navbar items when in toggle--*/
 
 @media(max-width:991px) {
@@ -391,11 +354,17 @@ section.pricing {
     }
 }
 
-/*----------Target on ipad an above--------------*/
+/*----------for small devices only------*/
 
-/*-------callout section-------*/
+@media(min-width:320px) and (max-width:566px) {
+    .second-img-div {
+        margin-bottom: -100px;
+    }
+}
 
-@media(min-width:768px) {
+/*----------for ipads------*/
+
+@media(min-width:567px) and (max-width:991px) {
     .jumbotron-gymname {
         font-size: 3rem;
 
@@ -404,28 +373,110 @@ section.pricing {
     .jumbotron-quote {
         letter-spacing: 1px;
     }
-}
 
-/*-------about section----*/
-
-@media(min-width:768px) {
-    .about-img {
-        height: 50%;
-        width: 70%;
-        margin-top: 12rem;
+    .about-header {
+        font-size: 100px;
+        margin-top: 20px;
     }
-}
 
-/*-------target ipad only------*/
-
-@media(min-width:767px) {
     .about-img-div {
-        width: 100%;
-        height: 100%;
-        margin-top: -110px;
+        margin-bottom: 20px;
     }
 
-    .about-section-head-paragraph {
-        margin-top: -40px;
+    .pricing-header {
+        margin-top: 20px;
+        font-size: 70px;
+    }
+
+
+}
+
+/*----------for ipad pro------*/
+
+@media(min-width: 992px) and (max-width:1180px) {
+
+    .jumbotron-gymname {
+        font-size: 6rem;
+
+    }
+
+    .jumbotron-quote {
+        letter-spacing: 1px;
+    }
+
+
+    .about-header {
+        margin-top: 20px;
+        font-size: 130px;
+    }
+
+    .about-text {
+        margin-top: -80px;
+    }
+
+    .pricing-header {
+        margin-top: 20px;
+        font-size: 100px;
+    }
+}
+
+/*----------for desktops------*/
+
+@media(min-width: 1200px) {
+
+    .gym-logo {
+        height: 80px;
+        width: auto;
+    }
+
+    .navbar h2 {
+        letter-spacing: 2px;
+        font-size: 2.5rem;
+    }
+
+
+    .navbar-nav {
+        margin-left: 100px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0px 10px;
+
+    }
+
+    .special-img-one {
+        margin-left: 7rem;
+    }
+
+    .offer-img {
+        margin-top: 160px;
+    }
+
+    .jumbotron-gymname {
+        font-size: 4rem;
+
+    }
+
+    .jumbotron-quote {
+        letter-spacing: 1px;
+    }
+
+
+    .about-header {
+        margin-top: 40px;
+        font-size: 160px;
+    }
+
+    .about-img-div {
+        margin-top: 40px;
+    }
+
+    .about-text-div {
+        margin-top: -90px;
+        margin-bottom: 70px;
+    }
+
+    .pricing-header {
+        font-size: 120px;
     }
 }
