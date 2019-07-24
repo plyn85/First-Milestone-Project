@@ -2,7 +2,7 @@
 
 /*-----------------------------------Colors-------------------------*/
 .bg-navbar-color {
-    background-color: rgba(10, 10, 10, 0.849);
+    background-color: #272c2f;
 }
 
 .about-section-container {
@@ -11,9 +11,18 @@
 }
 
 /*-------------------------------Reusable Components----------------*/
-/*------mintgreen---#98ff98;---------*/
-.fitness-color {
+/*------mintgreen-#98ff98;---------darkred-d#bf051e;----darkgrey--#272c2f*/
+
+.dark-red {
     color: #bf051e;
+}
+
+.darkgrey {
+    color: #272c2f;
+}
+
+.mintgreen {
+    color: -#98ff98;
 }
 
 .uppercase {
@@ -39,25 +48,31 @@ p {
 }
 
 .main-header {
-    color: white;
-    font-size: 125px;
+    color: #fff;
     text-shadow: 0 0 13px rgba(0, 0, 0, .88);
+}
+
+.sub-header {
+    font-size: 50px;
+    color: #272c2f;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.btn-cta {
+    padding: 3px 12px 3px 12px;
+    background-color: #bf051e;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    border: 2px solid #222222;
 }
 
 
 /*-----------------------Navbar---------------------------------------*/
-.navbar-toggler {
-    margin-right: 20px;
-}
-
-.navbar-nav {
-    margin-bottom: 3px;
-}
-
-.navbar-nav .nav-item {
-    margin: 0px 8px;
-}
-
 .navbar-expand-lg,
 .container-fluid {
     padding: 0;
@@ -79,6 +94,17 @@ p {
 
 }
 
+.navbar-nav {
+    margin-bottom: 3px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0px 8px;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
+}
 
 .btn-cta,
 .navbar .navbar-nav .nav-link {
@@ -194,13 +220,22 @@ p {
     margin-top: 1rem;
 }
 
+.about-sub-header-two {
+    margin-top: -90px;
+    margin-bottom: 20px;
+}
+
+.about-sub-header-three {
+    color: #98ff98;
+}
+
 .about-text {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: #212529;
     font-style: italic;
     line-height: 1.3em;
     font-weight: 600;
-    margin-top: -70px
+    margin-top:
 }
 
 
@@ -213,7 +248,7 @@ p {
 }
 
 .about-text-info.red {
-    color: #bf051e
+    color: #bf051e;
 }
 
 .about-text-info.black {
@@ -227,16 +262,6 @@ p {
 }
 
 /*-----------------------------------buttons-------------------------*/
-.btn-cta {
-    padding: 3px 12px 3px 12px;
-    background-color: #bf051e;
-    color: #fff;
-    border-radius: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-style: italic;
-    border: 2px solid #222222;
-}
 
 .btn-callout {
 
@@ -256,6 +281,7 @@ p {
 }
 
 /*----------------------Modal Contact Form-------------------------*/
+
 .error {
     color: #bf051e;
 }
@@ -379,6 +405,14 @@ section.pricing {
         margin-top: 20px;
     }
 
+    .sub-header {
+        font-size: 80px;
+    }
+
+    .about-sub-header-three {
+        font-size: 60px;
+    }
+
     .about-img-div {
         margin-bottom: 20px;
     }
@@ -410,8 +444,21 @@ section.pricing {
         font-size: 130px;
     }
 
+    .sub-header {
+        font-size: 100px;
+    }
+
+    .about-sub-header-two {
+        margin-top: -120px;
+
+    }
+
+    .about-sub-header-three {
+        font-size: 80px;
+    }
+
     .about-text {
-        margin-top: -80px;
+        margin-top: 20px;
     }
 
     .pricing-header {
@@ -465,6 +512,14 @@ section.pricing {
     .about-header {
         margin-top: 40px;
         font-size: 160px;
+    }
+
+    .sub-header {
+        font-size: 160px;
+    }
+
+    .about-sub-header-two {
+        font-size: 140px;
     }
 
     .about-img-div {
