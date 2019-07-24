@@ -227,6 +227,7 @@ p {
 
 .about-sub-header-three {
     color: #98ff98;
+    margin-top:-90px;
 }
 
 .about-text {
@@ -235,7 +236,7 @@ p {
     font-style: italic;
     line-height: 1.3em;
     font-weight: 600;
-    margin-top:
+  
 }
 
 
@@ -521,6 +522,11 @@ section.pricing {
     .about-sub-header-two {
         font-size: 140px;
     }
+
+    .about-sub-header-three{
+        font-size: 100px;
+        margin-top: -150px;  
+      }
 
     .about-img-div {
         margin-top: 40px;
