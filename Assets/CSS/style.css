@@ -11,7 +11,7 @@
 }
 
 /*-------------------------------Reusable Components----------------*/
-/*------mintgreen-#98ff98;---------darkred-d#bf051e;----darkgrey--#272c2f*/
+/*------mintgreen-#98ff98;---------darkred-d#bf051e;----darkgrey-#98ff98;*------ font-family: 'Barlow', sans-serif;--*/
 
 .dark-red {
     color: #bf051e;
@@ -47,6 +47,10 @@ p {
     z-index: 1;
 }
 
+.below-navstripe {
+    position: fixed;
+}
+
 .main-header {
     color: #fff;
     text-shadow: 0 0 13px rgba(0, 0, 0, .88);
@@ -59,8 +63,9 @@ p {
     font-family: 'Oswald', sans-serif;
 }
 
+/*-----------------------------------buttons-------------------------*/
 
-.btn-cta {
+/*.btn-cta {
     padding: 3px 12px 3px 12px;
     background-color: #bf051e;
     color: #fff;
@@ -69,10 +74,82 @@ p {
     text-transform: uppercase;
     font-style: italic;
     border: 2px solid #222222;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}*/
+
+.btn-cta {
+    background-color: #bf051e;
+    color: #fff;
+    font-size: 100%;
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: 900;
+    padding: 0.6 1rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.btn-cta:link,
+.btn-cta:visited,
+.btn-cta:hover,
+.btn-cta:active {
+    color: #f2f2f2;
+    border-color: #98ff98;
+}
+
+.btn-callout {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.btn-navbar {
+    margin-top: 5px;
+}
+
+.btn-pricing {
+    display: block;
+    margin: 0 auto;
+    background-color: #98ff98;
+}
+
+.btn-modal {
+    margin-top: 7px;
+}
+
+/*.pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.5s;
+}*/
+
+/*-----------------------Images---------------------------------------*/
+
+.priceplan-offer-img {
+    width: 100%;
+    height: 50%;
 }
 
 
+.img-navcollapse {
+    width: 100%;
+    height: 100%;
+}
+
 /*-----------------------Navbar---------------------------------------*/
+
 .navbar-expand-lg,
 .container-fluid {
     padding: 0;
@@ -99,6 +176,7 @@ p {
 }
 
 .navbar-nav .nav-item {
+    font-family: 'Barlow', sans-serif;
     margin: 0px 8px;
 }
 
@@ -106,9 +184,11 @@ p {
     margin-right: 20px;
 }
 
-.btn-cta,
+
 .navbar .navbar-nav .nav-link {
-    margin-right: 4px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
@@ -119,7 +199,6 @@ p {
 
 }
 
-.btn-cta,
 .navbar .navbar-nav .nav-link:link,
 .navbar .navbar-nav .nav-link:visited,
 .navbar .navbar-toggler:hover,
@@ -160,6 +239,7 @@ p {
 }
 
 .jumbotron-gymname {
+    font-family: 'Oswald', sans-serif;
     color: #e1e1e1;
     text-shadow: 0 0 13px rgba(0, 0, 0, 0.904);
     font-size: 1.8rem;
@@ -169,8 +249,9 @@ p {
 }
 
 .jumbotron-quote {
+
     color: #fff;
-    font-style: italic;
+    font-family: 'Barlow', sans-serif;
     font-weight: 700;
     margin: 30px;
 
@@ -227,7 +308,7 @@ p {
 
 .about-sub-header-three {
     color: #98ff98;
-    margin-top:-90px;
+    margin-top: -90px;
 }
 
 .about-text {
@@ -236,7 +317,7 @@ p {
     font-style: italic;
     line-height: 1.3em;
     font-weight: 600;
-  
+
 }
 
 
@@ -262,25 +343,6 @@ p {
 
 }
 
-/*-----------------------------------buttons-------------------------*/
-
-.btn-callout {
-
-    padding: 10px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-
-}
-
-.btn-modal {
-    margin-top: 7px;
-}
-
-#navbar-btn {
-    margin-top: 3px;
-}
-
 /*----------------------Modal Contact Form-------------------------*/
 
 .error {
@@ -304,10 +366,14 @@ section.pricing {
 }
 
 .pricing .card {
-    border: none;
+    border: 6px solid #98ff98;
     border-radius: 1rem;
-    transition: all 0.2s;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+l,
+ol,
+ul {
+    font-weight: 600;
 }
 
 .pricing hr {
@@ -318,42 +384,38 @@ section.pricing {
 
 .pricing .card-title {
     margin: 0.5rem 0;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     letter-spacing: .1rem;
-    font-weight: bold;
+    font-weight: 700;
+    color: #0f1215;
 }
 
 .pricing .card-price {
+    font-family: 'Oswald', sans-serif;
     font-size: 3rem;
+    font-weight: 600;
     margin: 0;
 }
 
 .pricing .card-price .period {
     font-size: 0.8rem;
+    font-family: 'Barlow', sans-serif;
 }
 
 .pricing ul li {
     margin-bottom: 1rem;
+
+}
+
+.fa-li i {
+    color: #98ff98
 }
 
 
 
 
-.pricing .btn {
-    font-size: 80%;
-    border-radius: 5rem;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    padding: 1rem;
-    opacity: 0.7;
-    transition: all 0.2s;
-}
 
-.last-list-item {
-    margin-bottom: 10px;
-}
-
-/* Hover Effects on Card */
+/* Hover Effects on Card 
 
 @media (min-width: 992px) {
     .pricing .card:hover {
@@ -365,7 +427,7 @@ section.pricing {
     .pricing .card:hover .btn {
         opacity: 1;
     }
-}
+}*/
 
 /*------------------------------------------Media Quries--------------------*/
 
@@ -468,6 +530,10 @@ section.pricing {
     }
 }
 
+#last-list-item-second-priceplan {
+    margin-bottom: 40px;
+}
+
 /*----------for desktops------*/
 
 @media(min-width: 1200px) {
@@ -523,10 +589,10 @@ section.pricing {
         font-size: 140px;
     }
 
-    .about-sub-header-three{
+    .about-sub-header-three {
         font-size: 100px;
-        margin-top: -150px;  
-      }
+        margin-top: -150px;
+    }
 
     .about-img-div {
         margin-top: 40px;
@@ -539,5 +605,13 @@ section.pricing {
 
     .pricing-header {
         font-size: 120px;
+    }
+
+    #last-list-item-second-priceplan {
+        margin-bottom: 64px;
+    }
+
+    #last-list-item-third-priceplan {
+        margin-bottom: 39px;
     }
 }

@@ -21,7 +21,7 @@
 
     <!----------------------------------------------------------------------Navbar-->
 
-    <nav class="navbar navbar-expand-lg bg-navbar-color">
+    <nav class="navbar navbar-expand-lg bg-navbar-color sticky-top">
         <div class="container-fluid navbar-section">
             <a class="navbar-brand" href="#"><img class="gym-logo"
                     src="Assets/Images/depositphotos_89034878-stock-illustration-gym-logo-in-vintage-style.jpg"
@@ -32,8 +32,11 @@
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav  mynavlinks">
+            <div class="row collapse navbar-collapse" id="navbarResponsive">
+                <div class="col-5 d-lg-none">
+                    <img class="img-navcollapse" src="Assets/Images/commitimage.png">
+                </div>
+                <ul class="col-2  navbar-nav  mynavlinks">
                     <li class="nav-item  active">
                         <a class="nav-link" href="#">Home
                             <span class="sr-only">(current)</span>
@@ -46,18 +49,23 @@
                         <a class="nav-link" href="#">Gym</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our Team</a>
+                        <a class="nav-link" href="#">Trainers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>
                     </li>
                     <li class="nav-item text-center hvr-wobble-horizontal">
-                        <button class="btn btn-cta navbar-section btn-md" id="navbar-btn" data-toggle="modal"
-                            data-target="#signUpModal">join
-                            us</button>
+                        <button class="btn btn-cta btn-navabar navbar-section btn-md mt-3 ml-3" id="navbar-btn"
+                            data-toggle="modal" data-target="#signUpModal">join
+                        </button>
                     </li>
                 </ul>
+                <div class="col-5 d-lg-none">
+                    <img class="img-navcollapse" src="Assets/Images/Copy of Untitled Design (1).png">
+                </div>
+
             </div>
+        </div>
         </div>
     </nav>
 
@@ -66,7 +74,7 @@
     <!-------------------------------------------------------------------------------Callout-->
 
     <section class="callout-section">
-        <div class="red-stripe"></div>
+        <div class="red-stripe below-navstripe"></div>
         <div class="container-fluid callout-container">
             <div class="opaque-overlay">&nbsp;</div>
             <div class="row">
@@ -80,14 +88,14 @@
                         <p class="offer-text d-none d-sm-inline uppercase"> Start your journey today <br>from
                             $19.99/month
                         </p>
-                        <button class="btn btn-callout btn-cta  hvr-wobble-horizontal btn-lg" data-toggle="modal"
+                        <button class="btn btn-callout btn-cta   hvr-wobble-horizontal btn-lg" data-toggle="modal"
                             data-target="#signUpModal">Join
                             us</button>
 
                     </section>
                 </div>
                 <div class="col-12 d-none d-xl-block col-xl-3 order-xl-3"><img
-                        class="special-img-two offer-img hvr-grow" src="Assets/Images/1.png"
+                        class="special-img-two offer-img hvr-grow" src="Assets/Images/commitimage.png"
                         alt="a image of a women including a special offer"></div>
             </div>
         </div>
@@ -121,7 +129,7 @@
                         <div class="row">
                             <div class="col">
                                 <h3 class="uppercase sub-header about-sub-header-two text-center">train<span
-                                        class="dark-red"> for</span> succees</h3>
+                                        class="dark-red"> for</span> success</h3>
                             </div>
 
                         </div>
@@ -169,18 +177,20 @@
                 </div>
                 <div class="row">
                     <!-- value Tier -->
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
-                                <h5 class="card-title  text-uppercase text-center">Value membership plan
+                                <h5 class="card-title  text-uppercase text-center">Value membership <span
+                                        class="d-block">plan<span>
                                 </h5>
                                 <h6 class="card-price text-center">19.99
                                     <span class="period">/month</span></h6>
                                 <hr>
                                 <ul class="fa-ul">
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>That’s less than
-                                            a
-                                            75c a day </strong>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span><span
+                                            class="uppercase dark-grey"><strong>That’s less than
+                                                a
+                                                75c a day! </strong></span>
                                     </li>
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Access our gym During off
                                         peak hours(6am-4pm)
@@ -192,12 +202,14 @@
                                         spartan
                                         challenge</li>
                                 </ul>
-                                <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+                                <button class="btn btn-pricing btn-cta   hvr-wobble-horizontal btn-lg"
+                                    data-toggle="modal" data-target="#signUpModal"><span class="darkgrey">Join
+                                        us</span></button>
                             </div>
                         </div>
                     </div>
                     <!-- standard Tier -->
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
                                 <h5 class="card-title text-uppercase text-center">Standard membership plan
@@ -206,25 +218,31 @@
                                     <span class="period">/month</span></h6>
                                 <hr>
                                 <ul class="fa-ul">
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>That’s less than
-                                            a
-                                            euro a day
-                                        </strong></li>
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Access our gym anytime
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong><span
+                                                class="uppercase dark-grey">That’s less
+                                                than
+                                                a
+                                                euro a day!
+                                        </strong></span></li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Access our gym
+                                        anytime
                                     </li>
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited classes at all
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited classes at
+                                        all
                                         times
                                     </li>
-                                    <li class="last-list-item"><span class="fa-li"><i
+                                    <li id="last-list-item-second-priceplan"><span class="fa-li"><i
                                                 class="fas fa-check"></i></span>Access
                                         to our 12 week spartan challenge</li>
                                 </ul>
-                                <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+                                <button class="btn btn-pricing btn-cta   hvr-wobble-horizontal btn-lg"
+                                    data-toggle="modal" data-target="#signUpModal"><span class="darkgrey">Join
+                                        us</span></button>
                             </div>
                         </div>
                     </div>
                     <!-- Premuim Tier -->
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title  text-uppercase text-center">Premium membership plan
@@ -233,21 +251,32 @@
                                     <span class="period">/month</span></h6>
                                 <hr>
                                 <ul class="fa-ul">
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Thats only 1.33
-                                            per
-                                            day</strong></li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span><span
+                                            class="uppercase dark-grey"><strong>Thats only 1.33
+                                                per
+                                                day!</strong></span></li>
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Access our gym at anytime
                                     </li>
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited classes at all
                                         times/Plus 2 personal training sessions per month
                                     </li>
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Access to our 12 week
+                                    <li id="last-list-item-third-priceplan"><span class="fa-li"><i
+                                                class="fas fa-check"></i></span>Access to our 12 week
                                         spartan
                                         challenge</li>
+
                                 </ul>
-                                <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+                                <button class="btn btn-pricing btn-cta   hvr-wobble-horizontal btn-lg"
+                                    data-toggle="modal" data-target="#signUpModal"><span class="darkgrey">Join
+                                        us</span></button>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 mt-5">
+                        <img class="priceplan-offer-img" src="Assets/Images/halfprice-image.png"
+                            alt="advert for price plans">
                     </div>
                 </div>
             </div>
@@ -273,7 +302,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">JOIN US TODAY AT DUMBELL <span class="fitness-color">FITNESS!</span>
+                        <h5 class="modal-title">JOIN US TODAY AT DUMBELL <span class="dark-red">FITNESS!</span>
                         </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
