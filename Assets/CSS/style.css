@@ -5,13 +5,9 @@
     background-color: #272c2f;
 }
 
-.about-section-container {
-    background-color: #f2f2f2;
-
-}
 
 /*-------------------------------Reusable Components----------------*/
-/*------mintgreen-#98ff98;---------darkred-d#bf051e;----darkgrey-#98ff98;*------ font-family: 'Barlow', sans-serif;--*/
+/*------mintgreen-#98ff98;---------darkred-d#bf051e;----darkgrey-#272c2f*------ font-family: 'Barlow', sans-serif;--*/
 
 .dark-red {
     color: #bf051e;
@@ -22,7 +18,7 @@
 }
 
 .mintgreen {
-    color: -#98ff98;
+    color: #98ff98;
 }
 
 .uppercase {
@@ -41,6 +37,7 @@ p {
 }
 
 .red-stripe {
+    position: fixed;
     background: #bf051e;
     height: 15px;
     width: 100vw;
@@ -64,21 +61,6 @@ p {
 }
 
 /*-----------------------------------buttons-------------------------*/
-
-/*.btn-cta {
-    padding: 3px 12px 3px 12px;
-    background-color: #bf051e;
-    color: #fff;
-    border-radius: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-style: italic;
-    border: 2px solid #222222;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-}*/
 
 .btn-cta {
     background-color: #bf051e;
@@ -125,28 +107,33 @@ p {
     margin-top: 7px;
 }
 
-/*.pricing .btn {
-    font-size: 80%;
-    border-radius: 5rem;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    padding: 1rem;
-    opacity: 0.7;
-    transition: all 0.5s;
-}*/
 
 /*-----------------------Images---------------------------------------*/
+.img-navcollapse {
+    width: 100%;
+    height: 100%;
+}
+
+.about-img-div {
+    text-align: center;
+}
+
+.about-img {
+    height: 60%;
+    width: 90%;
+    margin-top: 1rem;
+}
 
 .priceplan-offer-img {
     width: 100%;
     height: 50%;
 }
 
-
-.img-navcollapse {
-    width: 100%;
-    height: 100%;
+.offer-img {
+    height: 50%;
+    width: 70%;
 }
+
 
 /*-----------------------Navbar---------------------------------------*/
 
@@ -278,27 +265,18 @@ p {
     margin-top: 30px;
 }
 
-.offer-img {
-    height: 50%;
-    width: 70%;
-}
 
 /*-----------------------------------About section-------------------------*/
+
+.about-section-container {
+    border: 0;
+    padding: 0;
+}
 
 .about-header {
     border: 16px solid #bf051e;
     margin-top: 20px;
     font-size: 45px;
-}
-
-.about-img-div {
-    text-align: center;
-}
-
-.about-img {
-    height: 60%;
-    width: 90%;
-    margin-top: 1rem;
 }
 
 .about-sub-header-two {
@@ -320,27 +298,12 @@ p {
 
 }
 
-
 .about-text-info {
     display: block;
     margin-top: 20px;
     font-size: 2rem;
     font-weight: 700;
     font-style: italic;
-}
-
-.about-text-info.red {
-    color: #bf051e;
-}
-
-.about-text-info.black {
-    color: #222222;
-
-}
-
-.about-text-info.green {
-    color: #98ff98;
-
 }
 
 /*----------------------Modal Contact Form-------------------------*/
@@ -352,21 +315,23 @@ p {
 /*--------pricing section-----------------------------------------*/
 
 .pricing-header {
-    border: 16px solid #98ff98;
+    border: 16px solid #272c2f;
     font-size: 35px;
 }
 
 .our-price-plans-div {
-    margin-bottom: 40px;
+    padding: 0;
+    border: 0;
 }
 
 section.pricing {
-    background: #222222;
+    border: 0;
+    padding: 0;
 
 }
 
 .pricing .card {
-    border: 6px solid #98ff98;
+    border: 6px solid#272c2f;
     border-radius: 1rem;
 }
 
@@ -411,11 +376,165 @@ ul {
     color: #98ff98
 }
 
+/*----------------------Trainers section---------------------------*/
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.team-container {
+
+  
+    background: url('../Images/daniel-apodaca-WdoQio6HPVA-unsplash.jpg') no-repeat fixed ;
+    background-position-x: 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+
+.main-header-team-section {
+    font-size: 60px;
+    font-weight: 700;
+    font-family:  'Oswald', sans-serif;
+    text-shadow: 0 0 13px rgba(0, 0, 0, 0.233);
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    border: 16px solid#bf051e;
+    color:#8e8e8f;
+}
+
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #bf051e;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color:#bf051e;
+    border-color:#bf051e;
+}
+
+.team-section {
+    padding: 30px 0;
+}
+
+
+#team .card {
+    border: 7px solid #8e8e8f;
+    background: black;
+}
+
+.card-body{
+    padding: 0;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color:  #8e8e8f  !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #8e8e8f  !important;
+}
+
+.frontside .card .card-body img {
+   min-height: 312px;
+}
 
 
 
 
-/* Hover Effects on Card 
 
 @media (min-width: 992px) {
     .pricing .card:hover {
@@ -427,21 +546,11 @@ ul {
     .pricing .card:hover .btn {
         opacity: 1;
     }
-}*/
+}
 
 /*------------------------------------------Media Quries--------------------*/
 
-/*----Target Navbar items when in toggle--*/
 
-@media(max-width:991px) {
-    .navbar .btn-cta {
-        padding: 10px;
-    }
-
-    .navbar-nav .nav-link {
-        text-align: center;
-    }
-}
 
 /*----------for small devices only------*/
 
@@ -473,17 +582,21 @@ ul {
         font-size: 80px;
     }
 
+    .about-sub-header-two {
+        font-size: 75px
+    }
+
     .about-sub-header-three {
         font-size: 60px;
     }
 
-    .about-img-div {
+    .pricing-header {
+        font-size: 70px;
         margin-bottom: 20px;
     }
 
-    .pricing-header {
-        margin-top: 20px;
-        font-size: 70px;
+    .main-header-team-section{
+    font-size: 130px;
     }
 
 
@@ -526,9 +639,13 @@ ul {
     }
 
     .pricing-header {
-        margin-top: 20px;
+        margin: 20px 0;
         font-size: 100px;
     }
+
+    .main-header-team-section{
+        font-size: 200px;
+        }
 }
 
 #last-list-item-second-priceplan {
@@ -583,29 +700,32 @@ ul {
     }
 
     .sub-header {
-        font-size: 160px;
+        font-size: 140px;
     }
 
     .about-sub-header-two {
-        font-size: 135px;
+        font-size: 125px;
+
     }
 
     .about-sub-header-three {
-        font-size: 100px;
+        font-size: 95px;
         margin-top: -150px;
     }
 
     .about-img-div {
-        margin-top: 40px;
+        margin-bottom: -50px;
     }
 
-    .about-text-div {
-        margin-top: -90px;
-        margin-bottom: 70px;
+    .about-img-div-second {
+        margin-top: 40px;
+
     }
+
 
     .pricing-header {
         font-size: 120px;
+        margin-bottom: 40px;
     }
 
     #last-list-item-second-priceplan {
@@ -615,4 +735,8 @@ ul {
     #last-list-item-third-priceplan {
         margin-bottom: 39px;
     }
+
+    .main-header-team-section{
+        font-size: 200px;
+        }
 }
