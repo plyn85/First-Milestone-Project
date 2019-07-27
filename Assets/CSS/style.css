@@ -248,7 +248,7 @@ p {
     background-color: transparent;
 }
 
-.opaque-overlay {
+.opaque-overlay-callout {
     position: absolute;
     top: 0;
     left: 0;
@@ -292,7 +292,6 @@ p {
 .about-text {
     font-size: 2rem;
     color: #212529;
-    font-style: italic;
     line-height: 1.3em;
     font-weight: 600;
 
@@ -392,14 +391,16 @@ ul {
 
 }
 
-.opaque-overlay {
+.opaque-overlay-team {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.10);
+    background-color: rgba(0, 0, 0, 0.60);
 }
+
+
 
 
 .main-header-team-section {
@@ -550,6 +551,11 @@ ul {
 .frontside .card .card-body img {
     height: 212px;
     width: 100%;
+}
+
+.gallery {
+    display: inline-block;
+    margin-top: 20px;
 }
 
 /*------------------------------------------Media Quries--------------------*/
