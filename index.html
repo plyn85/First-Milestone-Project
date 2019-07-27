@@ -12,6 +12,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
@@ -21,9 +22,9 @@
 <body>
 
     <!----------------------------------------------------------------------Navbar-->
+    <div class="container-fluid navbar-section">
+        <nav class="navbar navbar-expand-lg bg-navbar-color">
 
-    <nav class="navbar navbar-expand-lg bg-navbar-color sticky-top">
-        <div class="container-fluid navbar-section">
             <a class="navbar-brand" href="#"><img class="gym-logo"
                     src="Assets/Images/depositphotos_89034878-stock-illustration-gym-logo-in-vintage-style.jpg"
                     alt="a gym logo of a man lifting a dumbell"></a>
@@ -67,40 +68,41 @@
                 </div>
 
             </div>
-        </div>
-        </div>
-    </nav>
-    <div class="red-stripe below-navstripe"></div>
+
+
+        </nav>
+        <div class="red-stripe below-navstripe"></div>
+    </div>
+
 
     <!-----------------------------------------------------------------------------/Navbar-->
 
     <!-------------------------------------------------------------------------------Callout-->
 
-
-    <div class="container-fluid callout-container">
-        <div class="opaque-overlay">&nbsp;</div>
-        <div class="row">
-            <div class="col-12 d-none d-md-block col-md-8 offset-md-3 offset-xl-0 order-md-1 order-xl-1 col-xl-3">
-                <img class="special-img-one offer-img hvr-grow" src="Assets/Images/1.png"
-                    alt="a image of a women including a special offer"></div>
-            <div class="col-12 col-md-12 col-xl-6 order-xl-2">
-                <section class="callout jumbotron order-md-2 text-center">
-                    <h1 class="jumbotron-gymname uppercase">Dumbell <span class="dark-red">Fitness</span></h1>
-                    <h2 class="jumbotron-quote"><q>Be the hero of your own story</q></h2>
-                    <p class="offer-text d-none d-sm-inline uppercase"> Start your journey today <br>from
-                        $19.99/month
-                    </p>
-                    <button class="btn btn-callout btn-cta   hvr-wobble-horizontal btn-lg" data-toggle="modal"
-                        data-target="#signUpModal">Join
-                        us</button>
-
-                </section>
+    <div class="wrapper">
+        <div class="container-fluid callout-container">
+            <div class="row">
+                <div class="col-12 d-none d-md-block col-md-8 offset-md-3 offset-xl-0 order-md-1 order-xl-1 col-xl-3">
+                    <img class="special-img-one offer-img hvr-grow" src="Assets/Images/1.png"
+                        alt="a image of a women including a special offer"></div>
+                <div class="col-12 col-md-12 col-xl-6 order-xl-2">
+                    <section class="callout jumbotron order-md-2 text-center">
+                        <h1 class="jumbotron-gymname uppercase">Dumbell <span class="dark-red">Fitness</span></h1>
+                        <h2 class="jumbotron-quote"><q>Be the hero of your own story</q></h2>
+                        <p class="offer-text d-none d-sm-inline uppercase"> Start your journey today <br>from
+                            $19.99/month
+                        </p>
+                        <button class="btn btn-callout btn-cta   hvr-wobble-horizontal btn-lg" data-toggle="modal"
+                            data-target="#signUpModal">Join
+                            us</button>
+                    </section>
+                </div>
+                <div class="col-12 d-none d-xl-block col-xl-3 order-xl-3"><img
+                        class="special-img-two offer-img hvr-grow" src="Assets/Images/commitimage.png"
+                        alt="a image of a women including a special offer"></div>
             </div>
-            <div class="col-12 d-none d-xl-block col-xl-3 order-xl-3"><img class="special-img-two offer-img hvr-grow"
-                    src="Assets/Images/commitimage.png" alt="a image of a women including a special offer"></div>
         </div>
     </div>
-
 
     <!-------------------------------------------------------------------------------/Callout-->
 
@@ -279,12 +281,11 @@
     </div>
     <!-------------------------------------------------------------------------------/Pricing-->
 
-    <!-------------------------------------------------------------------------------/Pricing-->
+    <!-------------------------------------------------------------------------------/Team Section-->
 
-    <div class="wrapper">
+    <div class="wrapper team-section mt-5">
         <section class="team-section" id="team" class="pb-5">
-            <div class="container team-container">
-                <div class="opaque-overlay-team">&nbsp;</div>
+            <div class="container">
                 <h5 class="main-header-team-section">OUR TEAM</h5>
                 <div class="row">
                     <!-- Team member -->
@@ -636,9 +637,135 @@
     </div>
     <!-- Team -->
 
-    <section class="contact-section">
+    <section class="gym-section">
+        <div class="container">
+            <!-- Grid row -->
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center main-header our-gym-header uppercase mt-5">our gym</h2>
+                    <h3 class="gym-section-text text-center mt-5">Check out some of our amazing training methods below
+                    </h3>
+                    <hr class="hr-style">
+                    <!-- Grid column -->
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-10 offset-1 offset-md-0 col-md-5 mt-5  vid-div-border p-0">
+                            <!--Modal: Name-->
+                            <div class="modal fade" id="modal2" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <!--Content-->
+                                    <div class="modal-content">
+                                        <!--Body-->
+                                        <div class="modal-body mb-0 p-0">
+                                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                <iframe class="embed-responsive-item"
+                                                    src="https://www.youtube.com/embed/GUEZCxBcM78"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.Content-->
+                                </div>
+                            </div>
+                            <!--Modal: Name-->
+                            <a><img class="img-fluid z-depth-1"
+                                    src="https://mdbootstrap.com/img/screens/yt/screen-video-4.jpg" alt="video"
+                                    data-toggle="modal" data-target="#modal2"></a>
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-10 offset-1 offset-md-0 col-md-5 mt-5 vid-div-border p-0">
+                            <!--Modal: Name-->
+                            <div class="modal fade" id="modal5" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <!--Content-->
+                                    <div class="modal-content">
+                                        <!--Body-->
+                                        <div class="modal-body mb-0 p-0">
+                                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                <iframe class="embed-responsive-item"
+                                                    src="https://www.youtube.com/embed/PjGkVCAo8Fw"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.Content-->
+                                </div>
+                            </div>
+                            <!--Modal: Name-->
+                            <a><img class="img-fluid z-depth-1"
+                                    src="https://mdbootstrap.com/img/screens/yt/screen-video-5.jpg" alt="video"
+                                    data-toggle="modal" data-target="#modal5"></a>
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-10 offset-1 offset-md-0 col-md-5 mt-5  vid-div-border p-0">
+                            <!--Modal: Name-->
+                            <div class="modal fade" id="modal3" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <!--Content-->
+                                    <div class="modal-content">
+                                        <!--Body-->
+                                        <div class="modal-body mb-0 p-0">
 
+                                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                <iframe class="embed-responsive-item"
+                                                    src="https://www.youtube.com/embed/gsNY7TV4r1M"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.Content-->
+                                    
+                                </div>
+                            </div>
+                            <!--Modal: Name-->
+                            <a><img class="img-fluid z-depth-1"
+                                    src="https://mdbootstrap.com/img/screens/yt/screen-video-6.jpg" alt="video"
+                                    data-toggle="modal" data-target="#modal3"></a>
+
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-10 offset-1 offset-md-0 col-md-5 mt-5  vid-div-border p-0">
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal3" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+    
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <iframe class="embed-responsive-item"
+                                                        src="https://www.youtube.com/embed/gsNY7TV4r1M"
+                                                        allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                        
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+                                <a><img class="img-fluid z-depth-1"
+                                        src="https://mdbootstrap.com/img/screens/yt/screen-video-6.jpg" alt="video"
+                                        data-toggle="modal" data-target="#modal3"></a>
+    
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid row -->
+        </div>
     </section>
+
+
+
+
+
+
+
 
     <footer>
 
@@ -690,13 +817,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script src="jquery.fancybox.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="jquery.fancybox.min.js"></script>
 
 </body>
 

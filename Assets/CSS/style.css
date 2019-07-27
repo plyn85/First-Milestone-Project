@@ -5,6 +5,10 @@
     background-color: #272c2f;
 }
 
+.gym-section {
+    background-color: black;
+}
+
 
 /*-------------------------------Reusable Components----------------*/
 /*------mintgreen-#98ff98;---------darkred-d#bf051e;----darkgrey-#272c2f*------ font-family: 'Barlow', sans-serif;--*/
@@ -32,24 +36,23 @@ p {
 }
 
 .hr-style {
-    border-top: 2px solid#bf051e;
-    width: 100px;
+    border-top: 4px solid#bf051e;
+
 }
 
 .red-stripe {
-    position: fixed;
+
     background: #bf051e;
     height: 15px;
     width: 100vw;
     z-index: 1;
 }
 
-.below-navstripe {
-    position: fixed;
-}
+
 
 .main-header {
     color: #fff;
+    font-family: 'Oswald', sans-serif;
     text-shadow: 0 0 13px rgba(0, 0, 0, .88);
 }
 
@@ -213,7 +216,7 @@ p {
 .callout-container {
 
     height: 100vh;
-    background: url('../Images/background-image-milestomeproject.jpg') no-repeat fixed;
+    background: url('../Images/background-image-milestomeproject-3.jpg') no-repeat fixed;
     background-position-x: 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -242,20 +245,14 @@ p {
     font-weight: 700;
     margin: 30px;
 
+
 }
 
 .jumbotron {
+
     background-color: transparent;
 }
 
-.opaque-overlay-callout {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.45);
-}
 
 .offer-text {
     color: #98ff98;
@@ -379,9 +376,7 @@ ul {
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-.team-container {
-
-
+.team-section {
     background: url('../Images/daniel-apodaca-WdoQio6HPVA-unsplash.jpg') no-repeat fixed;
     background-position-x: 50%;
     -webkit-background-size: cover;
@@ -397,7 +392,7 @@ ul {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.60);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -539,7 +534,7 @@ ul {
 
 .social-icon i:hover {
     margin-bottom: 0;
-    color: red;
+    color: #bf051e;
 }
 
 .frontside .card .card-title,
@@ -553,12 +548,23 @@ ul {
     width: 100%;
 }
 
-.gallery {
-    display: inline-block;
-    margin-top: 20px;
+
+/*------------------------------------------Gym section--------------------*/
+.our-gym-header {
+    border: 16px solid #bf051e;
+    font-size: 50px;
 }
 
-/*------------------------------------------Media Quries--------------------*/
+.gym-section-text {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+}
+
+.vid-div-border {
+    border: 5px solid red;
+   
+}
 
 
 
@@ -609,6 +615,11 @@ ul {
         font-size: 130px;
     }
 
+    .our-gym-header {
+        border: 16px solid #bf051e;
+        font-size: 140px;
+    }
+
 
 }
 
@@ -655,6 +666,11 @@ ul {
 
     .main-header-team-section {
         font-size: 200px;
+    }
+
+    .our-gym-header {
+        border: 16px solid #bf051e;
+        font-size: 170px;
     }
 }
 
@@ -753,5 +769,10 @@ ul {
     .frontside .card .card-title,
     .backside .card .card-title {
         font-size: 30px;
+    }
+
+    .our-gym-header {
+        border: 16px solid #bf051e;
+        font-size: 200px;
     }
 }
