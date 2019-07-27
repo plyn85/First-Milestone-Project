@@ -25,6 +25,10 @@
     color: #98ff98;
 }
 
+.white{
+    color: #fff;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -33,6 +37,10 @@ p {
     font-family: 'Barlow', sans-serif;
     line-height: 1.7rem;
 
+}
+
+.text-barlow{
+    font-family: 'Barlow', sans-serif;
 }
 
 .hr-style {
@@ -109,6 +117,21 @@ p {
 .btn-modal {
     margin-top: 7px;
 }
+
+.btn-cta-gym-modal{
+    background-color: #bf051e;
+    color: #fff;
+    border-radius:10px;
+}
+
+.btn-cta-gym-modal:link,
+.btn-cta-gym-modal:visited,
+.btn-cta-gym-modal:hover,
+.btn-cta-gym-modal:active {
+    color: #f2f2f2;
+    border-color: #fff;
+}
+
 
 
 /*-----------------------Images---------------------------------------*/
@@ -562,8 +585,33 @@ ul {
 }
 
 .vid-div-border {
-    border: 5px solid red;
+    border: 5px solid  #bf051e;
+    box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
+    border-radius: 10px;
    
+}
+
+.modal-footer-gym-section{
+    background-color: black;
+}
+
+.modal-footer-gym-section a{
+   background-color: #272c2f;
+  
+    
+}
+
+.modal-footer-gym-section i{
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    color: #fff;
+
+}
+
+.modal-footer-gym-section i:hover{
+color: #bf051e; 
 }
 
 
