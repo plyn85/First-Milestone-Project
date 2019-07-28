@@ -12,7 +12,6 @@
 
 /*-------------------------------Reusable Components----------------*/
 /*------mintgreen-#98ff98;---------darkred-d#bf051e;----darkgrey-#272c2f*------ font-family: 'Barlow', sans-serif;--*/
-
 .dark-red {
     color: #bf051e;
 }
@@ -25,9 +24,10 @@
     color: #98ff98;
 }
 
-.white{
+.white {
     color: #fff;
 }
+
 
 .uppercase {
     text-transform: uppercase;
@@ -39,7 +39,7 @@ p {
 
 }
 
-.text-barlow{
+.text-barlow {
     font-family: 'Barlow', sans-serif;
 }
 
@@ -118,10 +118,10 @@ p {
     margin-top: 7px;
 }
 
-.btn-cta-gym-modal{
+.btn-cta-gym-modal {
     background-color: #bf051e;
     color: #fff;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 .btn-cta-gym-modal:link,
@@ -288,6 +288,10 @@ p {
 
 /*-----------------------------------About section-------------------------*/
 
+.about-section-wrapper {
+    background-color: rgb(241, 240, 240);
+}
+
 .about-section-container {
     border: 0;
     padding: 0;
@@ -295,13 +299,12 @@ p {
 
 .about-header {
     border: 16px solid #bf051e;
-    margin-top: 20px;
     font-size: 45px;
 }
 
 .about-sub-header-two {
     margin-top: -90px;
-    margin-bottom: 20px;
+
 }
 
 .about-sub-header-three {
@@ -310,8 +313,8 @@ p {
 }
 
 .about-text {
-    font-size: 2rem;
-    color: #212529;
+    font-size: 1rem;
+    color: #272c2f;
     line-height: 1.3em;
     font-weight: 600;
 
@@ -332,9 +335,12 @@ p {
 }
 
 /*--------pricing section-----------------------------------------*/
+.pricing-wrapper {
+    background-color: #272c2f;
+}
+
 
 .pricing-header {
-    border: 16px solid #272c2f;
     font-size: 35px;
 }
 
@@ -585,23 +591,23 @@ ul {
 }
 
 .vid-div-border {
-    border: 5px solid  #bf051e;
+    border: 5px solid #bf051e;
     box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
     border-radius: 10px;
-   
+
 }
 
-.modal-footer-gym-section{
+.modal-footer-gym-section {
     background-color: black;
 }
 
-.modal-footer-gym-section a{
-   background-color: #272c2f;
-  
-    
+.modal-footer-gym-section a {
+    background-color: #272c2f;
+
+
 }
 
-.modal-footer-gym-section i{
+.modal-footer-gym-section i {
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -610,8 +616,8 @@ ul {
 
 }
 
-.modal-footer-gym-section i:hover{
-color: #bf051e; 
+.modal-footer-gym-section i:hover {
+    color: #bf051e;
 }
 
 
@@ -639,7 +645,10 @@ color: #bf051e;
 
     .about-header {
         font-size: 100px;
-        margin-top: 20px;
+    }
+
+    .about-text {
+        font-size: 1.2rem;
     }
 
     .sub-header {
@@ -656,7 +665,7 @@ color: #bf051e;
 
     .pricing-header {
         font-size: 70px;
-        margin-bottom: 20px;
+
     }
 
     .main-header-team-section {
@@ -686,18 +695,18 @@ color: #bf051e;
 
 
     .about-header {
-        margin-top: 20px;
         font-size: 130px;
     }
+
+    .about-text {
+        font-size: 1.7rem;
+    }
+
 
     .sub-header {
         font-size: 100px;
     }
 
-    .about-sub-header-two {
-        margin-top: -120px;
-
-    }
 
     .about-sub-header-three {
         font-size: 80px;
@@ -708,8 +717,8 @@ color: #bf051e;
     }
 
     .pricing-header {
-        margin: 20px 0;
         font-size: 100px;
+
     }
 
     .main-header-team-section {
@@ -722,9 +731,6 @@ color: #bf051e;
     }
 }
 
-#last-list-item-second-priceplan {
-    margin-bottom: 40px;
-}
 
 /*----------for desktops------*/
 
@@ -773,33 +779,31 @@ color: #bf051e;
         font-size: 160px;
     }
 
+    .about-text {
+        font-size: 2rem;
+    }
+
+
     .sub-header {
         font-size: 140px;
+
     }
 
     .about-sub-header-two {
         font-size: 125px;
-
+        margin-top: -10rem;
     }
 
     .about-sub-header-three {
         font-size: 95px;
-        margin-top: -150px;
-    }
-
-    .about-img-div {
-        margin-bottom: -50px;
-    }
-
-    .about-img-div-second {
-        margin-top: 40px;
 
     }
+
+
 
 
     .pricing-header {
         font-size: 120px;
-        margin-bottom: 40px;
     }
 
     #last-list-item-second-priceplan {
