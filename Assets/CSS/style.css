@@ -5,9 +5,20 @@
     background-color: #272c2f;
 }
 
-.gym-section-wrapper {
-    background-color: black;
+.about-section-wrapper {
+    background-color: #fff;
 }
+
+.gym-section-wrapper {
+    background-color: #272c2f;
+}
+
+.pricing-wrapper {
+    background-color: rgb(80, 88, 95);
+}
+
+
+
 
 
 /*-------------------------------Reusable Components----------------*/
@@ -287,9 +298,7 @@ p {
 
 /*-----------------------------------About section-------------------------*/
 
-.about-section-wrapper {
-    background-color: rgb(241, 240, 240);
-}
+
 
 .about-section-container {
     border: 0;
@@ -334,10 +343,6 @@ p {
 }
 
 /*--------pricing section-----------------------------------------*/
-
-.pricing-wrapper {
-    background-color: #272c2f;
-}
 
 
 .pricing-header {
@@ -419,9 +424,9 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-    height: 72%;
+    height: 68%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .main-header-team-section {
@@ -462,9 +467,9 @@ ul {
 
 
 #team .card {
-    border: 7px solid black;
+    border: 7px solid   #bf051e;
     border-radius: 10px;
-    background: black;
+    background:  #272c2f;
     box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
 }
 
@@ -705,6 +710,7 @@ ul {
         opacity: 0.7;
     }
 }
+/*----------customer testimonials section------*/
 
 
 /*----------for small devices only------*/
