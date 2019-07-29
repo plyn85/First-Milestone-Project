@@ -6,7 +6,7 @@
 }
 
 .about-section-wrapper {
-    background-color: #fff;
+    background-color: #272c2f;
 }
 
 .gym-section-wrapper {
@@ -310,7 +310,12 @@ p {
     font-size: 45px;
 }
 
+.about-sub-header-one {
+    color:#fff;
+}
+
 .about-sub-header-two {
+    color:#fff;
     margin-top: -90px;
 
 }
@@ -322,7 +327,7 @@ p {
 
 .about-text {
     font-size: 1rem;
-    color: #272c2f;
+    color: #fff;
     line-height: 1.3em;
     font-weight: 600;
 
@@ -426,7 +431,7 @@ ul {
     left: 0;
     height: 68%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-header-team-section {
@@ -598,7 +603,7 @@ ul {
     font-style: italic;
 }
 
-.gym-section-vid-logo i {
+.gym-section-logo i {
     font-size: 50px;
     color: #bf051e;
 }
