@@ -39,6 +39,10 @@
     color: #fff;
 }
 
+.black{
+    color:#000;
+}
+
 
 .uppercase {
     text-transform: uppercase;
@@ -717,6 +721,35 @@ ul {
 }
 /*----------customer testimonials section------*/
 
+.first-img-carousel {
+    border: 5px solid white;
+}
+
+.second-img-carousel{
+    border: 5px solid red;
+}
+
+.carousel-before-after{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.test-section-customer-quotes{
+    font-size: 20px;
+    line-height: 1.9rem;
+}
+
+.customer-name-test-section{
+    font-size: 20px;
+}
+
+.img-carousel{
+    border-radius: 10px;
+}
+
+.second-img-carousel{
+    box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
+}
 
 /*----------for small devices only------*/
 
@@ -770,8 +803,6 @@ ul {
         border: 16px solid #bf051e;
         font-size: 140px;
     }
-
-
 
 }
 
@@ -836,6 +867,12 @@ ul {
     .gallery-section-text {
         font-size: 33px;
     }
+
+    .test-section-customer-quotes{
+        font-size: 25px;
+        line-height: 2.5rem;
+    }
+
 }
 
 
@@ -940,5 +977,10 @@ ul {
 
     .gallery-section-text {
         font-size: 37px;
+    }
+
+    .test-section-customer-quotes{
+        font-size: 25px;
+        line-height: 2.5rem;
     }
 }
