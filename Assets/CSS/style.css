@@ -43,6 +43,10 @@
     color:#000;
 }
 
+.light-grey {
+    color: #8e8f8f;
+}
+
 
 .uppercase {
     text-transform: uppercase;
@@ -81,9 +85,9 @@ p {
 
 .sub-header {
     font-size: 50px;
-    color: #272c2f;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
+    text-shadow: 0 0 13px rgba(0, 0, 0, .88);
 }
 
 /*-----------------------------------buttons-------------------------*/
@@ -729,8 +733,8 @@ ul {
     border: 5px solid red;
 }
 
-.carousel-before-after{
-    font-size: 25px;
+.carousel-before-after i{
+    font-size: 40px;
     font-weight: 900;
 }
 
@@ -754,7 +758,7 @@ ul {
 /*----------for small devices only------*/
 
 @media(min-width:320px) and (max-width:566px) {
-    .second-img-div {}
+   
 
 }
 
@@ -803,6 +807,23 @@ ul {
         border: 16px solid #bf051e;
         font-size: 140px;
     }
+
+   .sub-header-one-gym-section{
+       font-size:  120px;
+         
+       
+   } 
+
+   .sub-header-two-gym-section{
+    font-size:  130px;
+      
+    
+} 
+
+.sub-header-three-gym-section{
+    font-size:  130px;
+      
+} 
 
 }
 
@@ -860,15 +881,23 @@ ul {
         font-size: 170px;
     }
 
-    .gym-section-text {
-        font-size: 40px;
-    }
+    .sub-header-one-gym-section{
+        font-size:  150px;
+          
+        
+    } 
 
-    .gallery-section-text {
-        font-size: 33px;
-    }
+    .sub-header-two-gym-section{
+        font-size:  150px;
+          
+  } 
 
-    .test-section-customer-quotes{
+  .sub-header-three-gym-section{
+    font-size:  170px;
+      
+} 
+
+ .test-section-customer-quotes{
         font-size: 25px;
         line-height: 2.5rem;
     }
@@ -970,14 +999,19 @@ ul {
         border: 16px solid #bf051e;
         font-size: 200px;
     }
+    .sub-header-one-gym-section{
+        font-size:  180px;
+          
+        
+    } 
+    .sub-header-two-gym-section{
+        font-size:  200px;
+          
+  } 
 
-    .gym-section-text {
-        font-size: 50px;
-    }
-
-    .gallery-section-text {
-        font-size: 37px;
-    }
+ .sub-header-three-gym-section {
+    font-size:  230px;
+ }
 
     .test-section-customer-quotes{
         font-size: 25px;
