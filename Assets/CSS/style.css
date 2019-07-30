@@ -189,7 +189,9 @@ p {
 }
 
 .gym-logo {
-    height: 50px;
+    border: 1px solid#bf051e;
+    border-radius: 2px;
+    height: 70px;
     width: auto;
 }
 
@@ -763,6 +765,11 @@ ul {
 /*----------for ipads------*/
 
 @media(min-width:567px) and (max-width:991px) {
+   .gym-logo{
+       font-size: 100px;
+   }
+   
+   
     .jumbotron-gymname {
         font-size: 3rem;
 
@@ -908,13 +915,13 @@ ul {
 @media(min-width: 1200px) {
 
     .gym-logo {
-        height: 80px;
+        height: 100px;
         width: auto;
     }
 
     .navbar h2 {
         letter-spacing: 2px;
-        font-size: 2.5rem;
+        font-size: 3.3rem;
     }
 
 
