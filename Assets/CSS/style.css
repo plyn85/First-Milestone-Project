@@ -797,28 +797,29 @@ footer a {
 }
 
 .social-pet li:nth-child(2) a {
-    background-color:#8e8e8f;
+    background-color: #8e8e8f;
 }
 
 .social-pet li:nth-child(3) a {
     background-color: #8e8e8f;
 }
+
 .social-pet li:nth-child(4) a {
-    background-color:  #8e8e8f;
+    background-color: #8e8e8f;
 }
 
 .social-pet li a:hover {
     background-color: #bf051e;
-   
+
 }
 
-.btn-footer{
-   background-color: #8e8e8f;
+.btn-footer {
+    background-color: #8e8e8f;
 }
 
 .btn-footer:hover {
-  background-color:#bf051e;
-  border-color: #bf051e;
+    background-color: #bf051e;
+    border-color: #bf051e;
 }
 
 .social-pet li a:hover i {
