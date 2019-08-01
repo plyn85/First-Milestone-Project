@@ -53,13 +53,13 @@
 }
 
 p {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     line-height: 1.7rem;
 
 }
 
 .text-barlow {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .hr-style {
@@ -96,7 +96,7 @@ p {
     background-color: #bf051e;
     color: #fff;
     font-size: 100%;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
     border-radius: 5rem;
     letter-spacing: .1rem;
@@ -210,7 +210,7 @@ p {
 }
 
 .navbar-nav .nav-item {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     margin: 0px 8px;
 }
 
@@ -284,7 +284,7 @@ p {
 .jumbotron-quote {
 
     color: #fff;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 700;
     margin: 30px;
 
@@ -384,6 +384,7 @@ l,
 ol,
 ul {
     font-weight: 600;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .pricing hr {
@@ -395,13 +396,14 @@ ul {
 .pricing .card-title {
     margin: 0.5rem 0;
     font-size: 1.2rem;
+    font-family: 
     letter-spacing: .1rem;
     font-weight: 700;
     color: #0f1215;
 }
 
 .pricing .card-price {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 3rem;
     font-weight: 600;
     margin: 0;
@@ -409,7 +411,7 @@ ul {
 
 .pricing .card-price .period {
     font-size: 0.8rem;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .pricing ul li {
@@ -477,7 +479,7 @@ ul {
 
 .backside .card-text {
     color: #fff;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 
@@ -587,7 +589,7 @@ ul {
 
 .frontside .card .card-title,
 .backside .card .card-title {
-    font-family: "Barlow", sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     color: #fff !important;
 }
 
@@ -761,7 +763,7 @@ ul {
 
 /*----------footer------*/
 footer {
-    font-family: "Barlow", sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     color: #fff;
     background-attachment: fixed;
     background-color: #111111;
@@ -1007,7 +1009,7 @@ footer a {
 }
 
 
-/*----------for desktops------*/
+/*----------for laptops------*/
 
 @media(min-width: 1200px) {
 
@@ -1051,7 +1053,7 @@ footer a {
 
     .about-header {
         margin-top: 40px;
-        font-size: 160px;
+        font-size: 260px;
     }
 
     .about-text {
@@ -1081,11 +1083,11 @@ footer a {
     }
 
     #last-list-item-second-priceplan {
-        margin-bottom: 64px;
+        margin-bottom: 84px;
     }
 
     #last-list-item-third-priceplan {
-        margin-bottom: 39px;
+        margin-bottom: 57px;
     }
 
     .main-header-team-section {
