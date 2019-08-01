@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Oswald&display=swap: 100,200,300,400,500,600,700,800,900');
 
+/* main body */
+
+body{
+    font-size: 16px;
+}
+
+
 /* Colors */
 
 .bg-navbar-color {
@@ -61,14 +68,14 @@ p {
 }
 
 .hr-style {
-    border-top: 4px solid#bf051e;
+    border-top: 0.25rem  solid#bf051e;
 
 }
 
 .red-stripe {
 
     background: #bf051e;
-    height: 15px;
+    height: 1rem;
     width: 100vw;
     z-index: 1;
 }
@@ -82,7 +89,7 @@ p {
 }
 
 .sub-header {
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     text-shadow: 0 0 13px rgba(0, 0, 0, .88);
@@ -119,12 +126,12 @@ p {
 .btn-callout {
     display: block;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 
 }
 
 .btn-navbar {
-    margin-top: 5px;
+    margin-top:0.3rem;
 }
 
 .btn-pricing {
@@ -134,13 +141,13 @@ p {
 }
 
 .btn-modal {
-    margin-top: 7px;
+    margin-top: 0.45rem;
 }
 
 .btn-cta-gym-modal {
     background-color: #bf051e;
     color: #fff;
-    border-radius: 10px;
+    border-radius:2.2rem;
 }
 
 .btn-cta-gym-modal:link,
@@ -192,9 +199,9 @@ p {
 }
 
 .gym-logo {
-    border: 1px solid#bf051e;
-    border-radius: 2px;
-    height: 45px;
+    border: 0.25rem solid#bf051e;
+    border-radius: 0.125rem;
+    height: 2rem;
     width: auto;
 }
 
@@ -209,23 +216,23 @@ p {
 }
 
 .navbar-nav {
-    margin-bottom: 3px;
+    margin-bottom: 0.2rem;
 }
 
 .navbar-nav .nav-item {
     font-family: 'Barlow Semi Condensed', sans-serif;
-    margin: 0px 8px;
+    margin: 0rem  0.5rem;
 }
 
 .navbar-toggler {
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 
 .navbar .navbar-nav .nav-link {
-    padding: 10px;
-    margin-top: 15px;
-    margin-left: 20px;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    margin-left: 1.25rem;
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
@@ -281,7 +288,7 @@ p {
     font-family: 'Oswald', sans-serif;
     color: #e1e1e1;
     text-shadow: 0 0 13px rgba(0, 0, 0, 0.904);
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     letter-spacing: 2px;
     font-weight: 900;
 }
@@ -291,7 +298,7 @@ p {
     color: #fff;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 700;
-    margin: 30px;
+    margin: 1.8rem;
 
 
 }
@@ -307,7 +314,7 @@ p {
     font-size: 1.7rem;
     font-weight: 900;
     letter-spacing: 1px;
-    margin-top: 30px;
+    margin-top: 2.2rem;
 }
 
 /* end callout section */
@@ -320,23 +327,26 @@ p {
 }
 
 .about-header {
-    border: 16px solid #bf051e;
-    font-size: 45px;
+    border: 1rem solid #bf051e;
+    font-size: 3rem;
 }
 
 .about-sub-header-one {
+    font-size: 3rem;
     color: #fff;
 }
 
 .about-sub-header-two {
+    font-size: 3rem;
     color: #fff;
-    margin-top: -90px;
+    margin-top: -5rem;
 
 }
 
 .about-sub-header-three {
+    font-size: 3rem;
     color: #98ff98;
-    margin-top: -90px;
+    margin-top: -5rem;
 }
 
 .about-text {
@@ -349,7 +359,7 @@ p {
 
 .about-text-info {
     display: block;
-    margin-top: 20px;
+    margin-top:1.25rem;
     font-size: 2rem;
     font-weight: 700;
     font-style: italic;
@@ -368,7 +378,7 @@ p {
 /* pricing section */
 
 .pricing-header {
-    font-size: 35px;
+    font-size: 2.5rem;
 }
 
 .our-price-plans-div {
@@ -383,7 +393,7 @@ section.pricing {
 }
 
 .pricing .card {
-    border: 6px solid#272c2f;
+    border: 0.4rem solid#272c2f;
     border-radius: 1rem;
 }
 
@@ -395,7 +405,7 @@ ul {
 }
 
 .pricing hr {
-    border-top: 2px solid #98ff98;
+    border-top: 0.125rem solid #98ff98;
     margin: 1.5rem;
 
 }
@@ -456,14 +466,14 @@ ul {
 }
 
 .main-header-team-section {
-    font-size: 60px;
+    font-size:4rem;
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
     text-shadow: 0 0 13px rgba(0, 0, 0, 0.233);
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom:4rem;
     text-transform: uppercase;
-    border: 16px solid#bf051e;
+    border:1rem solid#bf051e;
     color: #fff;
     text-shadow: 0 0 13px rgba(0, 0, 0, .50);
 }
@@ -483,7 +493,7 @@ ul {
 }
 
 .team-section {
-    padding: 30px 0;
+    padding:1.9rem 0;
 }
 
 .backside .card-text {
@@ -493,7 +503,7 @@ ul {
 
 
 #team .card {
-    border: 7px solid #bf051e;
+    border: 0.45rem solid #bf051e;
     border-radius: 10px;
     background: #272c2f;
     box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
@@ -578,11 +588,11 @@ ul {
 
 .frontside .card,
 .backside .card {
-    min-height: 312px;
+    min-height: 19.5rem;
 }
 
 .backside .card a {
-    font-size: 18px;
+    font-size:1.1rem;
     color: #fff !important;
 }
 
@@ -605,7 +615,7 @@ ul {
 }
 
 .frontside .card .card-body img {
-    height: 212px;
+    height: 13.25rem;
     width: 100%;
 }
 
@@ -617,7 +627,8 @@ ul {
 /* vids-section-gym-sub-section */
 
 .our-gym-header {
-    border: 16px solid #bf051e;
+    margin: 2rem 0 2rem 0;
+    border: 1rem solid #bf051e;
     font-size: 50px;
 }
 
@@ -628,14 +639,14 @@ ul {
 }
 
 .gym-section-logo i {
-    font-size: 50px;
+    font-size: 3.2rem;
     color: #bf051e;
 }
 
 .vid-div-border {
-    border: 5px solid #bf051e;
+    border: 0.3rem solid #bf051e;
     box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
-    border-radius: 10px;
+    border-radius: 0.6rem;
 
 }
 
@@ -667,15 +678,15 @@ ul {
 /* image gallery section */
 
 .gallery-block {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 
 
 .gallery-block .heading h2 {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
 }
 
@@ -701,12 +712,12 @@ ul {
     bottom: 0;
     left: 0;
     color: #fff;
-    padding: 10px;
-    font-size: 17px;
-    line-height: 18px;
+    padding:1.1rem;
+    font-size:1rem;
+    line-height: 1.1rem;
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 1rem;
+    padding-bottom:1rem;
     opacity: 1;
     color: #fff;
     transition: 0.8s ease;
@@ -722,7 +733,7 @@ ul {
 
 .gallery-block.compact-gallery .item .description .description-body {
     font-size: 0.8em;
-    margin-top: 10px;
+    margin-top: 6.25rem;
     font-weight: 300;
 }
 
@@ -747,34 +758,38 @@ ul {
 /* customer testimonials section */
 
 .first-img-carousel {
-    border: 5px solid white;
+    border:0.25rem solid white;
 }
 
 .second-img-carousel {
-    border: 5px solid red;
+    border: 0.25rem solid red;
 }
 
 .carousel-before-after i {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
 }
 
 .test-section-customer-quotes {
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 1.9rem;
 
 }
 
 .customer-name-test-section {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .img-carousel {
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .second-img-carousel {
     box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
+}
+
+.video-icon-gym-section{
+    margin-bottom: 1rem;
 }
 
 /* end customer testimonials section */
@@ -800,16 +815,16 @@ footer a {
 
 .social-pet li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .social-pet li a {
-    height: 35px;
-    width: 35px;
+    height: 2.2rem;
+    width: 2.3rem;
     border-radius: 50%;
     text-align: center;
     display: block;
-    line-height: 35px;
+    line-height: 2.2rem;
     background-color: #8e8e8f;
     color: #fff;
     transition: all 0.5s ease-in-out;
@@ -856,7 +871,7 @@ footer a {
 
 .f-address li i {
     color: #bf051e;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .f-address li a {
@@ -867,8 +882,8 @@ footer a {
 
 .copyright {
     background-color: #111;
-    padding: 12px 0;
-    font-size: 17px;
+    padding: 0.75rem 0;
+    font-size:1.1rem;
 }
 
 /* end copyright  */
