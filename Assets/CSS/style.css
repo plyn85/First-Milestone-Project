@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Oswald&display=swap: 100,200,300,400,500,600,700,800,900');
 
-/*-----------------------------------Colors-------------------------*/
+/* Colors */
+
 .bg-navbar-color {
     background-color: #111111;
 }
@@ -17,12 +18,6 @@
     background-color: rgb(80, 88, 95);
 }
 
-
-
-
-
-/*-------------------------------Reusable Components----------------*/
-/*------mintgreen-#98ff98;---------darkred-d#bf051e;----darkgrey-#272c2f*------ font-family: 'Barlow', sans-serif;--*/
 .dark-red {
     color: #bf051e;
 }
@@ -47,6 +42,9 @@
     color: #8e8f8f;
 }
 
+/* end colors */
+
+/* Reusable Components */
 
 .uppercase {
     text-transform: uppercase;
@@ -90,7 +88,9 @@ p {
     text-shadow: 0 0 13px rgba(0, 0, 0, .88);
 }
 
-/*-----------------------------------buttons-------------------------*/
+/* end reusable Components */
+
+/* buttons */
 
 .btn-cta {
     background-color: #bf051e;
@@ -151,9 +151,10 @@ p {
     border-color: #fff;
 }
 
+/* end buttons */
 
+/* Images */
 
-/*-----------------------Images---------------------------------------*/
 .img-navcollapse {
     width: 100%;
     height: 100%;
@@ -179,8 +180,10 @@ p {
     width: 70%;
 }
 
+/* end images */
 
-/*-----------------------Navbar---------------------------------------*/
+
+/* Navbar */
 
 .navbar-expand-lg,
 .container-fluid {
@@ -191,7 +194,7 @@ p {
 .gym-logo {
     border: 1px solid#bf051e;
     border-radius: 2px;
-    height: 50px;
+    height: 45px;
     width: auto;
 }
 
@@ -255,7 +258,9 @@ p {
     background-color: #bf051e;
 }
 
-/*------------------------callout section--------------------------*/
+/* end navbar */
+
+/* callout section */
 
 .callout-container {
 
@@ -305,10 +310,9 @@ p {
     margin-top: 30px;
 }
 
+/* end callout section */
 
-/*-----------------------------------About section-------------------------*/
-
-
+/* about section */
 
 .about-section-container {
     border: 0;
@@ -351,14 +355,17 @@ p {
     font-style: italic;
 }
 
-/*----------------------Modal Contact Form-------------------------*/
+/* end about section */
+
+/* Modal Contact Form */
 
 .error {
     color: #bf051e;
 }
 
-/*--------pricing section-----------------------------------------*/
+/* end modal contact form */
 
+/* pricing section */
 
 .pricing-header {
     font-size: 35px;
@@ -396,7 +403,7 @@ ul {
 .pricing .card-title {
     margin: 0.5rem 0;
     font-size: 1.2rem;
-    font-family:  'Barlow Semi Condensed', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     letter-spacing: .1rem;
     font-weight: 700;
     color: #0f1215;
@@ -423,7 +430,9 @@ ul {
     color: #98ff98
 }
 
-/*----------------------Team section---------------------------*/
+/* end pricing section */
+
+/* Team section */
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
@@ -517,6 +526,7 @@ ul {
     -webkit-transform-style: preserve-3d;
     -ms-transition: 1s;
     -moz-transition: 1s;
+    transform: perspective(1000px);
     -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
@@ -527,6 +537,7 @@ ul {
 
 .frontside {
     position: relative;
+    transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     z-index: 2;
@@ -598,11 +609,12 @@ ul {
     width: 100%;
 }
 
+/* end team section */
 
-/*------------------------------------------Gym section--------------------*/
 
+/* Gym section */
 
-/*---------vids-section-gym-sub-section--------*/
+/* vids-section-gym-sub-section */
 
 .our-gym-header {
     border: 16px solid #bf051e;
@@ -650,7 +662,9 @@ ul {
     color: #bf051e;
 }
 
-/*----------image Gallery section------*/
+/* end vids-section-gym-sub-section */
+
+/* image gallery section */
 
 .gallery-block {
     padding-bottom: 60px;
@@ -728,7 +742,9 @@ ul {
     }
 }
 
-/*----------customer testimonials section------*/
+/* end image gallery section */
+
+/* customer testimonials section */
 
 .first-img-carousel {
     border: 5px solid white;
@@ -761,7 +777,11 @@ ul {
     box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
 }
 
-/*----------footer------*/
+/* end customer testimonials section */
+
+/* footer */
+
+
 footer {
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: #fff;
@@ -843,14 +863,14 @@ footer a {
     color: #ccc;
 }
 
-/*=-Copyright-=*/
+/* copyright */
+
 .copyright {
     background-color: #111;
     padding: 12px 0;
     font-size: 17px;
 }
 
-/*----------for small devices only------*/
+/* end copyright  */
 
-@media(min-width:320px) and (max-width:566px) {}
-
+/* end footer */
