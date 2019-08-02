@@ -4,6 +4,19 @@
 
 body {
     font-size: 16px;
+   
+}
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+​
+.row {
+	margin-left: 0;
+	margin-right: 0;
 }
 
 
@@ -68,6 +81,7 @@ p {
 }
 
 .hr-style {
+    width: 90%;
     border-top: 0.25rem solid#bf051e;
 
 }
@@ -76,7 +90,7 @@ p {
 
     background: #bf051e;
     height: 1rem;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
 }
 
@@ -199,9 +213,10 @@ p {
 }
 
 .gym-logo {
+    margin-left: 0.55rem;
     border: 0.25rem solid#bf051e;
     border-radius: 0.125rem;
-    height: 2.7rem;
+    height: 2.6rem;
     width: auto;
 }
 
@@ -324,10 +339,7 @@ p {
 
 /* about section */
 
-.about-section-container {
-    border: 0;
-    padding: 0;
-}
+
 
 .about-header {
     border: 1rem solid #bf051e;
