@@ -269,6 +269,7 @@ p {
 
 /* callout section */
 
+/* Modified from my own code found at https://plyn85.github.io/First-bootstrap-website */
 .callout-container {
 
     height: 100vh;
@@ -278,11 +279,13 @@ p {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    display:flexbox;
+    display: flexbox;
     justify-content: center;
     align-items: center;
     position: relative;
 }
+
+/* end of  Modified code */
 
 .jumbotron-gymname {
     font-family: 'Oswald', sans-serif;
@@ -376,6 +379,7 @@ p {
 /* end modal contact form */
 
 /* pricing section */
+/* Modified from a tutorial found at https://startbootstrap.com/snippets/pricing-table/ */
 
 .pricing-header {
     font-size: 2.5rem;
@@ -443,6 +447,7 @@ ul {
 /* end pricing section */
 
 /* Team section */
+/* Modified from a tutorial found at https://bootsnipp.com/snippets/92xNm */
 
 .team-section {
     background: url('../Images/daniel-apodaca-WdoQio6HPVA-unsplash.jpg') no-repeat fixed;
@@ -624,6 +629,7 @@ ul {
 /* Gym section */
 
 /* vids-section-gym-sub-section */
+/* Modified from a tutorial found at https://mdbootstrap.com/plugins/jquery/gallery/ */
 
 .our-gym-header {
     margin: 2rem 0 2rem 0;
@@ -675,6 +681,7 @@ ul {
 /* end vids-section-gym-sub-section */
 
 /* image gallery section */
+/* Modified from a tutorial found at https://tutorialzine.com/2018/03/3-amazing-bootstrap-4-gallery-templates */
 
 .gallery-block {
     padding-bottom: 3rem;
@@ -755,6 +762,7 @@ ul {
 /* end image gallery section */
 
 /* customer testimonials section */
+/* Modified from a tutorial found at https://mdbootstrap.com/docs/jquery/sections/testimonials/ */
 
 .first-img-carousel {
     border: 0.25rem solid white;
@@ -794,7 +802,7 @@ ul {
 /* end customer testimonials section */
 
 /* footer */
-
+/* Modified from a tutorial found at https://colorlib.com/wp/bootstrap-footer/  */
 
 footer {
     font-family: 'Barlow Semi Condensed', sans-serif;
