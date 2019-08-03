@@ -4,7 +4,6 @@
 
 body {
     font-size: 16px;
-   
 }
 
 .container-fluid {
@@ -790,7 +789,7 @@ ul {
 }
 
 .test-section-customer-quotes {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.9rem;
 
 }
@@ -834,7 +833,13 @@ footer a {
 
 .social-pet li {
     display: inline-block;
-    margin-right: 0.625rem;
+    margin-right: 0.5rem;
+
+
+}
+
+#footer-social-links{
+    padding: 0rem;
 }
 
 .social-pet li a {
