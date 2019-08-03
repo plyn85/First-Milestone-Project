@@ -85,7 +85,7 @@
     <!-- Callout  -->
     <!-- Modified from my own code  found at https://plyn85.github.io/First-bootstrap-website/ -->
 
-    <section class="wrapper">
+    <section class="callout-section">
         <div class="container-fluid callout-container">
             <div class="row">
                 <div
@@ -114,9 +114,9 @@
     <!-- /Callout -->
 
     <!-- About Section  -->
-    <div class="about-section-wrapper pb-3">
-        <div class="container about-section-container">
-            <section class="about-section" id="about-section-nav-link">
+    <section class="about-section" id="about-section-nav-link">
+        <div class="about-section-wrapper pb-3">
+            <div class="container about-section-container">
                 <div class="row">
                     <div class="col-12 pt-4">
                         <h2 class="text-center main-header about-header uppercase">About us</h2>
@@ -173,17 +173,16 @@
                         </div>
                     </div>
                 </div>
-            </section>
-
+            </div>
         </div>
-    </div>
+    </section>
     <!--  /About -->
 
     <!-- Pricing  -->
     <!-- Modified from a tutorial found at https://startbootstrap.com/snippets/pricing-table/ -->
-    <div class="container-wrapper pricing-wrapper pt-5 pb-5">
-        <div class="container pricing-container">
-            <section class="pricing" id="pricing-section-nav-link">
+    <section class="pricing" id="pricing-section-nav-link">
+        <div class="container-wrapper pricing-wrapper pt-5 pb-5">
+            <div class="container pricing-container">
                 <div class="row">
                     <div class="col-12 our-price-plans-div">
                         <h2 class="text-center main-header pricing-header uppercase pb-4">our price plans</h2>
@@ -286,18 +285,21 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
-    </div>
+    </section>
     <!-- /Pricing  -->
 
     <!-- Team Section  -->
     <!-- Modified from a tutorial found at https://bootsnipp.com/snippets/92xNm -->
-
-    <div class="wrapper team-section" id="team-section-nav-link">
-        <section class="team-section" id="team">
+    <section class="team-section" id="team">
+        <div class="wrapper team-section" id="team-section-nav-link">
             <div class="container">
-                <h5 class="main-header-team-section">OUR TEAM</h5>
+                <div class="row">
+                    <div class="col">
+                        <h5 class="main-header-team-section">OUR TEAM</h5>
+                    </div>
+                </div>
                 <div class="row">
                     <!-- Team member -->
                     <div class="col-xs-12 col-sm-6 col-lg-4">
@@ -646,8 +648,9 @@
                     </div> <!-- ./Team member -->
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
     <!-- Team -->
     <!-- /Team Section  -->
 
@@ -662,10 +665,14 @@
                 <div class="col">
                     <h2 class="text-center main-header our-gym-header uppercase mt-lg-5">our gym</h2>
                     <article class="vids-section pt-md-3">
-                        <h3 class="uppercase sub-header sub-header-one-gym-section text-center light-grey">the training
-                        </h3>
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="uppercase sub-header sub-header-one-gym-section text-center light-grey">the
+                                    training
+                                </h3>
+                            </div>
+                        </div>
                         <hr class="hr-style">
-
                         <!-- Grid column -->
                         <div class="col-12 text-center mt-5 gym-section-logo"><i class="fas fa-video"></i></div>
                         <div class="row d-flex justify-content-between">
@@ -857,91 +864,94 @@
             <!--  Modified from a tutorial found at https://tutorialzine.com/2018/03/3-amazing-bootstrap-4-gallery-templates -->
 
             <article class=" gallery-block compact-gallery mt-md-5">
-                <h3 class="uppercase sub-header sub-header-two-gym-section text-center light-grey">the facilites</h3>
-                <hr class="hr-style">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center mt-md-5  gym-section-logo"><i class="fas fa-camera-retro"></i>
-                        </div>
+                <div class="row">
+                    <div class="col">
+                        <h3 class="uppercase sub-header sub-header-two-gym-section text-center light-grey">the facilites
+                        </h3>
                     </div>
-                    <div class="row no-gutters mt-3 mt-md-5">
-                        <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                            <a class="lightbox" href="Assets/Images/gym-rooms-img-3.jpg">
-                                <img class="img-fluid image" src="Assets/Images/gym-rooms-img-3.jpg"
-                                    alt="image of gym room">
-                                <span class="description">
-                                    <span class="description-heading">Free weights</span>
-                                    <span class="description-body">For those of you who love to lift, We have a
-                                        world class free weights,machine weights and every thing in between.</span>
+                </div>
+                <hr class="hr-style">
+                <div class="row">
+                    <div class="col-12 text-center mt-md-5  gym-section-logo"><i class="fas fa-camera-retro"></i>
+                    </div>
+                </div>
+                <div class="row no-gutters mt-3 mt-md-5">
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="Assets/Images/gym-rooms-img-3.jpg">
+                            <img class="img-fluid image" src="Assets/Images/gym-rooms-img-3.jpg"
+                                alt="image of gym room">
+                            <span class="description">
+                                <span class="description-heading">Free weights</span>
+                                <span class="description-body">For those of you who love to lift, We have a
+                                    world class free weights,machine weights and every thing in between.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="Assets/Images/gym-rooms-img-1.jpg">
+                            <img class="img-fluid image" src="Assets/Images/gym-rooms-img-1.jpg"
+                                alt="image of gym room">
+                            <span class="description">
+                                <span class="description-heading">Strength an conditioning</span>
+                                <span class="description-body">For anyone for an Interest in strength and
+                                    conditioning ,
+                                    we have just the room for you. A brilliant facility which won't disappoint.
                                 </span>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                            <a class="lightbox" href="Assets/Images/gym-rooms-img-1.jpg">
-                                <img class="img-fluid image" src="Assets/Images/gym-rooms-img-1.jpg"
-                                    alt="image of gym room">
-                                <span class="description">
-                                    <span class="description-heading">Strength an conditioning</span>
-                                    <span class="description-body">For anyone for an Interest in strength and
-                                        conditioning ,
-                                        we have just the room for you. A brilliant facility which won't disappoint.
-                                    </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="Assets/Images/gym-rooms-img-2.jpg">
+                            <img class="img-fluid image" src="Assets/Images/gym-rooms-img-2.jpg"
+                                alt="image of gym room">
+                            <span class="description">
+                                <span class="description-heading">Cardio</span>
+                                <span class="description-body">An beacuse we know cardio is an Important
+                                    part of any balanced work out. Every cardio machine you could want to keep you
+                                    in shape.
                                 </span>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                            <a class="lightbox" href="Assets/Images/gym-rooms-img-2.jpg">
-                                <img class="img-fluid image" src="Assets/Images/gym-rooms-img-2.jpg"
-                                    alt="image of gym room">
-                                <span class="description">
-                                    <span class="description-heading">Cardio</span>
-                                    <span class="description-body">An beacuse we know cardio is an Important
-                                        part of any balanced work out. Every cardio machine you could want to keep you
-                                        in shape.
-                                    </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="Assets/Images/gym-rooms-img-6.jpg">
+                            <img class="img-fluid image" src="Assets/Images/gym-rooms-img-6.jpg"
+                                alt="image of gym room">
+                            <span class="description">
+                                <span class="description-heading">Yoga</span>
+                                <span class="description-body">Yoga is a brilliant edtion to you over all fitness
+                                    regime.
+                                    We have a top class yoga room an teachers for our members to use.
                                 </span>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                            <a class="lightbox" href="Assets/Images/gym-rooms-img-6.jpg">
-                                <img class="img-fluid image" src="Assets/Images/gym-rooms-img-6.jpg"
-                                    alt="image of gym room">
-                                <span class="description">
-                                    <span class="description-heading">Yoga</span>
-                                    <span class="description-body">Yoga is a brilliant edtion to you over all fitness
-                                        regime.
-                                        We have a top class yoga room an teachers for our members to use.
-                                    </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="Assets/Images/gym-rooms-img-5.jpg">
+                            <img class="img-fluid image" src="Assets/Images/gym-rooms-img-5.jpg"
+                                alt="image of gym room">
+                            <span class="description">
+                                <span class="description-heading">Pilates</span>
+                                <span class="description-body">No top fitness facility is compeleted without a
+                                    pilates room.
+                                    We have one that will not be matched anywhere else.
                                 </span>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                            <a class="lightbox" href="Assets/Images/gym-rooms-img-5.jpg">
-                                <img class="img-fluid image" src="Assets/Images/gym-rooms-img-5.jpg"
-                                    alt="image of gym room">
-                                <span class="description">
-                                    <span class="description-heading">Pilates</span>
-                                    <span class="description-body">No top fitness facility is compeleted without a
-                                        pilates room.
-                                        We have one that will not be matched anywhere else.
-                                    </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="Assets/Images/gym-rooms-img-4.jpg">
+                            <img class="img-fluid image" src="Assets/Images/gym-rooms-img-4.jpg"
+                                alt="image of gym room">
+                            <span class="description">
+                                <span class="description-heading">Physiotheraphy</span>
+                                <span class="description-body">Because we understand that recovery is just as
+                                    Important
+                                    for maintaining your over all health. We have a renowned physiotheraphist an
+                                    physio rooms for you to use.
                                 </span>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                            <a class="lightbox" href="Assets/Images/gym-rooms-img-4.jpg">
-                                <img class="img-fluid image" src="Assets/Images/gym-rooms-img-4.jpg"
-                                    alt="image of gym room">
-                                <span class="description">
-                                    <span class="description-heading">Physiotheraphy</span>
-                                    <span class="description-body">Because we understand that recovery is just as
-                                        Important
-                                        for maintaining your over all health. We have a renowned physiotheraphist an
-                                        physio rooms for you to use.
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </article>
@@ -952,8 +962,13 @@
             <!-- customer testimonals subsection -->
             <!-- Modified from a tutorial found at https://mdbootstrap.com/docs/jquery/sections/testimonials/ -->
 
-            <article class="text-center md-my-2 container">
-                <h3 class="uppercase sub-header sub-header-three-gym-section text-center light-grey">the results</h3>
+            <article class="text-center md-my-2">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="uppercase sub-header sub-header-three-gym-section text-center light-grey">the results
+                        </h3>
+                    </div>
+                </div>
                 <hr class="hr-style">
                 <div class="row">
                     <div class="col-12 text-center mt-md-5  gym-section-logo"><i
@@ -1026,7 +1041,6 @@
                             <!--Controls-->
                         </div>
                     </div>
-
                 </div>
             </article>
         </div>
@@ -1036,83 +1050,81 @@
     <!-- footer -->
     <!-- Modified from a tutorial found at https://colorlib.com/wp/bootstrap-footer/  -->
 
-    <footer class="pt-5 pb-4" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-sm-6 mt-2 mb-4">
-                    <div class="col-12 ml-5 md-mb-5">
-                        <h5 class="mb-4  font-weight-bold">ABOUT US</h5>
-                    </div>
-
-                    <ul class="f-address">
-                        <li>
-                            <div class="row">
-                                <div class="col-1"><i class="fas fa-map-marker"></i></div>
-                                <div class="col-10">
-                                    <h6 class="font-weight-bold mb-0">Address:</h6>
-                                    <p>123 weights street, Dublin City Center.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row">
-                                <div class="col-1"><i class="far fa-envelope"></i></div>
-                                <div class="col-10">
-                                    <h6 class="font-weight-bold mb-0">Have any questions?</h6>
-                                    <p><a href="#">Support@Dumbellfitness.com</a></p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row">
-                                <div class="col-1"><i class="fas fa-phone-volume"></i></div>
-                                <div class="col-10">
-                                    <h6 class="font-weight-bold mb-0">Phone:</h6>
-                                    <p><a href="#">+353 (1) 12 345678 9999</a></p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+    <footer class="pt-5 pb-4 container-fluid" id="contact">
+        <div class="row">
+            <div class="col-md-5 col-sm-6 mt-2 mb-4">
+                <div class="col-12 ml-5 mb-md-5">
+                    <h5 class="mb-4  font-weight-bold">ABOUT US</h5>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-md-5 col-sm-6 mt-2 mb-4">
-                    <h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
 
-                    <div class="form-group">
-
-                        <label for="exampleInputEmail1" id="emailHelp">Email address<span class="error">*</span></label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
-
-
-                        <ul class="social-pet mt-5">
-                            <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" title="youtube"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
+                <ul class="f-address">
+                    <li>
                         <div class="row">
-                            <button class="col-5 col-xl-3 offset-3  offset-lg-2 btn btn-cta btn-footer  mt-3 md-mt-5"
-                                data-toggle="modal" data-target="#signUpModal">join us
-                            </button>
+                            <div class="col-1"><i class="fas fa-map-marker"></i></div>
+                            <div class="col-10">
+                                <h6 class="font-weight-bold mb-0">Address:</h6>
+                                <p>123 weights street, Dublin City Center.</p>
+                            </div>
                         </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="far fa-envelope"></i></div>
+                            <div class="col-10">
+                                <h6 class="font-weight-bold mb-0">Have any questions?</h6>
+                                <p><a href="#">Support@Dumbellfitness.com</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="fas fa-phone-volume"></i></div>
+                            <div class="col-10">
+                                <h6 class="font-weight-bold mb-0">Phone:</h6>
+                                <p><a href="#">+353 (1) 12 345678 9999</a></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-md-5 col-sm-6 mt-2 mb-4">
+                <h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
+
+                <div class="form-group">
+
+                    <label for="exampleInputEmail1" id="emailHelp">Email address<span class="error">*</span></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+
+
+                    <ul class="social-pet mt-5">
+                        <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" title="youtube"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <div class="row">
+                        <button class="col-5 col-xl-3 offset-3  offset-lg-2 btn btn-cta btn-footer  mt-3 md-mt-5"
+                            data-toggle="modal" data-target="#signUpModal">join us
+                        </button>
                     </div>
                 </div>
             </div>
-            <hr class="hr-style">
-            <!-- Copyright -->
-            <section class="copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <h2 class="text-center text-white">
-                                &copy; 2019 Dumbell Fitness . All Rights Reserved.
-                            </h2>
-                        </div>
+        </div>
+        <hr class="hr-style">
+        <!-- Copyright -->
+        <section class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <h2 class="text-center text-white">
+                            &copy; 2019 Dumbell Fitness . All Rights Reserved.
+                        </h2>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </footer>
 
     <!-- /footer -->
