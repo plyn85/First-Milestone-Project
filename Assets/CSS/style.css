@@ -24,6 +24,8 @@ html {
 }
 
 
+/* end main body */
+
 /* Colors */
 
 .bg-navbar-color {
@@ -97,7 +99,6 @@ p {
     width: 100%;
     z-index: 1;
 }
-
 
 
 .main-header {
@@ -289,6 +290,7 @@ p {
 /* callout section */
 
 /* Modified from my own code found at https://plyn85.github.io/First-bootstrap-website */
+
 .callout-container {
 
     height: 100vh;
@@ -342,8 +344,6 @@ p {
 /* end callout section */
 
 /* about section */
-
-
 
 .about-header {
     border: 1rem solid #bf051e;
@@ -703,8 +703,6 @@ ul {
     padding-bottom: 3rem;
     padding-top: 3rem;
 }
-
-
 
 .gallery-block .heading h2 {
     font-weight: bold;
