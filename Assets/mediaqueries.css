@@ -135,9 +135,13 @@
         font-size: 6.5rem;
     }
 
+    .about-sub-header-two{
+        font-size: 6rem;
+    }
+
 
     .about-sub-header-three {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .about-text {

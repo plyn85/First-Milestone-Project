@@ -2,9 +2,21 @@
 
 /* main body */
 
+/* copy an pasted from code found at https://stackoverflow.com/questions/4617872/ */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* end of copyed code */
+
 body {
     font-size: 16px;
-   
+
 }
 
 html {
@@ -12,15 +24,14 @@ html {
 }
 
 .container-fluid {
-	padding-right: 0;
-	padding-left: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 
-​
-.row {
-	margin-left: 0;
-	margin-right: 0;
+​ .row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
@@ -841,7 +852,7 @@ footer a {
 
 }
 
-#footer-social-links{
+#footer-social-links {
     padding: 0rem;
 }
 
