@@ -235,6 +235,14 @@
         margin-top: 10rem;
     }
 
+    /* end navbar section */
+
+    /* callout section */
+
+    .jumbotron {
+        margin-top: 7rem;
+    }
+
     .jumbotron-gymname {
         font-size: 4.5rem;
 
@@ -243,6 +251,8 @@
     .jumbotron-quote {
         letter-spacing: 1px;
     }
+
+    /* end callout section */
 
     /* about section */
 
