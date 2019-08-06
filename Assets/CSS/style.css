@@ -482,7 +482,7 @@ ul {
 /* Modified from a tutorial found at https://bootsnipp.com/snippets/92xNm */
 
 .team-section {
-    background: url('../Images/daniel-apodaca-WdoQio6HPVA-unsplash.jpg') no-repeat fixed;
+    background: url('../Images/larger-background-img.jpg') no-repeat fixed;
     background-position-x: 50%;
     background-size: cover;
     -webkit-background-size: cover;
