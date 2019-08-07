@@ -9,7 +9,7 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    overflow-x : hidden;
 }
 
 /* end of copyed code */
@@ -17,11 +17,7 @@ body {
 
 body {
     font-size: 16px;
-
-}
-
-html {
- scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .container-fluid {
