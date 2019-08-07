@@ -3,7 +3,14 @@
 /* main body */
 
 /* copy an pasted from code found at https://stackoverflow.com/questions/4617872/ */
-
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 
 /* end of copyed code */
 

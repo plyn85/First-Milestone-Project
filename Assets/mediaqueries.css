@@ -385,15 +385,7 @@
 
 /* adding smaller background images for mobile and ipads */
 @media(max-width: 1024px){
-    .team-section {
-        background: url('./Images/Smaller-background-img-mobile.jpg') no-repeat fixed;
-        background-position-x: 50%;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-    
-    }
+   
     .callout-container {
 
         height: 100vh;
@@ -411,5 +403,17 @@
             -ms-flex-align: center;
                 align-items: center;
         position: relative;
+    }
+}
+
+@media(max-width:450px){
+    .team-section {
+        background: url('./Images/Smaller-background-img-mobile.jpg') no-repeat fixed;
+        background-position-x: 50%;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    
     }
 }
