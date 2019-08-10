@@ -135,7 +135,7 @@
         font-size: 6.5rem;
     }
 
-    .about-sub-header-two{
+    .about-sub-header-two {
         font-size: 6rem;
     }
 
@@ -179,7 +179,7 @@
     }
 
     .sub-header-two-gym-section {
-        font-size:10rem;
+        font-size: 10rem;
 
     }
 
@@ -191,7 +191,7 @@
     /* customer testimonials section */
 
     .test-section-customer-quotes {
-        font-size:2rem;
+        font-size: 2rem;
         line-height: 2.5rem;
         margin-top: 6rem;
     }
@@ -208,7 +208,7 @@
     /*  navbar section  */
 
     .gym-logo {
-        height:6rem;
+        height: 6rem;
         width: auto;
     }
 
@@ -258,7 +258,7 @@
 
 
     .about-header {
-        margin-top:2.2rem;
+        margin-top: 2.2rem;
         font-size: 15rem;
     }
 
@@ -283,6 +283,10 @@
 
     }
 
+    /* end about section */
+
+
+
     /* pricing section */
 
     .pricing-header {
@@ -298,6 +302,9 @@
         margin-bottom: 3.70rem;
     }
 
+    /* end pricing section */
+
+
     /* team section */
 
     .main-header-team-section {
@@ -309,25 +316,31 @@
         font-size: 1.9rem;
     }
 
+    /* end team section */
+
+    /* gym section */
+    
     .our-gym-header {
         border: 16px solid #bf051e;
         font-size: 17rem;
     }
 
     .sub-header-one-gym-section {
-        font-size: 12rem;
+        font-size: 11rem;
 
 
     }
 
     .sub-header-two-gym-section {
-        font-size:12rem;
+        font-size: 12rem;
 
     }
 
     .sub-header-three-gym-section {
         font-size: 12rem;
     }
+
+    /* end gym section */
 
     /* customer testimonials section */
 
@@ -345,7 +358,7 @@
 @media(min-width:1400px) {
 
     .gym-logo {
-        height:10rem;
+        height: 10rem;
         width: auto;
     }
 
@@ -385,8 +398,9 @@
 
 
 /* adding smaller background images for mobile and ipads */
-@media(max-width: 1024px){
-   
+
+@media(max-width: 1024px) {
+
     .callout-container {
 
         height: 100vh;
@@ -398,16 +412,16 @@
         -o-background-size: cover;
         display: flexbox;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         position: relative;
     }
 }
 
-@media(max-width:450px){
+@media(max-width:450px) {
     .team-section {
         background: url('./Images/Smaller-background-img-mobile.jpg') no-repeat fixed;
         background-position-x: 50%;
@@ -415,6 +429,6 @@
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-    
+
     }
 }

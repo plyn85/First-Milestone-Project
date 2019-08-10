@@ -920,9 +920,13 @@ footer a {
     font-size: 1.1rem;
 }
 
+/* added to fix internet explorer issue with bootstrap flex on col class */
+
 .internet-explorer-fix{
  -ms-flex: none;
 }
+
+/* end of internet explorer fix */
 
 .f-address li a {
     color: #ccc;
