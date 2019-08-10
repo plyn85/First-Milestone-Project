@@ -920,6 +920,10 @@ footer a {
     font-size: 1.1rem;
 }
 
+.internet-explorer-fix{
+ -ms-flex: none;
+}
+
 .f-address li a {
     color: #ccc;
 }
