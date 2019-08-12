@@ -199,10 +199,6 @@ p {
     height: 50%;
 }
 
-.special-img-one {
-   
-}
-
  /*end images */
 
 
@@ -229,7 +225,7 @@ p {
 .nav-heading {
 
     font-size:2rem;
-    margin: 1rem 0rem 1rem  2.6rem;
+    padding: 1rem 0rem 0rem 1rem;
     font-family: 'Oswald', sans-serif;
     color: #f2f2f2;
     font-weight: 500;
