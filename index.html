@@ -25,9 +25,10 @@
     <header>
         <div class="container-fluid navbar-section">
             <nav class="navbar navbar-expand-lg bg-navbar-color">
-
-                <a class="navbar-brand" href="#"><img class="gym-logo" src="Assets/Images/dumbellfitnesslogo.png"
-                        alt="a gym logo of a dumbell"></a>
+                  <!-- hidden on mobile -->
+                  <div class="row"><div class="col d-none d-sm-block"> <a class="navbar-brand" href="#"><img class="gym-logo" src="Assets/Images/dumbellfitnesslogo.png"
+                    alt="a gym logo of a dumbell"></a></div></div>
+               
 
                 <h2 class="mr-3 nav-heading">Dumbell <span class="dark-red">Fitness</span></h2>
 
@@ -37,7 +38,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="row collapse navbar-collapse" id="navbarResponsive">
-                    <div class="col-8 col-md-5 d-noe-d-md-block d-lg-none">
+                    <div class="col-8 col-md-5 d-lg-none">
                         <img class="img-navcollapse" src="Assets/Images/commitimage.png"
                             alt="image saying commit to your fitness">
                     </div>
@@ -94,6 +95,7 @@
                         <button class="btn btn-callout btn-cta   hvr-wobble-horizontal btn-lg" data-toggle="modal"
                             data-target="#signUpModal">Join
                             us</button>
+                            <div class="col d-block d-sm-none mintgreen mt-3 bold uppercase mobile-only-callout-below-text"><p>Check out what we have to offer below </p></div>
                     </article>
                 </div>
                 <div class="col-12 d-none d-xl-block col-xl-3 order-xl-3 mb-xl-5"><img

@@ -235,7 +235,8 @@ p {
 
 .nav-heading {
 
-    font-size: 1.3rem;
+    font-size:2rem;
+    margin: 1rem 0rem 1rem  2.6rem;
     font-family: 'Oswald', sans-serif;
     color: #f2f2f2;
     font-weight: 500;
@@ -347,6 +348,10 @@ p {
     font-weight: 900;
     letter-spacing: 1px;
     margin-top: 2.2rem;
+}
+
+.mobile-only-callout-below-text{
+    font-size: 1.7rem;
 }
 
 /* end callout section */
@@ -1349,7 +1354,7 @@ footer a {
     .callout-container {
 
         height: 100vh;
-        background: url('./Images/background-image-mobile.jpg') no-repeat fixed;
+        background: url('../Images/background-image-mobile.jpg') no-repeat fixed;
         background-position-x: 50%;
         background-size: cover;
         -webkit-background-size: cover;
@@ -1368,7 +1373,7 @@ footer a {
 
 @media(max-width:450px) {
     .team-section {
-        background: url('./Images/Smaller-background-img-mobile.jpg') no-repeat fixed;
+        background: url('../Images/smaller-background-img-mobile.jpg') no-repeat fixed;
         background-position-x: 50%;
         background-size: cover;
         -webkit-background-size: cover;
