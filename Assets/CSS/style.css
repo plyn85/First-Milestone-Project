@@ -25,6 +25,8 @@ body {
     padding: 0;
     }
     
+
+
 /* end main body */
 
 /* Colors */
@@ -197,6 +199,10 @@ p {
     height: 50%;
 }
 
+.special-img-one {
+   
+}
+
  /*end images */
 
 
@@ -223,7 +229,7 @@ p {
 .nav-heading {
 
     font-size:2rem;
-    padding: 1rem 0rem;
+    margin: 1rem 0rem 1rem  2.6rem;
     font-family: 'Oswald', sans-serif;
     color: #f2f2f2;
     font-weight: 500;
@@ -465,7 +471,7 @@ ul {
 /* Team section */
 /* Modified from a tutorial found at https://bootsnipp.com/snippets/92xNm */
 
-.team-section-img-image-wrapper{
+.team-section-img-wrapper{
     height: 100%;
     width: 100%;
 }
@@ -483,7 +489,7 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-    height: 68%;
+    height: 70%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -1059,7 +1065,7 @@ footer a {
     /* callout section */
 
     .special-img-one{
-        margin-left: 2.7rem;
+        margin-left: 2.5rem;
     }
 
     .jumbotron-gymname {
