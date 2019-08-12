@@ -2,7 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
 /* main body */
 
-/* copy an pasted from code found at https://stackoverflow.com/questions/4617872/ */
+ /* copy an pasted from code found at https://stackoverflow.com/questions/4617872/  */
 html,
 body {
     width: 100%;
@@ -12,7 +12,7 @@ body {
     overflow-x : hidden;
 }
 
-/* end of copyed code */
+/*  end of copyed code */ 
 
 
 body {
@@ -20,18 +20,11 @@ body {
     scroll-behavior: smooth;
 }
 
-.container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-
-​ .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-
+.container-fluid, .row {
+    margin: 0;
+    padding: 0;
+    }
+    
 /* end main body */
 
 /* Colors */
@@ -189,11 +182,6 @@ p {
 
 /* Images */
 
-.img-navcollapse {
-    width: 100%;
-    height: 100%;
-}
-
 .about-img-div {
     text-align: center;
 }
@@ -209,15 +197,14 @@ p {
     height: 50%;
 }
 
-.offer-img {
-    height: 50%;
-    width: 70%;
-}
-
-/* end images */
+ /*end images */
 
 
 /* Navbar */
+
+.navbar-toggler {
+    margin-right: 1rem;
+}
 
 .navbar-expand-lg,
 .container-fluid {
@@ -236,7 +223,7 @@ p {
 .nav-heading {
 
     font-size:2rem;
-    margin: 1rem 0rem 1rem  2.6rem;
+    padding: 1rem 0rem;
     font-family: 'Oswald', sans-serif;
     color: #f2f2f2;
     font-weight: 500;
@@ -252,11 +239,6 @@ p {
     font-family: 'Barlow Semi Condensed', sans-serif;
     margin: 0rem 0.5rem;
 }
-
-.navbar-toggler {
-    margin-right: 1.25rem;
-}
-
 
 .navbar .navbar-nav .nav-link {
     padding: 0.6rem;
@@ -298,10 +280,15 @@ p {
 
 /* callout section */
 
+.callout-section-img-wrapper{
+    height: 100%;
+    width: 100%;
+}
+
 .callout-container {
 
     height: 100vh;
-    background: url('../Images/background-image-milestomeproject-2.jpg') no-repeat fixed;
+    background: url('../Images/background-image-mobile.jpg') no-repeat fixed;
     background-position-x: 50%;
     background-size: cover;
     -webkit-background-size: cover;
@@ -478,6 +465,10 @@ ul {
 /* Team section */
 /* Modified from a tutorial found at https://bootsnipp.com/snippets/92xNm */
 
+.team-section-img-image-wrapper{
+    height: 100%;
+    width: 100%;
+}
 .team-section {
     background: url('../Images/larger-background-img.jpg') no-repeat fixed;
     background-position-x: 50%;
@@ -492,7 +483,7 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-    height: 70%;
+    height: 68%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -963,7 +954,14 @@ footer a {
         font-size: 3rem;
     }
 
+    .navbar-toggler {
+        margin-right: 2.25rem;
+    }
     /* callout section */
+
+    .special-img-one{
+        margin-left: 0.6rem;
+    }
 
     .jumbotron-gymname {
         font-size: 8rem;
@@ -1055,10 +1053,14 @@ footer a {
     }
 
     .nav-heading {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     /* callout section */
+
+    .special-img-one{
+        margin-left: 2.7rem;
+    }
 
     .jumbotron-gymname {
         font-size: 10rem;
@@ -1190,7 +1192,7 @@ footer a {
     /* callout section */
 
     .jumbotron {
-        margin-top: 6rem;
+        margin-top: 2rem;
     }
 
     .jumbotron-gymname {
@@ -1347,14 +1349,19 @@ footer a {
 }
 
 
-/* adding smaller background images for mobile and ipads */
+/* adding larger  background images for laptop an destop */
 
-@media(max-width: 1024px) {
+@media(min-width: 1024px) {
+
+    .callout-section-img-wrapper{
+        height: 100%;
+        width: 100%;
+    }
 
     .callout-container {
 
         height: 100vh;
-        background: url('../Images/background-image-mobile.jpg') no-repeat fixed;
+        background: url('../Images/background-image-milestomeproject-2.jpg') no-repeat fixed;
         background-position-x: 50%;
         background-size: cover;
         -webkit-background-size: cover;
@@ -1371,14 +1378,3 @@ footer a {
     }
 }
 
-@media(max-width:450px) {
-    .team-section {
-        background: url('../Images/smaller-background-img-mobile.jpg') no-repeat fixed;
-        background-position-x: 50%;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-
-    }
-}
