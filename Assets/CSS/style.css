@@ -348,6 +348,7 @@ p {
 /* about section */
 
 .about-header {
+    margin-top: 2rem;
     border: 1rem solid #bf051e;
     font-size: 3rem;
 }
