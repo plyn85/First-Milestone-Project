@@ -90,7 +90,8 @@ p {
 }
 
 .hr-style {
-    width: 90%;
+    margin: 0 auto;
+    width: 80%;
     border-top: 0.25rem solid#bf051e;
 
 }
@@ -159,7 +160,7 @@ p {
 .btn-pricing {
     display: block;
     margin: 0 auto;
-    background-color: #98ff98;
+    background-color: #5a9a5a;
 }
 
 .btn-modal {
@@ -183,21 +184,6 @@ p {
 /* end buttons */
 
 /* Images */
-
-.about-img-div {
-    text-align: center;
-}
-
-.about-img {
-    height: 60%;
-    width: 90%;
-    margin-top: 1rem;
-}
-
-.priceplan-offer-img {
-    width: 100%;
-    height: 50%;
-}
 
  /*end images */
 
@@ -366,7 +352,7 @@ p {
 }
 
 .about-sub-header-three {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #98ff98;
     margin-top: -5rem;
 }
@@ -428,7 +414,7 @@ ul {
 }
 
 .pricing hr {
-    border-top: 0.125rem solid #98ff98;
+    border-top: 0.125rem solid #5a9a5a;
     margin: 1.5rem;
 
 }
@@ -460,7 +446,7 @@ ul {
 }
 
 .fa-li i {
-    color: #98ff98
+    color: #5a9a5a;
 }
 
 /* end pricing section */
@@ -1111,7 +1097,11 @@ footer a {
     }
 
     #last-list-item-second-priceplan {
-        margin-bottom: 2.2rem;
+        margin-bottom: 3.9rem;
+    }
+
+    #last-list-item-third-priceplan{
+        margin-bottom: 2.3rem;
     }
 
     /* team section */
@@ -1250,11 +1240,11 @@ footer a {
     }
 
     #last-list-item-second-priceplan {
-        margin-bottom: 5.33rem;
+        margin-bottom: 3.9rem;
     }
 
     #last-list-item-third-priceplan {
-        margin-bottom: 3.70rem;
+        margin-bottom: 2.3rem;
     }
 
     /* end pricing section */
