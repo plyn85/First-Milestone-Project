@@ -622,7 +622,7 @@ ul {
 
 /* Gym section */
 
-/* vids-section-gym-sub-section */
+/* tranning-section-gym-sub-section */
 /* Modified from a tutorial found at https://mdbootstrap.com/plugins/jquery/gallery/ */
 
 .our-gym-header {
@@ -673,9 +673,9 @@ ul {
     color: #bf051e;
 }
 
-/* end vids-section-gym-sub-section */
+/* end tranning-section-gym-sub-section */
 
-/* image gallery section */
+/* facilites-section */
 /* Modified from a tutorial found at https://tutorialzine.com/2018/03/3-amazing-bootstrap-4-gallery-templates */
 
 .gallery-block {
@@ -761,9 +761,9 @@ ul {
     }
 }
 
-/* end image gallery section */
+/* end facilites section */
 
-/* customer testimonials section */
+/*results section */
 /* Modified from a tutorial found at https://mdbootstrap.com/docs/jquery/sections/testimonials/ */
 
 .first-img-carousel {
