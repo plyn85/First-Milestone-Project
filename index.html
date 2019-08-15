@@ -115,9 +115,7 @@
     <!-- /Callout -->
 
     <!-- About Section  -->
-    <section class="about-section" id="about-section-nav-link">
-        <div class="about-section-wrapper pb-3">
-            <div class="container-fluid about-section-container">
+    <section class="container-fluid about-section pb-3" id="about-section-nav-link">
                 <div class="row justify-content-center">
                     <div class="col-11 pt-4">
                         <h2 class="text-center main-header about-header uppercase">About us</h2>
@@ -174,16 +172,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
     <!--  /About -->
 
     <!-- Pricing  -->
     <!-- Modified from a tutorial found at https://startbootstrap.com/snippets/pricing-table/ -->
-    <section class="pricing" id="pricing-section-nav-link">
-        <div class="container-wrapper pricing-wrapper pt-5 pb-5">
-            <div class="container-fluid pricing-container">
+    <section class="pricing container-fluid pricing-wrapper pt-5 pb-5" id="pricing-section-nav-link">
                 <div class="row justify-content-center">
                     <div class="col-11 our-price-plans-div">
                         <h2 class="text-center main-header pricing-header uppercase pb-4">our price plans</h2>
@@ -286,16 +280,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
     <!-- /Pricing  -->
 
     <!-- Team Section  -->
     <!-- Modified from a tutorial found at https://bootsnipp.com/snippets/92xNm -->
-    <section id="team">
-        <div class="wrapper team-section-img-wrapper" id="team-section-nav-link">
-            <div class="container-fluid team-section">
+    <section class="container-fluid team-section" id="team">
+      <!-- parent of team section background image -->
+        <div class="team-section-img-wrapper" id="team-section-nav-link">
                 <div class="row justify-content-center">
                     <div class="col-11">
                         <h5 class="main-header-team-section">OUR TEAM</h5>
@@ -683,20 +675,19 @@
                     </div> <!-- ./Team member -->
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Team -->
     <!-- /Team Section  -->
 
     <!-- Gym Section -->
-    <!-- Modified from a tutorial found at https://mdbootstrap.com/plugins/jquery/gallery/ -->
-
+    <!-- this wraps the entire gym section and its  3 subsections videos,trainning,results  -->
     <section class="wrapper gym-section-wrapper pb-5" id="gym-section-nav-link">
         <div class="container-fluid gym-section">
-            <!-- Grid row -->
+             <!-- row and col classes wrap the entire gym section -->
             <div class="row justify-content-center">
                 <div class="col-11">
+                    <!-- gym section main header -->
                     <h2 class="text-center main-header our-gym-header uppercase mt-lg-5">our gym</h2>
                     <article class="vids-section pt-md-3">
                         <div class="row">
@@ -708,6 +699,7 @@
                         </div>
                         <div class="hr-style my-3"></div>
                         <!-- videos-subsection  -->
+                        <!-- Modified from a tutorial found at https://mdbootstrap.com/plugins/jquery/gallery/ -->
                         <!-- Grid column -->
                         <div class="col-12 text-center mt-lg-5 gym-section-logo"><i class="fas fa-video"></i></div>
                         <div class="row d-flex justify-content-between">
