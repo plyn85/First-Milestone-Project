@@ -2,17 +2,17 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
 /* main body */
 
- /* copy an pasted from code found at https://stackoverflow.com/questions/4617872/  */
+/* copy an pasted from code found at https://stackoverflow.com/questions/4617872/ 
 html,
 body {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x : hidden;
+   
 }
 
-/*  end of copyed code */ 
+/*  end of copyed code */
 
 
 body {
@@ -20,11 +20,14 @@ body {
     scroll-behavior: smooth;
 }
 
-.container-fluid, .row {
+.container-fluid,
+.container,
+.row {
     margin: 0;
     padding: 0;
-    }
-    
+    overflow-x: hidden;
+}
+
 
 
 /* end main body */
@@ -106,16 +109,22 @@ p {
 
 
 .main-header {
+    border: 1rem solid #bf051e;
+    font-weight: bold;
     color: #fff;
     font-family: 'Oswald', sans-serif;
     text-shadow: 0 0 13px rgba(0, 0, 0, .88);
 }
 
 .sub-header {
-    font-size: 3rem;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     text-shadow: 0 0 13px rgba(0, 0, 0, .88);
+}
+
+.gym-section-logo i {
+    font-size: 3.2rem;
+    color: #bf051e;
 }
 
 /* end reusable Components */
@@ -205,7 +214,7 @@ p {
 
 .nav-heading {
 
-    font-size:2rem;
+    font-size: 2rem;
     padding: 1rem 0rem 0rem 1rem;
     font-family: 'Oswald', sans-serif;
     color: #f2f2f2;
@@ -263,7 +272,7 @@ p {
 
 /* callout section */
 
-.callout-section-img-wrapper{
+.callout-section-img-wrapper {
     height: 100%;
     width: 100%;
 }
@@ -279,11 +288,11 @@ p {
     -o-background-size: cover;
     display: flexbox;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
 }
 
@@ -320,7 +329,7 @@ p {
     margin-top: 2.2rem;
 }
 
-.mobile-only-callout-below-text{
+.mobile-only-callout-below-text {
     font-size: 1.7rem;
 }
 
@@ -328,26 +337,21 @@ p {
 
 /* about section */
 
-.about-header {
-    margin-top: 2rem;
-    border: 1rem solid #bf051e;
-    font-size: 3rem;
+.main-header-about-section {
+    font-size: 3.5rem;
 }
 
-.about-sub-header-one {
-    font-size: 3rem;
+.about {
     color: #fff;
+    font-size: 2.5rem;
 }
 
 .about-sub-header-two {
-    font-size: 3rem;
-    color: #fff;
     margin-top: -5rem;
 
 }
 
 .about-sub-header-three {
-    font-size: 2.5rem;
     color: #98ff98;
     margin-top: -5rem;
 }
@@ -380,11 +384,6 @@ p {
 
 /* pricing section */
 /* Modified from a tutorial found at https://startbootstrap.com/snippets/pricing-table/ */
-
-.pricing-header {
-    font-size: 2.5rem;
-}
-
 section.pricing {
     border: 0;
     padding: 0;
@@ -444,10 +443,11 @@ ul {
 /* Team section */
 /* Modified from a tutorial found at https://bootsnipp.com/snippets/92xNm */
 
-.team-section-img-wrapper{
+.team-section-img-wrapper {
     height: 100%;
     width: 100%;
 }
+
 .team-section {
     background: url('../images/larger-background-img.jpg') no-repeat fixed;
     background-position-x: 50%;
@@ -485,7 +485,7 @@ ul {
 .btn-primary:focus {
     background-color: #57020d;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     outline: none;
 }
 
@@ -510,7 +510,7 @@ ul {
     border-radius: 10px;
     background: #272c2f;
     -webkit-box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
-            box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
+    box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
 }
 
 .team-section .card-body {
@@ -537,7 +537,7 @@ ul {
     -ms-transition: 1s;
     -moz-transition: 1s;
     -webkit-transform: perspective(1000px);
-            transform: perspective(1000px);
+    transform: perspective(1000px);
     -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
@@ -637,15 +637,12 @@ ul {
     font-style: italic;
 }
 
-.gym-section-logo i {
-    font-size: 3.2rem;
-    color: #bf051e;
-}
+
 
 .vid-div-border {
     border: 0.3rem solid #bf051e;
     -webkit-box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
-            box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
+    box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
     border-radius: 0.6rem;
 
 }
@@ -675,7 +672,7 @@ ul {
 
 /* end tranning-section-gym-sub-section */
 
-/* facilites-section */
+/* facilites-section-gym-subsection */
 /* Modified from a tutorial found at https://tutorialzine.com/2018/03/3-amazing-bootstrap-4-gallery-templates */
 
 .gallery-block {
@@ -755,8 +752,8 @@ ul {
 
     .gallery-block .zoom-on-hover:hover .image {
         -webkit-transform: scale(1.3);
-            -ms-transform: scale(1.3);
-                transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
         opacity: 0.7;
     }
 }
@@ -795,11 +792,16 @@ ul {
 
 .second-img-carousel {
     -webkit-box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
-            box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
+    box-shadow: 0 0 13px rgba(250, 248, 248, 0.90);
 }
 
 .video-icon-gym-section {
     margin-bottom: 1rem;
+}
+
+/* added to center carousel */
+.wrapper-carousel-fix {
+    margin-left: 1rem;
 }
 
 /* end customer testimonials section */
@@ -877,7 +879,7 @@ footer a {
 
 .social-pet li a:hover i {
     -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
+    transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
 }
@@ -887,15 +889,14 @@ footer a {
 }
 
 .f-address li i {
-    color: #bf051e;
     font-size: 1.1rem;
 }
 
 /* added to fix internet explorer issue with bootstrap flex on col class */
 
-.internet-explorer-fix{
+.internet-explorer-fix {
     flex: none;
- -ms-flex: none;
+    -ms-flex: none;
 }
 
 /* end of internet explorer fix */
@@ -936,9 +937,10 @@ footer a {
     .navbar-toggler {
         margin-right: 2.25rem;
     }
+
     /* callout section */
 
-    .special-img-one{
+    .special-img-one {
         margin-left: 0.6rem;
     }
 
@@ -953,17 +955,18 @@ footer a {
 
     /* about section */
 
-    .about-header {
+    .main-header {
         font-size: 8rem;
+    }
+
+    .about {
+        font-size: 4rem;
     }
 
     .about-text {
         font-size: 1.2rem;
     }
 
-    .sub-header {
-        font-size: 5rem;
-    }
 
     .about-sub-header-two {
         font-size: 4.5rem;
@@ -993,22 +996,11 @@ footer a {
         font-size: 9rem;
     }
 
-    .sub-header-one-gym-section {
+    .gym-section-subheader {
         font-size: 7rem;
-
-
     }
 
-    .sub-header-two-gym-section {
-        font-size: 7rem;
 
-
-    }
-
-    .sub-header-three-gym-section {
-        font-size: 7rem;
-
-    }
 
     /* customer testimonials  section */
 
@@ -1037,7 +1029,7 @@ footer a {
 
     /* callout section */
 
-    .special-img-one{
+    .special-img-one {
         margin-left: 2.5rem;
     }
 
@@ -1052,8 +1044,7 @@ footer a {
 
     /* about section */
 
-
-    .about-header {
+    .main-header-about-section {
         font-size: 11rem;
     }
 
@@ -1090,7 +1081,7 @@ footer a {
         margin-bottom: 3.9rem;
     }
 
-    #last-list-item-third-priceplan{
+    #last-list-item-third-priceplan {
         margin-bottom: 2.3rem;
     }
 
@@ -1107,21 +1098,11 @@ footer a {
         font-size: 13rem;
     }
 
-    .sub-header-one-gym-section {
-        font-size: 10rem;
-
-
-    }
-
-    .sub-header-two-gym-section {
+    .gym-section-subheader {
         font-size: 10rem;
 
     }
 
-    .sub-header-three-gym-section {
-        font-size: 11rem;
-
-    }
 
     /* customer testimonials section */
 
@@ -1192,7 +1173,7 @@ footer a {
     /* about section */
 
 
-    .about-header {
+    .main-header-about-section {
         margin-top: 2.2rem;
         font-size: 15rem;
     }
@@ -1202,7 +1183,7 @@ footer a {
     }
 
 
-    .sub-header {
+    .about-sub-header-one {
         font-size: 8rem;
 
     }
@@ -1254,25 +1235,15 @@ footer a {
     /* end team section */
 
     /* gym section */
-    
+
     .our-gym-header {
         border: 16px solid #bf051e;
         font-size: 17rem;
     }
 
-    .sub-header-one-gym-section {
+    .gym-section-subheader {
         font-size: 11rem;
 
-
-    }
-
-    .sub-header-two-gym-section {
-        font-size: 12rem;
-
-    }
-
-    .sub-header-three-gym-section {
-        font-size: 12rem;
     }
 
     /* end gym section */
@@ -1332,11 +1303,11 @@ footer a {
 }
 
 
-/* adding larger  background images for laptop an destop */
+/* adding larger  background image for laptop and destop */
 
 @media(min-width: 1024px) {
 
-    .callout-section-img-wrapper{
+    .callout-section-img-wrapper {
         height: 100%;
         width: 100%;
     }
@@ -1360,4 +1331,3 @@ footer a {
         position: relative;
     }
 }
-
