@@ -8,5 +8,3 @@ baguetteBox.run('.compact-gallery', {
 
 
 
-
-

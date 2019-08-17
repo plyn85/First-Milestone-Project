@@ -2,22 +2,13 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
 /* main body */
 
-/* copy an pasted from code found at https://stackoverflow.com/questions/4617872/ */
-html,
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden
-}
 
-/*  end of copyed code */
-
-
-body {
+body,
+html {
     font-size: 16px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
 }
 
 .container-fluid,
@@ -26,8 +17,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
 
 /* end main body */
 
@@ -99,15 +88,6 @@ p {
     border-top: 0.25rem solid#bf051e;
 
 }
-
-.red-stripe {
-
-    background: #bf051e;
-    height: 0.5rem;
-    width: 100%;
-
-}
-
 
 .main-header {
     border: 1rem solid #bf051e;
@@ -197,35 +177,14 @@ p {
     border-color: #fff;
 }
 
-.btn-footer{
-    font-size:1rem;
+.btn-footer {
+    font-size: 1rem;
 }
 
 /* end buttons */
 
 /* Navbar */
 /* added for a fixed navbar */
-.navbar {
-    opacity: 0.7;
-}
-
-.navbar {
-    padding: 5px 0;
-}
-
-.navbar-fixed-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-.navbar-toggler {
-    margin-right: 1rem;
-}
-
-
 .gym-logo {
     margin-left: 0.55rem;
     border: 0.25rem solid#bf051e;
@@ -234,32 +193,26 @@ p {
     width: auto;
 }
 
-.nav-heading {
-
-    font-size: 2.5rem;
-    padding: 1rem 0rem 0rem 1rem;
-    font-family: 'Oswald', sans-serif;
-    color: #f2f2f2;
-    font-weight: 500;
-    text-transform: uppercase;
-
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    width: 100%;
+    z-index: 2;
 }
 
-.navbar-nav {
-    margin-bottom: 0.2rem;
-}
-
-.navbar-nav .nav-item {
+.mynavlinks {
     font-family: 'Barlow Semi Condensed', sans-serif;
     margin: 0rem 0.5rem;
 }
 
-.navbar .navbar-nav .nav-link {
+.nav-link {
     padding: 0.6rem;
-    margin-top: 1rem;
-    margin-left: 1.25rem;
+    margin-top: 0.6rem;
+    margin-left: 1.75rem;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -432,7 +385,7 @@ ul {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.pricing hr {
+    {
     border-top: 0.125rem solid #5a9a5a;
     margin: 1.5rem;
 
@@ -868,7 +821,9 @@ footer a {
     /* navbar */
 
     .navbar {
+        font-size: 2rem;
         padding: 7px 0;
+        opacity: 0.8;
     }
 
     .gym-logo {
@@ -876,11 +831,8 @@ footer a {
         height: 5rem;
     }
 
-    .nav-heading {
-        font-size: 3rem;
-    }
-
     .navbar-toggler {
+        font-size: 2rem;
         margin-right: 2.25rem;
     }
 
@@ -968,24 +920,32 @@ footer a {
 @media(min-width: 992px) and (max-width:1180px) {
 
     /* navbar */
-    /* added padding extra padding for larger nav on ipad-pro */
+    /*targeting navbar an navitems on larger-tablets */
     .navbar {
-        padding: 10px 0;
+        opacity: 0.6;
+
+    }
+
+    .mynavlinks {
+        margin-left: 5rem;
+        margin-top: 1.7rem;
+    }
+
+    .nav-item {
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding: 0.6rem;
     }
 
     .gym-logo {
         margin-left: 0.5rem;
-        height: 5rem;
-    }
-
-    .nav-heading {
-        font-size: 2rem;
+        height: 7rem;
     }
 
     /* callout section */
     /* adjusting jumbuton for ipad pro */
     .callout {
-        margin-top: 11rem;
+        margin-top: 18rem;
     }
 
     .special-img-one {
@@ -998,7 +958,12 @@ footer a {
     }
 
     .jumbotron-quote {
+        font-size: 4rem;
         letter-spacing: 1px;
+    }
+
+    .offer-text {
+        font-size: 3rem;
     }
 
     /* about section */
@@ -1087,14 +1052,21 @@ footer a {
         width: auto;
     }
 
-    .navbar h2 {
-        letter-spacing: 2px;
-        font-size: 3.3rem;
+    /* targeting navbar and navlinks on desktop lower opactiy
+    as nav bar takes up more space than on mobile or tablet */
+    .mynavlinks {
+        margin-top: 0.5rem;
+        margin-left: 19.5rem;
+
     }
 
+    .nav-item {
+        font-size: 2rem;
+        font-weight: 600;
+    }
 
-    .navbar-nav {
-        margin-left: 6.5rem;
+    .navbar-fixed-top {
+        opacity: 0.4;
     }
 
     .navbar-nav .nav-item {
@@ -1186,8 +1158,8 @@ footer a {
         font-size: 11rem;
     }
 
-     /* team section cards size for mobile,laptops and up slighty narrow to aviod streched look */
-     .team-section-img-wrapper {
+    /* team section cards size for mobile,laptops and up slighty narrow to aviod streched look */
+    .team-section-img-wrapper {
         width: 75%;
     }
 
@@ -1228,18 +1200,12 @@ footer a {
 @media(min-width:1400px) {
 
     .gym-logo {
-        height: 10rem;
+        height: 8rem;
         width: auto;
     }
 
-    .navbar h2 {
-        letter-spacing: 2px;
-        font-size: 5.3rem;
-    }
-
-
     .navbar-nav {
-        margin-left: 10rem;
+        margin-left: 17rem;
     }
 
     .navbar-nav .nav-item {
@@ -1247,12 +1213,16 @@ footer a {
 
     }
 
+    .callout {
+        margin-top: 15rem;
+    }
+
     .special-img-one {
         margin-left: 7rem;
     }
 
     .offer-img {
-        margin-top: 10rem;
+        margin-top: 22rem;
     }
 
     .jumbotron-gymname {
@@ -1294,4 +1264,8 @@ footer a {
         align-items: center;
         position: relative;
     }
+}
+
+.body {
+    overflow-y: hidden;
 }
