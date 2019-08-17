@@ -21,16 +21,16 @@
     <!-- Modified from a tutorial found at  https://startbootstrap.com/snippets/full-image-header/ -->
 
     <header>
-        <div class="container-fluid navbar-section">
+        <div class="container-fluid navbar-section navbar-fixed-top">
             <nav class="navbar navbar-expand-lg bg-navbar-color">
                 <!-- logo  hidden on mobile -->
                 <div class="row">
-                    <div class="col d-none d-sm-block"> <a class="navbar-brand" href="#"
+                    <div class="col d-none d-sm-block"> <a class="navbar-brand" href="#home-section-nav-link"
                             aria-label="gym logo and home link"><img class="gym-logo"
                                 src="assets/images/dumbellfitnesslogo.png" alt="a gym logo of a dumbell"></a></div>
                 </div>
-
-                <h2 class="mr-3 nav-heading">Dumbell <span class="dark-red">Fitness</span></h2>
+                   <!-- heading blocked on mobile -->
+                <h2 class="mr-3 nav-heading d-none d-sm-block">Dumbell <span class="dark-red">Fitness</span></h2>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
                     <!-- navlinks col-4 on moblie and col-2 on ipad to allow space for images during navbar collapse -->
                     <ul class="col-4 col-md-2 ml-lg-3 navbar-nav mynavlinks">
                         <li class="nav-item active">
-                            <a class="nav-link" aria-label=" home navigation link" href="#">Home
+                            <a class="nav-link" aria-label=" home navigation link" href="#home-section-nav-link">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -82,7 +82,7 @@
     <!-- /Navbar  -->
 
     <!-- Callout  -->
-    <section class="callout-section callout-section-img-wrapper">
+    <section class="callout-section callout-section-img-wrapper" id="home-section-nav-link">
         <div class="container-fluid callout-container">
             <div class="row">
 
@@ -91,7 +91,7 @@
                     <img class="special-img-one offer-img hvr-grow img-fluid" src="assets/images/offer-image-one.png"
                         alt="a image of a women including a special offer"></div>
                 <div class="col-12 col-xl-6 order-xl-2">
-                    <article class="callout jumbotron order-md-2 mb-5 text-center">
+                    <article class="callout jumbotron order-md-2 mb-5 text-center mt-5">
                         <h1 class="jumbotron-gymname uppercase">Dumbell <span class="dark-red">Fitness</span></h1>
                         <h2 class="jumbotron-quote"><q>Be the hero of your own story</q></h2>
                         <p class="offer-text d-none d-sm-inline uppercase"> Start your journey today <br>from
@@ -1038,7 +1038,7 @@
                                         <div class="avatar mx-auto">
                                             <img src="assets/images/3-month-male-fat-loss-customer-test-section-img-one.jpg"
                                                 class="first-img-carousel img-carousel img-fluid"
-                                                alt="First sample avatar image">
+                                                alt="an image of a man posing with out a top on">
                                         </div>
                                         <!--Content-->
                                     </div>
@@ -1053,7 +1053,7 @@
                                         <div class="avatar mx-auto">
                                             <img src="assets/images/3-month-male-fat-loss-customer-test-section-img-two (1).jpg"
                                                 class="second-img-carousel 
-                                                img-carousel img-fluid" alt="First sample avatar image">
+                                                img-carousel img-fluid" alt="an image of a man posing withoot a top on">
                                         </div>
                                         <!--Content-->
                                     </div>
