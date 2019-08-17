@@ -129,25 +129,10 @@ p {
     color: #bf051e;
 }
 
-/* targetinng borders and modal borders in training and gym sections */
+/* targeting padding in  modal body in facilities only */
 
-.vid-div-border,
-.img-thumbnail {
-    border: 0.2rem solid #8e8f8f;
-    background-color: #8e8f8f;
-    border-radius: 0.6rem;
-   
-}
-
-.vid-div-border {
-    border: 0.5rem solid #8e8f8f;
-}
-
-
-.modal-content {
-    border: 0.2rem solid #bf051e;
-    background-color:  #bf051e;
-    
+.facilities .modal-body {
+    padding: 0;
 }
 
 /* end reusable Components */
@@ -157,13 +142,12 @@ p {
 .btn-cta {
     background-color: #bf051e;
     color: #fff;
-    font-size: 100%;
+    font-size: 1.6rem;
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
-    border-radius: 5rem;
     letter-spacing: .1rem;
     font-weight: 900;
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1.5rem;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -213,12 +197,19 @@ p {
     border-color: #fff;
 }
 
+.btn-footer{
+    font-size:1rem;
+}
+
 /* end buttons */
 
 /* Navbar */
 /* added for a fixed navbar */
+.navbar {
+    opacity: 0.7;
+}
 
-.navbar{
+.navbar {
     padding: 5px 0;
 }
 
@@ -227,7 +218,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    z-index:2; 
+    z-index: 2;
 }
 
 .navbar-toggler {
@@ -312,7 +303,7 @@ p {
 .callout-container {
 
     height: 100vh;
-    background: url('../images/background-image-mobile.jpg') no-repeat fixed;
+    background: url('../images/background-image-smaller.jpeg') no-repeat fixed;
     background-position-x: 50%;
     background-size: cover;
     -webkit-background-size: cover;
@@ -326,6 +317,11 @@ p {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
+}
+
+/* adjusting jumbuton for mobile */
+.callout {
+    margin-top: 3rem;
 }
 
 .jumbotron-gymname {
@@ -476,10 +472,11 @@ ul {
 
 /* Team section */
 /* Modified from a tutorial found at https://bootsnipp.com/snippets/92xNm */
-
+/* team section cards size for mobile,small and large tablets */
 .team-section-img-wrapper {
+    margin: 0 auto;
     height: 100%;
-    width: 100%;
+    width: 90%;
 }
 
 .team-section {
@@ -492,14 +489,7 @@ ul {
 
 }
 
-.opaque-overlay-team {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 70%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
-}
+
 
 .main-header-team-section {
     font-size: 4rem;
@@ -540,9 +530,7 @@ ul {
 
 
 #team .card {
-    border: 0.45rem solid#272c2f;
-    border-radius: 0.7rem;
-    background: #272c2f;
+    background: #292525c7
 }
 
 
@@ -646,7 +634,7 @@ ul {
 }
 
 .frontside .card .card-body img {
-    height: 13.25rem;
+    height: 11rem;
     width: 100%;
 }
 
@@ -706,8 +694,9 @@ ul {
 
 /*results section */
 
-.img-carousel{
+.img-carousel {
     z-index: 1;
+    border-radius: 0rem;
 }
 
 .first-img-carousel {
@@ -866,7 +855,11 @@ footer a {
 /* end footer */
 
 /* media queries */
-
+@media(max-width:568px) {
+    .navbar {
+        opacity: 0.9;
+    }
+}
 
 /* for ipads */
 
@@ -892,6 +885,11 @@ footer a {
     }
 
     /* callout section */
+
+    /* adjusting jumbuton for ipad */
+    .callout {
+        margin-top: 7rem;
+    }
 
     .special-img-one {
         margin-left: 0.6rem;
@@ -985,6 +983,10 @@ footer a {
     }
 
     /* callout section */
+    /* adjusting jumbuton for ipad pro */
+    .callout {
+        margin-top: 11rem;
+    }
 
     .special-img-one {
         margin-left: 2.5rem;
@@ -1105,15 +1107,15 @@ footer a {
     }
 
     .offer-img {
-        margin-top: 10rem;
+        margin-top: 18rem;
     }
 
     /* end navbar section */
 
     /* callout section */
-
-    .jumbotron {
-        margin-top: 2rem;
+    /* adjusting jumbuton for laptop */
+    .callout {
+        margin-top: 13rem;
     }
 
     .jumbotron-gymname {
@@ -1181,7 +1183,12 @@ footer a {
     /* team section */
 
     .main-header-team-section {
-        font-size: 13rem;
+        font-size: 11rem;
+    }
+
+     /* team section cards size for mobile,laptops and up slighty narrow to aviod streched look */
+     .team-section-img-wrapper {
+        width: 75%;
     }
 
     .frontside .card .card-title,
@@ -1272,7 +1279,7 @@ footer a {
     .callout-container {
 
         height: 100vh;
-        background: url('../images/background-image-milestomeproject-2.jpg') no-repeat fixed;
+        background: url('../images/background-image.jpeg') no-repeat fixed;
         background-position-x: 50%;
         background-size: cover;
         -webkit-background-size: cover;
