@@ -6,9 +6,12 @@
 body,
 html {
     font-size: 16px;
-    scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
+body{
+    position: relative;
 }
 
 .container-fluid,
@@ -137,7 +140,7 @@ p {
 .btn-cta:link,
 .btn-cta:visited,
 .btn-cta:hover,
-.btn-cta:active {
+.btn-cta:active {  
     color: #f2f2f2;
     border-color: #98ff98;
 }
@@ -152,6 +155,7 @@ p {
 .btn-navbar {
     margin-top: 0.3rem;
 }
+
 
 .btn-pricing {
     display: block;
@@ -197,7 +201,6 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    opacity: 0.9;
     width: 100%;
     z-index: 2;
 }
@@ -232,11 +235,17 @@ p {
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:active {
+   
+     font-size:1.6rem;
     color: #98ff98;
     border-color: #98ff98;
     text-decoration: underline;
     font-style: italic;
 
+}
+
+#navbar-btn{
+    padding: 8px;
 }
 
 .navbar-toggler {
@@ -253,10 +262,14 @@ p {
     width: 100%;
 }
 
-.callout-container {
+.callout-container{
+   background-color:black; 
+}
+
+ .callout-container {
 
     height: 100vh;
-    background: url('../images/background-image-smaller.jpeg') no-repeat fixed;
+    background: url('../images/background-img-two.jpg') no-repeat fixed;
     background-position-x: 50%;
     background-size: cover;
     -webkit-background-size: cover;
@@ -270,7 +283,7 @@ p {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
-}
+} 
 
 /* adjusting jumbuton for mobile */
 .callout {
@@ -385,7 +398,8 @@ ul {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-    {
+   .hr-style-pricing {
+    margin:0 auto;
     border-top: 0.125rem solid #5a9a5a;
     margin: 1.5rem;
 
@@ -432,7 +446,11 @@ ul {
     width: 90%;
 }
 
-.team-section {
+.team-section{
+    background-color: black;
+}
+
+ .team-section {
     background: url('../images/larger-background-img.jpg') no-repeat fixed;
     background-position-x: 50%;
     background-size: cover;
@@ -440,7 +458,7 @@ ul {
     -moz-background-size: cover;
     -o-background-size: cover;
 
-}
+} 
 
 
 
@@ -638,11 +656,6 @@ ul {
 
 /* end tranning-section-gym-sub-section */
 
-/* facilites-section-gym-subsection */
-
-
-
-/* end facilites section */
 
 
 /*results section */
@@ -808,13 +821,20 @@ footer a {
 /* end footer */
 
 /* media queries */
+
+/* targeting navbar on mobile only to make navlinks for visable */
 @media(max-width:568px) {
     .navbar {
-        opacity: 0.9;
+        background-color: black;
+        opacity: 0.7;
+    }
+
+    .navbar-toggler{
+        margin-right: 1.5rem;
     }
 }
 
-/* for ipads */
+/* for tablets */
 
 @media(min-width:567px) and (max-width:991px) {
 
@@ -823,7 +843,6 @@ footer a {
     .navbar {
         font-size: 2rem;
         padding: 7px 0;
-        opacity: 0.8;
     }
 
     .gym-logo {
@@ -838,7 +857,7 @@ footer a {
 
     /* callout section */
 
-    /* adjusting jumbuton for ipad */
+    /* adjusting jumbuton for tablet */
     .callout {
         margin-top: 7rem;
     }
@@ -921,13 +940,8 @@ footer a {
 
     /* navbar */
     /*targeting navbar an navitems on larger-tablets */
-    .navbar {
-        opacity: 0.6;
-
-    }
-
     .mynavlinks {
-        margin-left: 5rem;
+        margin-left: 4rem;
         margin-top: 1.7rem;
     }
 
@@ -1052,12 +1066,16 @@ footer a {
         width: auto;
     }
 
-    /* targeting navbar and navlinks on desktop lower opactiy
-    as nav bar takes up more space than on mobile or tablet */
+   
     .mynavlinks {
         margin-top: 0.5rem;
         margin-left: 19.5rem;
 
+    }
+
+    .navbar {
+        background-color: black;
+        opacity: 0.5;
     }
 
     .nav-item {
@@ -1065,13 +1083,8 @@ footer a {
         font-weight: 600;
     }
 
-    .navbar-fixed-top {
-        opacity: 0.4;
-    }
-
-    .navbar-nav .nav-item {
+     .nav-item {
         margin: 0rem 0.625rem;
-
     }
 
     .special-img-one {
@@ -1204,11 +1217,12 @@ footer a {
         width: auto;
     }
 
-    .navbar-nav {
-        margin-left: 17rem;
+
+    .mynavlinks {
+        margin-left: 22rem;
     }
 
-    .navbar-nav .nav-item {
+     .nav-item {
         margin: 0rem 1.1rem;
 
     }
@@ -1237,35 +1251,3 @@ footer a {
 }
 
 
-/* adding larger  background image for laptop and destop */
-
-@media(min-width: 1024px) {
-
-    .callout-section-img-wrapper {
-        height: 100%;
-        width: 100%;
-    }
-
-    .callout-container {
-
-        height: 100vh;
-        background: url('../images/background-image.jpeg') no-repeat fixed;
-        background-position-x: 50%;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        display: flexbox;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: relative;
-    }
-}
-
-.body {
-    overflow-y: hidden;
-}

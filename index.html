@@ -15,60 +15,58 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
     <!-- Navbar -->
     <!-- Modified from a tutorial found at  https://startbootstrap.com/snippets/full-image-header/ -->
 
     <header>
         <div class="container-fluid nav-container">
-            <div class="navbar-section navbar-fixed-top">
-                <nav class="navbar navbar-expand-lg bg-navbar-color">
-                    <!-- logo  hidden on mobile -->
-                    <div class="row">
-                        <div class="col d-none d-sm-block"> <a class="navbar-brand" href="#home-section-nav-link"
-                                aria-label="gym logo and home link"><img class="gym-logo"
-                                    src="assets/images/dumbellfitnesslogo.png" alt="a gym logo of a dumbell"></a></div>
-                    </div>
-                    <!-- heading blocked on mobile -->
-                    <!-- <h2 class="mr-3 nav-heading d-none d-sm-block">Dumbell <span class="dark-red">Fitness</span></h2> -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="row collapse navbar-collapse" id="navbarResponsive">
-                        <!-- navbar-links -->
-                        <ul class="col navbar-nav mynavlinks text-center">
-                            <li class="nav-item active">
-                                <a class="nav-link" aria-label="home navigation link" href="#home-section-nav-link">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about-section-nav-link"
-                                    aria-label="about section navagation link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#pricing-section-nav-link"
-                                    aria-label="pricing section navigation link">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#team-section-nav-link"
-                                    aria-label="team section navigation link">Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#gym-section-nav-link"
-                                    aria-label="gym section navigation link">Gym</a>
-                            </li>
-                            <li class="nav-item text-center hvr-wobble-horizontal">
-                                <button class="btn btn-cta navbar-section btn-md mt-3 ml-3" id="navbar-btn"
-                                    data-toggle="modal" data-target="#signUpModal">join
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-fixed-top">
+                <!-- logo  hidden on mobile -->
+                <div class="row">
+                    <div class="col d-none d-sm-block"> <a class="navbar-brand" href="#home-section-nav-link"
+                            aria-label="gym logo and home link"><img class="gym-logo"
+                                src="assets/images/dumbellfitnesslogo.png" alt="a gym logo of a dumbell"></a></div>
+                </div>
+                <!-- heading blocked on mobile -->
+                <!-- <h2 class="mr-3 nav-heading d-none d-sm-block">Dumbell <span class="dark-red">Fitness</span></h2> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="row collapse navbar-collapse" id="navbarResponsive">
+                    <!-- navbar-links -->
+                    <ul class="ml-auto navbar-nav mynavlinks text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-label="home navigation link" href="#home-section-nav-link">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-section-nav-link"
+                                aria-label="about section navagation link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing-section-nav-link"
+                                aria-label="pricing section navigation link">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team-section-nav-link"
+                                aria-label="team section navigation link">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gym-section-nav-link"
+                                aria-label="gym section navigation link">Gym</a>
+                        </li>
+                        <li class="nav-item text-center hvr-wobble-horizontal">
+                            <button class="btn btn-cta btn-md mt-3 ml-3" id="navbar-btn" data-toggle="modal"
+                                data-target="#signUpModal">join us
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
     <!-- /Navbar  -->
@@ -186,7 +184,7 @@
                         </h5>
                         <h6 class="card-price text-center">19.99
                             <span class="period">/month</span></h6>
-                        <hr>
+                        <hr class="hr-style-pricing">
                         <ul class="fa-ul">
                             <li><span class="fa-li"><i class="fas fa-check"></i></span><span
                                     class="uppercase dark-grey"><strong>That’s less than
@@ -217,7 +215,7 @@
                         </h5>
                         <h6 class="card-price text-center">29.99
                             <span class="period">/month</span></h6>
-                        <hr>
+                        <hr class="hr-style-pricing">
                         <ul class="fa-ul">
                             <li><span class="fa-li"><i class="fas fa-check"></i></span><strong><span
                                         class="uppercase dark-grey">That’s less
@@ -250,7 +248,7 @@
                         </h5>
                         <h6 class="card-price text-center">39.99
                             <span class="period">/month</span></h6>
-                        <hr>
+                        <hr class='hr-style-pricing'>
                         <ul class="fa-ul">
                             <li><span class="fa-li"><i class="fas fa-check"></i></span><span
                                     class="uppercase dark-grey"><strong>Thats only 1.33
@@ -1220,6 +1218,7 @@
     </div>
     <!-- /modal -->
 
+   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js">
     </script>

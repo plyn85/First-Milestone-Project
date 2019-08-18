@@ -5,6 +5,8 @@ baguetteBox.run('.compact-gallery', {
     animation: 'slideIn'
 });
 
+$('body').scrollspy({target: ".navbar"})
+
 
 
 
