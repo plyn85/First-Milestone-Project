@@ -57,7 +57,7 @@
                             <a class="nav-link" href="#gym-section-nav-link"
                                 aria-label="gym section navigation link">Gym</a>
                         </li>
-                      <!-- navbar button added with data target added to open modal when clicked -->
+                      <!-- navbar button added with data target added to open sign up modal when clicked -->
                         <li class="nav-item text-center hvr-wobble-horizontal">
                             <button class="btn btn-cta btn-md mt-3 ml-3" id="navbar-btn" data-toggle="modal"
                                 data-target="#signUpModal">join us
@@ -74,7 +74,7 @@
     <section class="callout-section callout-section-img-wrapper" id="home-section-nav-link">
         <div class="container-fluid callout-container">
             <div class="row">
-                   <!-- image only visable for for tablets an above image displayed below 
+                   <!-- image only visable for for tablets and above image displayed below 
                     jumbuton on tablets an to the left of jumbuton  on bigger devices this was done using bootstrap order an offset classes -->
                 <div
                     class="col-12 d-none d-md-block col-md-8 offset-md-4 offset-xl-0 order-md-1 col-xl-3 mb-xl-5">
@@ -126,12 +126,12 @@
                         class="dark-red">your</span> body</h3>
             </div>
         </div>
-           <!-- image visable on all devices takes up entire row on mobile an 1/2 of row on all larger using bootstrap  -->
+           <!-- image visable on all devices takes up entire row on mobile an 1/2 of row on all larger using bootstrap row and col classes  -->
         <div class="row d-flex justify-content-center pt-3">
             <div class="col-12 col-md-6 mb-4 text-center"><img class="img-fluid"
                     src="assets/images/mailing-list-img.png" alt="image asking customers to join our mailing list">
             </div>
-                      <!-- image visable for tablet size  an up 1/2 of row on all other devices using bootstrap  -->
+                      <!-- image visable for tablet size  an up 1/2 of row on all other devices using bootstrap col and row classes -->
             <div class="d-none d-md-block col-12 col-md-6 text-center">
                 <img class="img-fluid" src="assets/images/spartan-challenge-img.png"
                     alt="image asking customers to take part in a 12 week spartan challenge">
@@ -221,6 +221,7 @@
                                 spartan
                                 challenge</li>
                         </ul>
+                       <!-- button added with wobble effect opens sign up modal when clicked -->
                         <button class="btn btn-pricing btn-cta hvr-wobble-horizontal btn-lg" data-toggle="modal"
                             data-target="#signUpModal"><span class="darkgrey">Join
                                 us</span></button>
@@ -256,6 +257,7 @@
                                         class="fas fa-check"></i></span>Access
                                 to our 12 week spartan challenge</li>
                         </ul>
+                       <!-- button added with wobble effect opens sign up modal when clicked -->
                         <button class="btn btn-pricing btn-cta   hvr-wobble-horizontal btn-lg" data-toggle="modal"
                             data-target="#signUpModal"><span class="darkgrey">Join
                                 us</span></button>
@@ -288,6 +290,7 @@
                                 spartan
                                 challenge</li>
                         </ul>
+                       <!-- button added with wobble effect opens sign up modal when clicked -->
                         <button class="btn btn-pricing btn-cta hvr-wobble-horizontal btn-lg" data-toggle="modal"
                             data-target="#signUpModal"><span class="darkgrey">Join
                                 us</span></button>
@@ -301,7 +304,7 @@
     <!-- Team Section  -->
     <!-- Modified from a tutorial found at https://bootsnipp.com/snippets/92xNm -->
     <section class="container-fluid team-section" id="team">
-        <!-- parent of team section background image wraps entire team section  -->
+        <!-- parent of team section background image and wraps entire team section  -->
         <div class="team-section-img-wrapper" id="team-section-nav-link">
            <!-- main team section header takes up entire row on all devices using bootstrap col and row classes -->
             <div class="row justify-content-center">
@@ -317,13 +320,13 @@
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
+                           <!-- frontside of card -->
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <p><img class=" img-fluid" src="assets/images/pesonal-trainer-one.jpeg"
                                                 alt="card image">
                                         </p>
-                                        <div class="opaque-overlay-team">&nbsp;</div>
                                         <h4 class="card-title">Ian</h4>
                                         <div class="col mb-1"> <a href="#"
                                                 aria-label="a button thats allows you to spin card around"
@@ -332,6 +335,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- backside of card -->
                             <div class="backside">
                                 <div class="card">
                                     <div class="card-body text-center mt-4">
@@ -389,7 +393,6 @@
                                                 alt="card image">
 
                                         </p>
-                                        <div class="opaque-overlay-team">&nbsp;</div>
                                         <h4 class="card-title">Peter</h4>
 
                                         <div class="col mb-1"> <a href="#"
@@ -457,7 +460,6 @@
                                                 alt="card image">
 
                                         </p>
-                                        <div class="opaque-overlay-team">&nbsp;</div>
                                         <h4 class="card-title">Gavin</h4>
                                         <div class="col mb-1"> <a href="#"
                                                 aria-label="a button thats allows you to spin card around"
@@ -525,7 +527,6 @@
                                                 alt="card image">
 
                                         </p>
-                                        <div class="opaque-overlay-team">&nbsp;</div>
                                         <h4 class="card-title">Cian</h4>
 
                                         <div class="col mb-1"> <a href="#"
@@ -593,7 +594,6 @@
                                                 alt="card image">
 
                                         </p>
-                                        <div class="opaque-overlay-team">&nbsp;</div>
                                         <h4 class="card-title">Aidean</h4>
 
                                         <div class="col mb-1"> <a href="#"
@@ -662,7 +662,6 @@
                                                 alt="card image">
 
                                         </p>
-                                        <div class="opaque-overlay-team">&nbsp;</div>
                                         <h4 class="card-title">Jenn</h4>
                                         <div class="col mb-1">
                                             <a href="#" aria-label="a button thats allows you to spin card around"
@@ -722,7 +721,7 @@
     <!-- Gym Section -->
     <!-- this wraps the entire gym section and its  3 subsections videos,trainning,results  -->
     <section class="wrapper gym-section-wrapper pb-5 container-fluid gym-section" id="gym-section-nav-link">
-        <!--row and col below classes wrap the tranning section takes up entire row on all devices using bootstap col an row classes-->
+        <!--row and col below classes wrap the tranning section takes up entire row on all devices using bootstap-->
         <div class="row justify-content-center">
             <div class="col-11">
                 <!-- gym section main header takes up entire row on all devices using bootstap col an row classes -->
@@ -745,7 +744,7 @@
                     <!-- fontawsome icon of a video camera takes up entire row on all devices using bootstap col and row classes -->
                     <div class="col-12 text-center mt-lg-5 gym-section-logo"><i class="fas fa-video"></i></div>
                     <!-- Modified from a tutorial found at https://mdbootstrap.com/plugins/jquery/gallery/ -->
-                   <!-- row  wraps all tranning  section cards -->
+                   <!-- row  wraps alltraning section cards -->
                    <div class="row d-flex justify-content-between">
                        <!-- card takes up entire row on mobile an 1/2 of row on all other devices using bootstrap col an row classes -->
                     <div class="col-12  col-md-5 mt-5 vid-div-border p-0">
@@ -762,6 +761,7 @@
                                                     src="https://www.youtube.com/embed/KlkJuv1IxIA"
                                                     allowfullscreen></iframe>
                                             </div>
+                                           <!-- modal footer -->
                                             <div class="modal-footer modal-footer-gym-section
                                                     justify-content-center">
                                                 <span class="mr-4 uppercase white text-barlow">dumbell fitness
@@ -812,6 +812,7 @@
                                                     src="https://www.youtube.com/embed/zxHP1fSp0Z4"
                                                     allowfullscreen></iframe>
                                             </div>
+                                            <!-- modal footer -->
                                             <div class="modal-footer modal-footer-gym-section
                                                     justify-content-center">
                                                 <span class="mr-4 uppercase white text-barlow">dumbell fitness
@@ -863,6 +864,7 @@
                                                     src="https://www.youtube.com/embed/J7buRPxIY1c"
                                                     allowfullscreen></iframe>
                                             </div>
+                                            <!-- modal footer -->
                                             <div class="modal-footer modal-footer-gym-section
                                                 justify-content-center">
                                                 <span class="mr-4 uppercase white text-barlow">dumbell fitness
@@ -914,7 +916,7 @@
                                                     src="https://www.youtube.com/embed/7jHYrMcjZwU"
                                                     allowfullscreen></iframe>
                                             </div>
-
+                                           <!-- modal footer -->
                                             <div class="modal-footer modal-footer-gym-section
                                                     justify-content-center">
                                                 <span class="mr-4 uppercase white text-barlow">dumbell fitness
@@ -1157,7 +1159,8 @@
     <footer class="pt-5 pb-4 container-fluid" id="contact">
       <!-- row wraps entire footer section -->
         <div class="row">
-           <!-- col wraps entire about us section takes up entire row on mobile its col-6 class is centered and half a row on all other devices using bootstrap col and row classes-->
+           <!-- col wraps entire about us section takes up entire row on mobile its 
+            col-6 class is centered 1/2  a row on all other devices using bootstrap col and row classes-->
             <div class=" col-6 col-md-5  mt-2 mb-4">
                 <div class="col-10 ml-5 mb-md-5">
                     <h5 class="mb-4 font-weight-bold">ABOUT US</h5>
@@ -1200,7 +1203,7 @@
                 all other devices using bootstrap col and row classes -->
             <div class=" col-6 col-md-5 offset-2 mt-2 mb-4">
                 <h5 class="mb-4  ml-3 font-weight-bold">CONNECT WITH US</h5>
-
+                 <!-- form group -->
                 <div class="form-group">
                     <div class="col-9 col-md-5">
                         <label for="exampleInputEmail1" id="emailHelp">Email address<span class="error">*</span></label>
@@ -1218,6 +1221,7 @@
                                     title="instagram"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
+                   <!-- button added that targets sigin up modal when clicked -->
                     <div class="row">
                         <button class="col-5 col-xl-3 offset-2 offset-md-1 btn btn-cta btn-footer  mt-3 md-mt-5"
                             data-toggle="modal" data-target="#signUpModal">join us
@@ -1283,7 +1287,8 @@
                         <textarea rows="5" name="sitefeedback" id="sitefeedback" class="form-control"
                             placeholder="Please provide us with any questions you may have here" required></textarea>
 
-                         <!-- modal submit button  -->
+                        
+                         
                         <button type="submit" class="btn btn-modal btn-cta">Submit</button>
                     </form>
                 </div>

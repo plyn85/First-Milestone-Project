@@ -2,7 +2,8 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
 /* main body */
 
-
+/* scroll behaviour smooth added to give smooth scrolling
+ effect an overflow x added to deal with any unwanted over flow */
 body,
 html {
     font-size: 16px;
@@ -10,10 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
-    position: relative;
-}
-
+/* removing all margins and padding from bootsrap rows an cols */
 .container-fluid,
 .container,
 .row {
@@ -85,6 +83,7 @@ p {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+/* reused for all divs giving redline effect */
 .hr-style {
     margin: 0 auto;
     width: 80%;
@@ -92,14 +91,18 @@ p {
 
 }
 
+/* reused for all main headers on sections */
 .main-header {
     border: 1rem solid #bf051e;
-    font-weight: bold;
     color: #fff;
     font-family: 'Oswald', sans-serif;
     text-shadow: 0 0 13px rgba(0, 0, 0, .88);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
 }
 
+/* reused for all sub headers on sections */
 .sub-header {
     font-size: 3rem;
     font-weight: bold;
@@ -121,7 +124,7 @@ p {
 /* end reusable Components */
 
 /* buttons */
-
+/* used for all buttons */
 .btn-cta {
     background-color: #bf051e;
     color: #fff;
@@ -137,14 +140,16 @@ p {
     -o-transition: all 0.5s ease-in-out;
 }
 
+/* used for all buttons */
 .btn-cta:link,
 .btn-cta:visited,
 .btn-cta:hover,
-.btn-cta:active {  
+.btn-cta:active {
     color: #f2f2f2;
     border-color: #98ff98;
 }
 
+/* used for callout section button */
 .btn-callout {
     display: block;
     margin: 0 auto;
@@ -152,31 +157,30 @@ p {
 
 }
 
+/* used for navbar section button */
 .btn-navbar {
     margin-top: 0.3rem;
 }
 
-
+/* used for navbar section button */
 .btn-pricing {
     display: block;
     margin: 0 auto;
     background-color: #5a9a5a;
 }
 
+/* used for modal section button */
 .btn-modal {
     margin-top: 0.45rem;
-}
-
-.btn-cta-gym-modal {
     background-color: #bf051e;
     color: #fff;
     border-radius: 2.2rem;
 }
 
-.btn-cta-gym-modal:link,
-.btn-cta-gym-modal:visited,
-.btn-cta-gym-modal:hover,
-.btn-cta-gym-modal:active {
+.btn-modal:link,
+.btn-modal:visited,
+.btn-modal:hover,
+.btn-modal:active {
     color: #f2f2f2;
     border-color: #fff;
 }
@@ -188,7 +192,7 @@ p {
 /* end buttons */
 
 /* Navbar */
-/* added for a fixed navbar */
+
 .gym-logo {
     margin-left: 0.55rem;
     border: 0.25rem solid#bf051e;
@@ -197,6 +201,8 @@ p {
     width: auto;
 }
 
+/* added for a fixed navbar dispaled over callout background z-index-2 
+added to override carosel z-index from testimonials section*/
 .navbar-fixed-top {
     position: fixed;
     top: 0;
@@ -205,11 +211,13 @@ p {
     z-index: 2;
 }
 
+/* targeting entire navbar links as a group */
 .mynavlinks {
     font-family: 'Barlow Semi Condensed', sans-serif;
     margin: 0rem 0.5rem;
 }
 
+/* targeting navbar links as a individually */
 .nav-link {
     padding: 0.6rem;
     margin-top: 0.6rem;
@@ -224,19 +232,19 @@ p {
 
 }
 
-.navbar .navbar-nav .nav-link:link,
-.navbar .navbar-nav .nav-link:visited,
-.navbar .navbar-toggler:hover,
-.navbar .navbar-toggler:active {
+/* targeting navlinks turning text green when visited */
+.nav-link:link,
+.nav-link:visited {
     color: #f2f2f2;
     border-color: #98ff98;
 
 }
 
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link:active {
-   
-     font-size:1.6rem;
+/* targeting navlinks turning text green when hovered */
+.nav-link:hover,
+.nav-link:active {
+
+    font-size: 1.6rem;
     color: #98ff98;
     border-color: #98ff98;
     text-decoration: underline;
@@ -244,10 +252,12 @@ p {
 
 }
 
-#navbar-btn{
+/* targeting button in navabar only */
+#navbar-btn {
     padding: 8px;
 }
 
+/* targeting navbar toggle button */
 .navbar-toggler {
     background-color: #bf051e;
 }
@@ -256,17 +266,20 @@ p {
 
 /* callout section */
 
-
+/* a warpper for callout image */
 .callout-section-img-wrapper {
     height: 100%;
     width: 100%;
 }
 
-.callout-container{
-   background-color:black; 
+/* callout container backgrond button */
+.callout-container {
+    background-color: black;
 }
 
- .callout-container {
+/* callout container image to cover entire view height flexbox added to target jumbotron */
+
+.callout-container {
 
     height: 100vh;
     background: url('../images/background-img-two.jpg') no-repeat fixed;
@@ -283,13 +296,14 @@ p {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
-} 
+}
 
 /* adjusting jumbuton for mobile */
 .callout {
     margin-top: 3rem;
 }
 
+/* targeting gym name in jumbotron text shadow added for effect */
 .jumbotron-gymname {
     font-family: 'Oswald', sans-serif;
     color: #e1e1e1;
@@ -299,18 +313,16 @@ p {
     font-weight: 900;
 }
 
+/* targeting jumbotron quote */
 .jumbotron-quote {
 
     color: #fff;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 700;
     margin: 1.8rem;
-
-
 }
-
+/* removing background color jumbtron to have text displayed over background image */
 .jumbotron {
-
     background-color: transparent;
 }
 
@@ -322,7 +334,7 @@ p {
     letter-spacing: 1px;
     margin-top: 2.2rem;
 }
-
+/* targeting text guiding user to scroll down rest of page visable on mobile only */
 .mobile-only-callout-below-text {
     font-size: 1.7rem;
 }
@@ -330,7 +342,7 @@ p {
 /* end callout section */
 
 /* about section */
-
+/* targeting all headers and text in about section */
 .main-header-about-section {
     margin-top: 3rem;
     font-size: 3.5rem;
@@ -370,7 +382,7 @@ p {
 /* end about section */
 
 /* Modal Contact Form */
-
+/* adding red color to asterisk in modal */
 .error {
     color: #bf051e;
 }
@@ -380,26 +392,20 @@ p {
 /* pricing section */
 /* Modified from a tutorial found at https://startbootstrap.com/snippets/pricing-table/ */
 
-section.pricing {
-    border: 0;
-    padding: 0;
-
-}
-
 .pricing .card {
+    background-color:lightgrey;
     border: 0.4rem solid#272c2f;
     border-radius: 1rem;
 }
 
-l,
 ol,
 ul {
     font-weight: 600;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-   .hr-style-pricing {
-    margin:0 auto;
+.hr-style-pricing {
+    margin: 0 auto;
     border-top: 0.125rem solid #5a9a5a;
     margin: 1.5rem;
 
@@ -446,11 +452,11 @@ ul {
     width: 90%;
 }
 
-.team-section{
+.team-section {
     background-color: black;
 }
-
- .team-section {
+/* background image added to team section to cover backgrond of entire section */
+.team-section {
     background: url('../images/larger-background-img.jpg') no-repeat fixed;
     background-position-x: 50%;
     background-size: cover;
@@ -458,24 +464,14 @@ ul {
     -moz-background-size: cover;
     -o-background-size: cover;
 
-} 
-
-
-
-.main-header-team-section {
-    font-size: 4rem;
-    font-weight: 700;
-    font-family: 'Oswald', sans-serif;
-    text-shadow: 0 0 13px rgba(0, 0, 0, 0.233);
-    text-align: center;
-    margin-bottom: 4rem;
-    text-transform: uppercase;
-    border: 1rem solid#bf051e;
-    color: #fff;
-    text-shadow: 0 0 13px rgba(0, 0, 0, .50);
 }
 
+.main-header-team-section {
+font-size: 4rem;
+margin-bottom: 4rem;
+}
 
+/* targeting button on teams section */
 .btn-primary:hover,
 .btn-primary:focus {
     background-color: #57020d;
@@ -489,11 +485,11 @@ ul {
     background-color: #bf051e;
     border-color: #bf051e;
 }
-
+/* padding on entire team section */
 .team-section {
     padding: 1.9rem 0;
 }
-
+/* making card text more visable adding white color */
 .backside .card-text {
     color: #fff;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -504,9 +500,9 @@ ul {
     background: #292525c7
 }
 
-
+/* removing padding from cards so image width fits entire card */
 .team-section .card-body {
-    padding: 0;
+    padding: 0rem;
 }
 
 .image-flip:hover .backside,
@@ -585,14 +581,14 @@ ul {
     font-size: 1.1rem;
     color: #fff !important;
 }
-
+/* adding transition timing effect to card links for a more subtle effect when hovered */
 .social-icon i {
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
 }
-
+/* changing links to red when hovered */
 .social-icon i:hover {
     margin-bottom: 0;
     color: #bf051e;
@@ -603,10 +599,10 @@ ul {
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: #fff !important;
 }
-
+/* adjusting card image heights */
 .frontside .card .card-body img {
     height: 11rem;
-    width: 100%;
+    
 }
 
 /* end team section */
@@ -829,7 +825,7 @@ footer a {
         opacity: 0.7;
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
         margin-right: 1.5rem;
     }
 }
@@ -1066,7 +1062,7 @@ footer a {
         width: auto;
     }
 
-   
+
     .mynavlinks {
         margin-top: 0.5rem;
         margin-left: 19.5rem;
@@ -1083,7 +1079,7 @@ footer a {
         font-weight: 600;
     }
 
-     .nav-item {
+    .nav-item {
         margin: 0rem 0.625rem;
     }
 
@@ -1222,7 +1218,7 @@ footer a {
         margin-left: 22rem;
     }
 
-     .nav-item {
+    .nav-item {
         margin: 0rem 1.1rem;
 
     }
@@ -1249,5 +1245,3 @@ footer a {
     }
 
 }
-
-
