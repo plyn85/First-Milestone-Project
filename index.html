@@ -19,8 +19,7 @@
 
     <!-- Navbar -->
     <!-- Modified from a tutorial found at  https://startbootstrap.com/snippets/full-image-header/ -->
-
-    <header>
+  <header>
         <div class="container-fluid nav-container">
             <nav class="navbar navbar-expand-lg navbar-fixed-top">
                 <!-- logo  hidden on mobile -->
@@ -29,14 +28,13 @@
                             aria-label="gym logo and home link"><img class="gym-logo"
                                 src="assets/images/dumbellfitnesslogo.png" alt="a gym logo of a dumbell"></a></div>
                 </div>
-                <!-- heading blocked on mobile -->
-                <!-- <h2 class="mr-3 nav-heading d-none d-sm-block">Dumbell <span class="dark-red">Fitness</span></h2> -->
+                 <!-- navabar toggler button added -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="row collapse navbar-collapse" id="navbarResponsive">
-                    <!-- navbar-links -->
+                    <!-- navbar-links added with ml-auto to move nav items to the right on collapsed navbar -->
                     <ul class="ml-auto navbar-nav mynavlinks text-center">
                         <li class="nav-item active">
                             <a class="nav-link" aria-label="home navigation link" href="#home-section-nav-link">Home
@@ -59,6 +57,7 @@
                             <a class="nav-link" href="#gym-section-nav-link"
                                 aria-label="gym section navigation link">Gym</a>
                         </li>
+                      <!-- navbar button added with data target added to open modal when clicked -->
                         <li class="nav-item text-center hvr-wobble-horizontal">
                             <button class="btn btn-cta btn-md mt-3 ml-3" id="navbar-btn" data-toggle="modal"
                                 data-target="#signUpModal">join us
@@ -75,26 +74,34 @@
     <section class="callout-section callout-section-img-wrapper" id="home-section-nav-link">
         <div class="container-fluid callout-container">
             <div class="row">
-
+                   <!-- image only visable for for tablets an above image displayed below 
+                    jumbuton on tablets an to the left of jumbuton  on bigger devices this was done using bootstrap order an offset classes -->
                 <div
-                    class="col-12 d-none d-md-block col-md-8 offset-md-4 offset-xl-0 order-md-1 order-xl-1 col-xl-3 mb-xl-5">
+                    class="col-12 d-none d-md-block col-md-8 offset-md-4 offset-xl-0 order-md-1 col-xl-3 mb-xl-5">
                     <img class="special-img-one offer-img hvr-grow img-fluid" src="assets/images/offer-image-one.png"
                         alt="a image of a women including a special offer"></div>
                 <div class="col-12 col-xl-6 order-xl-2">
+                    <!-- jumbotron addded -->
                     <article class="callout jumbotron order-md-2 text-center">
+                      <!-- main callout header and quote visable on all devices -->
                         <h1 class="jumbotron-gymname uppercase">Dumbell <span class="dark-red">Fitness</span></h1>
                         <h2 class="jumbotron-quote"><q>Be the hero of your own story</q></h2>
+                      <!-- offer text not visable on mobile visable on all other devices used bootstrap class for this  -->
                         <p class="offer-text d-none d-sm-inline uppercase"> Start your journey today <br>from
                             $19.99/month
                         </p>
+                       <!-- button added linked to sign up modal when pressed wobble effect added when hovered -->
                         <button class="btn btn-callout btn-cta hvr-wobble-horizontal btn-lg" data-toggle="modal"
                             data-target="#signUpModal">Join
                             us</button>
-                        <div class="col d-block d-sm-none mintgreen mt-3 bold uppercase mobile-only-callout-below-text">
+                             <!-- offer text visable on mobile only used bootstrap class for this -->
+                            <div class="col d-block d-sm-none mintgreen mt-3 bold uppercase mobile-only-callout-below-text">
                             <p>Check out what we have to offer below </p>
                         </div>
                     </article>
                 </div>
+               <!-- image only visable for for laptop an above image displayed below 
+                    jumbuton on tablets an to the right of jumbuton  on bigger devices this was done using bootstrap order an offset classes -->
                 <div class="col-11 d-none d-xl-block col-xl-3 order-xl-3 mb-xl-5"><img
                         class="special-img-two offer-img hvr-grow" src="assets/images/commitimage.png"
                         alt="a image of a women including a special offer"></div>
@@ -106,33 +113,40 @@
 
     <!-- About Section  -->
     <section class="container-fluid about-section pb-3" id="about-section-nav-link">
+       <!-- main about section header takes up entire row an all devices -->
         <div class="row justify-content-center">
             <div class="col-11 mt-5">
                 <h2 class="text-center main-header main-header-about-section uppercase">About us</h2>
             </div>
         </div>
+         <!-- about section sub header takes up entire row an all devices using bootstap row and col classes -->
         <div class="row justify-content-center">
             <div class="col-11">
                 <h3 class="uppercase about-header sub-header about about-sub-header-one text-center pt-3">respect <span
                         class="dark-red">your</span> body</h3>
             </div>
         </div>
+           <!-- image visable on all devices takes up entire row on mobile an 1/2 of row on all larger using bootstrap  -->
         <div class="row d-flex justify-content-center pt-3">
             <div class="col-12 col-md-6 mb-4 text-center"><img class="img-fluid"
                     src="assets/images/mailing-list-img.png" alt="image asking customers to join our mailing list">
             </div>
+                      <!-- image visable for tablet size  an up 1/2 of row on all other devices using bootstrap  -->
             <div class="d-none d-md-block col-12 col-md-6 text-center">
                 <img class="img-fluid" src="assets/images/spartan-challenge-img.png"
                     alt="image asking customers to take part in a 12 week spartan challenge">
             </div>
+          
             <div class="col-11 about-section-head-paragraph pt-3">
                 <div class="about-text-div">
+                        <!-- about section sub header takes up entire row an all devices using bootrap col and row classes -->
                     <div class="row">
                         <div class="col">
                             <h3 class="uppercase sub-header about-header about about-sub-header-two text-center mt-1">
                                 train<span class="dark-red"> for</span> success</h3>
                         </div>
                     </div>
+                      <!-- about section main paragraph  -->
                     <p class="about-text pt-3"> Here at the Dumbell fitness we are dedicated to the pursuit of
                         peak
                         performance for all
@@ -152,6 +166,7 @@
                                 alt="image of inspiring quote">
                         </div>
                     </div>
+                   <!-- about section sub header takes up entire row an all devices using bootrap col and row classes -->
                     <div class="row justify-content-center">
                         <div class="col-11">
                             <h3
@@ -166,16 +181,21 @@
     <!--  /About -->
 
     <!-- Pricing  -->
-    <!-- Modified from a tutorial found at https://startbootstrap.com/snippets/pricing-table/ -->
+   
     <section class="pricing container-fluid pricing-wrapper pt-5 pb-5" id="pricing-section-nav-link">
+          <!-- pricing section main header uses bootstrap row an col classes to take entire row on all devices -->
         <div class="row justify-content-center">
             <div class="col-11 our-price-plans-div">
                 <h2 class="text-center sub-header pricing-header white uppercase pb-4">our <span class="mintgreen">price
                     </span>plans</h2>
             </div>
         </div>
-        <div class="row justify-content-center">
+       <!-- Modified from a tutorial found at https://startbootstrap.com/snippets/pricing-table/ -->
+        <!-- div below wraps pricing cards -->
+       <div class="row justify-content-center">
             <!-- value Tier -->
+              <!-- pricing card takes up entire row on mobile and 1/3 of a row on all other 
+                devices using bootstrap row an col classes hover effect added so when user hovers over item it grows -->
             <div class="col-11 col-lg-4 hvr-grow">
                 <div class="card mb-5 mb-lg-0">
                     <div class="card-body">
@@ -208,6 +228,8 @@
                 </div>
             </div>
             <!-- standard Tier -->
+            <!-- pricing card takes up entire row on mobile and 1/3 of a row on all other 
+                devices using bootstrap row an col classes hover effect added so when user hovers over item it grows -->
             <div class=" col-11 col-lg-4 hvr-grow">
                 <div class="card mb-5 mb-lg-0">
                     <div class="card-body">
@@ -241,6 +263,8 @@
                 </div>
             </div>
             <!-- Premuim Tier -->
+            <!-- pricing card takes up entire row on mobile and 1/3 of a row on all other 
+                devices using bootstrap row an col classes hover effect added so when user hovers over item it grows -->
             <div class="col-11 col-lg-4 hvr-grow">
                 <div class="card">
                     <div class="card-body">
@@ -277,15 +301,19 @@
     <!-- Team Section  -->
     <!-- Modified from a tutorial found at https://bootsnipp.com/snippets/92xNm -->
     <section class="container-fluid team-section" id="team">
-        <!-- parent of team section background image -->
+        <!-- parent of team section background image wraps entire team section  -->
         <div class="team-section-img-wrapper" id="team-section-nav-link">
+           <!-- main team section header takes up entire row on all devices using bootstrap col and row classes -->
             <div class="row justify-content-center">
                 <div class="col-11">
                     <h5 class="main-header main-header-team-section">OUR TEAM</h5>
                 </div>
             </div>
+             <!-- row wraps entire team section -->
             <div class="row justify-content-center">
                 <!-- Team member -->
+                <!-- takes up entire row on mobile 1/2 of row on small tablet 
+                    an 1/3 of a row on all other devices using bootstrap col and row -->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
@@ -348,9 +376,12 @@
                 </div>
                 <!-- ./Team member -->
                 <!-- Team member -->
+                <!-- takes up entire row on mobile 1/2 of row on small tablet 
+                    an 1/3 of a row on all other devices using bootstrap col and row -->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
+                             <!-- frontside of card -->
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
@@ -368,6 +399,7 @@
                                     </div>
                                 </div>
                             </div>
+                           <!-- backside of card -->
                             <div class="backside">
                                 <div class="card">
                                     <div class="card-body text-center mt-4">
@@ -412,9 +444,12 @@
                 </div>
                 <!-- ./Team member -->
                 <!-- Team member -->
+                <!-- takes up entire row on mobile 1/2 of row on small tablet 
+                    an 1/3 of a row on all other devices using bootstrap col and row -->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
+                            <!-- frontside of card -->
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
@@ -431,6 +466,7 @@
                                     </div>
                                 </div>
                             </div>
+                             <!-- backside of card -->
                             <div class="backside">
                                 <div class="card">
                                     <div class="card-body text-center mt-4">
@@ -476,9 +512,12 @@
                 </div>
                 <!-- ./Team member -->
                 <!-- Team member -->
+                <!-- takes up entire row on mobile 1/2 of row on small tablet 
+                    an 1/3 of a row on all other devices using bootstrap col and row -->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
+                            <!-- frontside of card -->
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
@@ -496,6 +535,7 @@
                                     </div>
                                 </div>
                             </div>
+                               <!-- backside of card -->
                             <div class="backside">
                                 <div class="card">
                                     <div class="card-body text-center mt-4">
@@ -540,9 +580,12 @@
                 </div>
                 <!-- ./Team member -->
                 <!-- Team member -->
+                <!-- takes up entire row on mobile 1/2 of row on small tablet 
+                    an 1/3 of a row on all other devices using bootstrap col and row -->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
+                           <!-- frontside of card -->
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
@@ -560,6 +603,7 @@
                                     </div>
                                 </div>
                             </div>
+                               <!-- backside of card -->
                             <div class="backside">
                                 <div class="card">
                                     <div class="card-body text-center mt-4">
@@ -605,9 +649,12 @@
                 </div>
                 <!-- ./Team member -->
                 <!-- Team member -->
+                <!-- takes up entire row on mobile 1/2 of row on small tablet 
+                    an 1/3 of a row on all other devices using bootstrap col and row -->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
+                            <!-- frontside of card -->
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
@@ -624,6 +671,7 @@
                                     </div>
                                 </div>
                             </div>
+                               <!-- backside of card -->
                             <div class="backside">
                                 <div class="card">
                                     <div class="card-body text-center mt-4">
@@ -674,13 +722,13 @@
     <!-- Gym Section -->
     <!-- this wraps the entire gym section and its  3 subsections videos,trainning,results  -->
     <section class="wrapper gym-section-wrapper pb-5 container-fluid gym-section" id="gym-section-nav-link">
-        <!--row and col below classes wrap the tranning section-->
+        <!--row and col below classes wrap the tranning section takes up entire row on all devices using bootstap col an row classes-->
         <div class="row justify-content-center">
             <div class="col-11">
-                <!-- gym section main header -->
+                <!-- gym section main header takes up entire row on all devices using bootstap col an row classes -->
                 <h2 class="text-center main-header our-gym-header uppercase mt-lg-5">our gym</h2>
                 <article class="vids-section pt-md-3">
-                    <!-- sub header one training section -->
+                    <!-- sub header one  takes up entire row on all devices using bootstap col an row classes -->
                     <div class="row">
                         <div class="col">
                             <h3
@@ -690,14 +738,17 @@
                             </h3>
                         </div>
                     </div>
-                    <div class="hr-style my-3"></div>
                     <!-- training -subsection  -->
-
+                   <!-- adds red line under sub header for effect -->
+                    <div class="hr-style my-3"></div>
                     <!-- Grid column -->
+                    <!-- fontawsome icon of a video camera takes up entire row on all devices using bootstap col and row classes -->
                     <div class="col-12 text-center mt-lg-5 gym-section-logo"><i class="fas fa-video"></i></div>
                     <!-- Modified from a tutorial found at https://mdbootstrap.com/plugins/jquery/gallery/ -->
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-12  col-md-5 mt-5 vid-div-border p-0">
+                   <!-- row  wraps all tranning  section cards -->
+                   <div class="row d-flex justify-content-between">
+                       <!-- card takes up entire row on mobile an 1/2 of row on all other devices using bootstrap col an row classes -->
+                    <div class="col-12  col-md-5 mt-5 vid-div-border p-0">
                             <!--Modal: Name-->
                             <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="myModalLabel"
                                 aria-hidden="true">
@@ -746,6 +797,7 @@
                                     data-target="#modal1"></a>
                         </div>
                         <!-- Grid column -->
+                          <!-- card takes up entire row on mobile an 1/2 of row on all other devices using bootstrap col an row classes -->
                         <div class="col-12 col-md-5 mt-5 vid-div-border p-0">
                             <!--Modal: Name-->
                             <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="myModalLabel1"
@@ -795,6 +847,7 @@
                                     data-toggle="modal" data-target="#modal2"></a>
                         </div>
                         <!-- Grid column -->
+                          <!-- card takes up entire row on mobile an 1/2 of row on all other devices using bootstrap col an row classes -->
                         <div class="col-12 col-md-5 mt-5  vid-div-border p-0">
                             <!--Modal: Name-->
                             <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="myModalLabel2"
@@ -845,6 +898,7 @@
                                     data-toggle="modal" data-target="#modal3"></a>
                         </div>
                         <!-- Grid column -->
+                          <!-- card takes up entire row on mobile an 1/2 of row on all other devices using bootstrap col an row classes -->
                         <div class="col-12 col-md-5 mt-5  vid-div-border p-0">
                             <!--Modal: Name-->
                             <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="myModalLabel3"
@@ -903,7 +957,7 @@
 
         <!-- facilities subsection -->
         <article class="mt-md-5 facilities">
-            <!-- gym-sub-header two facilities-subsection  -->
+            <!-- sub header two takes up entire row on all devices using bootstap col an row classes -->
             <div class="row mt-5">
                 <div class="col">
                     <h3
@@ -913,12 +967,16 @@
                     </h3>
                 </div>
             </div>
+            <!-- adds red line under sub header for effect -->
             <div class="hr-style my-3"></div>
+            <!-- fontawsome icon of a camera takes up entire row on all devices using bootstap col and row classes -->
             <div class="row">
                 <div class="col-12 text-center mt-md-5  gym-section-logo"><i class="fas fa-camera-retro"></i>
                 </div>
             </div>
             <!-- Modified from a tutorial found athttps://bootsnipp.com/snippets/ZXyEz -->
+             <!-- all images take up entire row on mobile an 1/3 of row on all 
+                other  devices using bootstrap col an row classes. all images target a modal when clicked -->
             <div class="row mt-3 justify-content-center">
                 <div class=" col-12 col-md-4" data-toggle="modal" data-target="#modal">
                     <a href="#lightbox" data-slide-to="0"><img src="assets/images/gym-rooms-img-1.jpg"
@@ -964,6 +1022,7 @@
 
 
                                 </ol>
+                                <!-- images will be displayed on carousel when clicked -->
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="assets/images/gym-rooms-img-1.jpg"
                                             class="w-100" alt=""></div>
@@ -989,14 +1048,13 @@
                     </div>
                 </div>
             </div>
-
-
-        </article>
+   </article>
 
 
         <!-- the results subsection -->
         <article class="text-center mt-3">
             <!-- gym-sub-header-three the results section -->
+            <!-- sub header three takes up entire row on all devices using bootstap col an row classes -->
             <div class="row">
                 <div class="col">
                     <h3
@@ -1005,16 +1063,19 @@
                     </h3>
                 </div>
             </div>
+           <!-- adds red line under sub header for effect -->
             <div class="hr-style my-3"></div>
+            <!-- fontawsome icon of a dumbell camera takes up entire row on all devices using bootstap col and row classes -->
             <div class="row">
                 <div class="col-12 text-center mt-md-5  gym-section-logo"><i
                         class="fas fa-dumbbell video-icon-gym-section"></i>
                 </div>
             </div>
             <!-- Modified from a tutorial found at https://mdbootstrap.com/docs/jquery/sections/testimonials/ -->
+          <!-- quote will take up full row on mobile an 1/2 of a row on all other devices using bootstarp col and row classes -->
             <div class="row">
                 <div class="col-md-5 md-my-5">
-                    <p class="white text-barlow italic  test-section-customer-quotes mt- text-md-justify">
+                    <p class="white text-barlow italic test-section-customer-quotes mt-text-md-justify">
 
                         <i><q>This is me before joining dumbell fitness
                                 and taking part In there 12 week spartan program.
@@ -1026,6 +1087,7 @@
                     <h6 class=" my-3 dark-red text-barlow mt-3 customer-name-test-section">
                         Graham lynch happy dumbell fitness customer</h6>
                 </div>
+                  <!-- carousel will take up full row on mobile an 1/2 of a row on all other devices using bootstarp col and row classes -->
                 <div class="wrapper-carousel-fix mt-2 col-11 offset-md-1 col-md-6">
                     <!-- Carousel Wrapper -->
                     <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade"
@@ -1037,6 +1099,7 @@
                                 <div class="testimonial">
                                     <!--Avatar-->
                                     <h4 class="font-weight-bold white text-barlow uppercase mb-5">week 1</h4>
+                                  <!-- before image added -->
                                     <div class="avatar mx-auto">
                                         <img src="assets/images/3-month-male-fat-loss-customer-test-section-img-one.jpg"
                                             class="first-img-carousel img-carousel img-fluid"
@@ -1052,6 +1115,7 @@
                                     <!--Avatar-->
                                     <h4 class="font-weight-bold dark-red barlow uppercase mb-5 text-barlow">week 12
                                     </h4>
+                                   <!-- before image added -->
                                     <div class="avatar mx-auto">
                                         <img src="assets/images/3-month-male-fat-loss-customer-test-section-img-two (1).jpg"
                                             class="second-img-carousel 
@@ -1091,13 +1155,17 @@
     <!-- Modified from a tutorial found at https://colorlib.com/wp/bootstrap-footer/  -->
 
     <footer class="pt-5 pb-4 container-fluid" id="contact">
+      <!-- row wraps entire footer section -->
         <div class="row">
-            <div class=" col-sm-6 col-md-5  mt-2 mb-4">
+           <!-- col wraps entire about us section takes up entire row on mobile its col-6 class is centered and half a row on all other devices using bootstrap col and row classes-->
+            <div class=" col-6 col-md-5  mt-2 mb-4">
                 <div class="col-10 ml-5 mb-md-5">
-                    <h5 class="mb-4  font-weight-bold">ABOUT US</h5>
+                    <h5 class="mb-4 font-weight-bold">ABOUT US</h5>
                 </div>
 
                 <ul class="f-address">
+                  <!-- internet expoler fix class added to all list items to override 
+                    bootstap col-10 class issue only taking effect on interent expoler browser -->
                     <li>
                         <div class="row">
                             <div class="col-1"><i class="fas fa-map-marker dark-red"></i></div>
@@ -1128,8 +1196,9 @@
                     </li>
                 </ul>
             </div>
-
-            <div class=" col-sm-6 col-md-5  offset-2 mt-2 mb-4">
+             <!-- wraps connect with us section takes up entire row on mobile and 1/2 of row an 
+                all other devices using bootstrap col and row classes -->
+            <div class=" col-6 col-md-5 offset-2 mt-2 mb-4">
                 <h5 class="mb-4  ml-3 font-weight-bold">CONNECT WITH US</h5>
 
                 <div class="form-group">
@@ -1160,23 +1229,27 @@
             <!-- Copyright -->
             <section class="copyright">
                 <div class="container">
+                   <!-- takes up entire row on all devices using bootstarp rowl an col classes -->
                     <div class="row">
-                        <div class="col-md-12 ">
+                        <div class="col-md-12">
                             <h2 class="text-center text-white">
                                 &copy; 2019 Dumbell Fitness . All Rights Reserved.
                             </h2>
                         </div>
                     </div>
                 </div>
-            </section>
+                 </section>
+                </div>
     </footer>
 
     <!-- /footer -->
 
     <!-- modal -->
+    <!-- modal added all join up buttons on paged are linked to it -->
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+               <!-- modal header -->
                 <div class="modal-header">
                     <h5 class="modal-title">JOIN US TODAY AT DUMBELL <span class="dark-red">FITNESS!</span>
                     </h5>
@@ -1184,6 +1257,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+               <!-- modal body -->
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
@@ -1209,7 +1283,7 @@
                         <textarea rows="5" name="sitefeedback" id="sitefeedback" class="form-control"
                             placeholder="Please provide us with any questions you may have here" required></textarea>
 
-
+                         <!-- modal submit button  -->
                         <button type="submit" class="btn btn-modal btn-cta">Submit</button>
                     </form>
                 </div>
