@@ -602,6 +602,7 @@ margin-bottom: 4rem;
 /* adjusting card image heights */
 .frontside .card .card-body img {
     height: 11rem;
+    width: 100%;
     
 }
 

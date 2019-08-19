@@ -19,10 +19,11 @@
 
     <!-- Navbar -->
     <!-- Modified from a tutorial found at  https://startbootstrap.com/snippets/full-image-header/ -->
-  <header>
+  <!-- <header>   navabar container -->
         <div class="container-fluid nav-container">
+                 <!-- navbar has a fixed an expands on large tablets an bigger -->
             <nav class="navbar navbar-expand-lg navbar-fixed-top">
-                <!-- logo  hidden on mobile -->
+                <!-- logo  hidden on mobile can be seen on all there devices -->
                 <div class="row">
                     <div class="col d-none d-sm-block"> <a class="navbar-brand" href="#home-section-nav-link"
                             aria-label="gym logo and home link"><img class="gym-logo"
@@ -94,14 +95,14 @@
                         <button class="btn btn-callout btn-cta hvr-wobble-horizontal btn-lg" data-toggle="modal"
                             data-target="#signUpModal">Join
                             us</button>
-                             <!-- offer text visable on mobile only used bootstrap class for this -->
+                             <!-- offer text visable on mobile only. used bootstrap class for this -->
                             <div class="col d-block d-sm-none mintgreen mt-3 bold uppercase mobile-only-callout-below-text">
                             <p>Check out what we have to offer below </p>
                         </div>
                     </article>
                 </div>
-               <!-- image only visable for for laptop an above image displayed below 
-                    jumbuton on tablets an to the right of jumbuton  on bigger devices this was done using bootstrap order an offset classes -->
+               <!-- image only visable on  laptop and and bigger devices. image will be  displayed below 
+                    jumbuton on tablets and to the right of jumbuton  on bigger devices this was done using bootstrap order and offset classes -->
                 <div class="col-11 d-none d-xl-block col-xl-3 order-xl-3 mb-xl-5"><img
                         class="special-img-two offer-img hvr-grow" src="assets/images/commitimage.png"
                         alt="a image of a women including a special offer"></div>
@@ -113,13 +114,13 @@
 
     <!-- About Section  -->
     <section class="container-fluid about-section pb-3" id="about-section-nav-link">
-       <!-- main about section header takes up entire row an all devices -->
+       <!-- main about section header takes up  row an all devices -->
         <div class="row justify-content-center">
             <div class="col-11 mt-5">
                 <h2 class="text-center main-header main-header-about-section uppercase">About us</h2>
             </div>
         </div>
-         <!-- about section sub header takes up entire row an all devices using bootstap row and col classes -->
+         <!-- about section sub header takes up 11/12 of  row an all devices using bootstap row and col classes -->
         <div class="row justify-content-center">
             <div class="col-11">
                 <h3 class="uppercase about-header sub-header about about-sub-header-one text-center pt-3">respect <span
@@ -146,8 +147,9 @@
                                 train<span class="dark-red"> for</span> success</h3>
                         </div>
                     </div>
-                      <!-- about section main paragraph  -->
-                    <p class="about-text pt-3"> Here at the Dumbell fitness we are dedicated to the pursuit of
+                      <!-- about section main paragraph takes up 10/12 of  row on all devices row content is centered using bootstrap col an row classes  -->
+                         <div class="row justify-content-center">
+                      <p class=" col-10 texxt-center about-text pt-3"> Here at the Dumbell fitness we are dedicated to the pursuit of
                         peak
                         performance for all
                         of our members.
@@ -157,10 +159,14 @@
                         Dublin's city center. Our training methods are world famous. Please explore our website,
                         Get in touch join our mailing list where you gain access to news, mailings and events.
                         Check out our 12 week spartan challenge.</p>
+                    </div>
+                        <!-- row wraps an centers images -->
                     <div class="row justify-content-center">
+                        <!-- image visable for tablet size  an up 1/2 of row on all other devices using bootstrap col and row classes -->
                         <div class="col-12 col-md-6 text-center mb-3"><img class="img-fluid"
                                 src="assets/images/gym-quotes-img-one.jpg" alt="image of inspiring quote">
                         </div>
+                       <!-- image visable for tablet size  an up 1/2 of row on all other devices using bootstrap col and row classes -->
                         <div class="d-none d-md-block col-12 col-md-6 mb-3 text-center">
                             <img class="img-fluid" src="assets/images/gym-quotes-img-two.jpg"
                                 alt="image of inspiring quote">
@@ -183,7 +189,7 @@
     <!-- Pricing  -->
    
     <section class="pricing container-fluid pricing-wrapper pt-5 pb-5" id="pricing-section-nav-link">
-          <!-- pricing section main header uses bootstrap row an col classes to take entire row on all devices -->
+          <!-- pricing section main header uses bootstrap row an col classes to take up 11/12 of row on all devices -->
         <div class="row justify-content-center">
             <div class="col-11 our-price-plans-div">
                 <h2 class="text-center sub-header pricing-header white uppercase pb-4">our <span class="mintgreen">price
@@ -194,7 +200,7 @@
         <!-- div below wraps pricing cards -->
        <div class="row justify-content-center">
             <!-- value Tier -->
-              <!-- pricing card takes up entire row on mobile and 1/3 of a row on all other 
+              <!-- pricing card takes up 11/12 row on mobile and 1/3 of a row on all other 
                 devices using bootstrap row an col classes hover effect added so when user hovers over item it grows -->
             <div class="col-11 col-lg-4 hvr-grow">
                 <div class="card mb-5 mb-lg-0">
@@ -229,7 +235,7 @@
                 </div>
             </div>
             <!-- standard Tier -->
-            <!-- pricing card takes up entire row on mobile and 1/3 of a row on all other 
+            <!-- pricing card takes up 11/12 of row on mobile and 1/3 of a row on all other 
                 devices using bootstrap row an col classes hover effect added so when user hovers over item it grows -->
             <div class=" col-11 col-lg-4 hvr-grow">
                 <div class="card mb-5 mb-lg-0">
@@ -265,7 +271,7 @@
                 </div>
             </div>
             <!-- Premuim Tier -->
-            <!-- pricing card takes up entire row on mobile and 1/3 of a row on all other 
+            <!-- pricing card takes up 11/12 row on mobile and 1/3 of a row on all other 
                 devices using bootstrap row an col classes hover effect added so when user hovers over item it grows -->
             <div class="col-11 col-lg-4 hvr-grow">
                 <div class="card">
@@ -306,7 +312,9 @@
     <section class="container-fluid team-section" id="team">
         <!-- parent of team section background image and wraps entire team section  -->
         <div class="team-section-img-wrapper" id="team-section-nav-link">
-           <!-- main team section header takes up entire row on all devices using bootstrap col and row classes -->
+             <!-- all cards where given 11/12 of row on mobile to avoid a streched look on the Images and 
+                 the image on the card taking up every bit of the screen -->
+            <!-- main team section header takes up 11/12 of row on all devices using bootstrap col and row classes -->
             <div class="row justify-content-center">
                 <div class="col-11">
                     <h5 class="main-header main-header-team-section">OUR TEAM</h5>
@@ -315,7 +323,7 @@
              <!-- row wraps entire team section -->
             <div class="row justify-content-center">
                 <!-- Team member -->
-                <!-- takes up entire row on mobile 1/2 of row on small tablet 
+                <!-- takes up 11/12 of  row on mobile 1/2 of row on small tablet 
                     an 1/3 of a row on all other devices using bootstrap col and row -->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
@@ -380,7 +388,7 @@
                 </div>
                 <!-- ./Team member -->
                 <!-- Team member -->
-                <!-- takes up entire row on mobile 1/2 of row on small tablet 
+                <!-- takes up 11/12 of row on mobile 1/2 of row on small tablet 
                     an 1/3 of a row on all other devices using bootstrap col and row -->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
@@ -447,8 +455,8 @@
                 </div>
                 <!-- ./Team member -->
                 <!-- Team member -->
-                <!-- takes up entire row on mobile 1/2 of row on small tablet 
-                    an 1/3 of a row on all other devices using bootstrap col and row -->
+                <!-- takes up 11/12 of row  on mobile 1/2 of row on small tablet 
+                    an 1/3 of a row on all other devices using bootstrap col and row  classes-->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
@@ -514,7 +522,7 @@
                 </div>
                 <!-- ./Team member -->
                 <!-- Team member -->
-                <!-- takes up entire row on mobile 1/2 of row on small tablet 
+                <!-- takes up 11/12 row on mobile 1/2 of row on small tablet 
                     an 1/3 of a row on all other devices using bootstrap col and row -->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
@@ -581,7 +589,7 @@
                 </div>
                 <!-- ./Team member -->
                 <!-- Team member -->
-                <!-- takes up entire row on mobile 1/2 of row on small tablet 
+                <!-- takes up 11/12 of row on mobile 1/2 of row on small tablet 
                     an 1/3 of a row on all other devices using bootstrap col and row -->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
@@ -649,7 +657,7 @@
                 </div>
                 <!-- ./Team member -->
                 <!-- Team member -->
-                <!-- takes up entire row on mobile 1/2 of row on small tablet 
+                <!-- takes up 11/12 of row on mobile 1/2 of row on small tablet 
                     an 1/3 of a row on all other devices using bootstrap col and row -->
                 <div class="col-11 col-sm-6 col-lg-4">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
@@ -721,7 +729,7 @@
     <!-- Gym Section -->
     <!-- this wraps the entire gym section and its  3 subsections videos,trainning,results  -->
     <section class="wrapper gym-section-wrapper pb-5 container-fluid gym-section" id="gym-section-nav-link">
-        <!--row and col below classes wrap the tranning section takes up entire row on all devices using bootstap-->
+        <!--row and col below classes wrap the tranning section takes up 11/12 row on all devices using bootstap-->
         <div class="row justify-content-center">
             <div class="col-11">
                 <!-- gym section main header takes up entire row on all devices using bootstap col an row classes -->
@@ -1076,9 +1084,9 @@
             <!-- Modified from a tutorial found at https://mdbootstrap.com/docs/jquery/sections/testimonials/ -->
           <!-- quote will take up full row on mobile an 1/2 of a row on all other devices using bootstarp col and row classes -->
             <div class="row">
-                <div class="col-md-5 md-my-5">
+                <div class="col col-md-5 md-my-5">
                     <p class="white text-barlow italic test-section-customer-quotes mt-text-md-justify">
-
+                             <!-- a quote describing a transformation -->
                         <i><q>This is me before joining dumbell fitness
                                 and taking part In there 12 week spartan program.
                                 Low on confidence an energy I was extremly unhappy with my over all
@@ -1089,12 +1097,14 @@
                     <h6 class=" my-3 dark-red text-barlow mt-3 customer-name-test-section">
                         Graham lynch happy dumbell fitness customer</h6>
                 </div>
-                  <!-- carousel will take up full row on mobile an 1/2 of a row on all other devices using bootstarp col and row classes -->
-                <div class="wrapper-carousel-fix mt-2 col-11 offset-md-1 col-md-6">
+                  <!-- carousel will take up 11/12 of  row on mobile an 1/2 of a row on all other devices offset class was also used to algin carousel. using bootstarp col and row classes -->
+                     
+                  <div class="wrapper-carousel-fix mt-2 col-11 offset-md-1 col-md-6">
                     <!-- Carousel Wrapper -->
                     <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade"
                         data-ride="carousel" data-interval="false">
                         <!--Slides-->
+                      <!-- carousel added -->
                         <div class="carousel-inner">
                             <!--First slide-->
                             <div class="carousel-item active">
@@ -1119,7 +1129,7 @@
                                     </h4>
                                    <!-- before image added -->
                                     <div class="avatar mx-auto">
-                                        <img src="assets/images/3-month-male-fat-loss-customer-test-section-img-two (1).jpg"
+                                        <img src="assets/images/3-month-male-fat-loss-customer-test-section-img-two.jpg"
                                             class="second-img-carousel 
                                                 img-carousel img-fluid"
                                             alt="an image of a man posing withoot a top on">
@@ -1161,14 +1171,14 @@
         <div class="row">
            <!-- col wraps entire about us section takes up entire row on mobile its 
             col-6 class is centered 1/2  a row on all other devices using bootstrap col and row classes-->
-            <div class=" col-6 col-md-5  mt-2 mb-4">
+            <div class="col col-6 col-md-5  mt-2 mb-4">
                 <div class="col-10 ml-5 mb-md-5">
                     <h5 class="mb-4 font-weight-bold">ABOUT US</h5>
                 </div>
 
                 <ul class="f-address">
                   <!-- internet expoler fix class added to all list items to override 
-                    bootstap col-10 class issue only taking effect on interent expoler browser -->
+                    bootstap col-10 class issue only taking effect on interent explorer browser -->
                     <li>
                         <div class="row">
                             <div class="col-1"><i class="fas fa-map-marker dark-red"></i></div>
@@ -1201,7 +1211,7 @@
             </div>
              <!-- wraps connect with us section takes up entire row on mobile and 1/2 of row an 
                 all other devices using bootstrap col and row classes -->
-            <div class=" col-6 col-md-5 offset-2 mt-2 mb-4">
+            <div class="col col-6 col-md-5 offset-2 mt-2 mb-4">
                 <h5 class="mb-4  ml-3 font-weight-bold">CONNECT WITH US</h5>
                  <!-- form group -->
                 <div class="form-group">
