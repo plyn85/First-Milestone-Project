@@ -150,7 +150,7 @@ All sections of the website where tested trough out the project using chrome dev
      and two for laptops and desktops. For this feature bootstraps grid system was used. The background Image wont remain fixed when viewed on a chrome browser on android.
       As it does not effect the overall flow of the website and I could not find a solution to the bug I decided to leave It in. 
   
-    3. About section- The about sections responsiveness was tested on all devices. Both bootstrap an media queries where used.
+  3. About section- The about sections responsiveness was tested on all devices. Both bootstrap an media queries where used.
       Bootstrap was used to show or block Images on different devices. 
       Media queries where used to change the size of text an headers.
  
@@ -183,7 +183,7 @@ All sections of the website where tested trough out the project using chrome dev
       
 
 ## Deployment 
-The site is hosted on GithHub Pages at[https://plyn85.github.io/First-Milestone-Project/](https://plyn85.github.io/First-Milestone-Project/) and is built from the master branch. The Master
+The site is hosted on GithHub Pages at [https://plyn85.github.io/First-Milestone-Project/](https://plyn85.github.io/First-Milestone-Project/) and is built from the master branch. The Master
 branch was created in the repository by:
 
   1. On GitHub, navigate to your GitHub Pages site's repository.
@@ -210,7 +210,7 @@ Should you wish to clone this:
 ### Media
   Many of the Images where taken from google Images. 
     Some Images and the gym logo where Designed by myself using [ https://www.canva.com/](https://www.canva.com/)
-    Ressources that where also used for Images where [https://unsplash.com/]([https://unsplash.com/) and[https://pixabay.com/.](https://pixabay.com/.)
+    Ressources that where also used for Images where [https://unsplash.com/](https://unsplash.com/) and [https://pixabay.com/.](https://pixabay.com/.)
     All videos in the trainning section of the website where taken from [https://www.youtube.com/](https://www.youtube.com/)
 
 ### Acknowledgements
