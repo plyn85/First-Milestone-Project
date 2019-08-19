@@ -110,11 +110,7 @@ p {
     text-shadow: 0 0 13px rgba(0, 0, 0, .88);
 }
 
-.gym-section-logo i {
-    font-size: 3.2rem;
-    color: #bf051e;
-}
-
+.
 /* targeting padding in  modal body in facilities only */
 
 .facilities .modal-body {
@@ -123,8 +119,76 @@ p {
 
 /* end reusable Components */
 
+/* icons */
+.gym-section-logo i {
+    font-size: 3.2rem;
+    color: #bf051e;
+}
+
+/* adding transition timing effect to card links for a more subtle effect when hovered */
+.social-pet li a,
+.modal-footer-gym-section i,
+.social-icon i {
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+/* changing links to red when hovered */
+.modal-footer-gym-section i:hover,
+.social-icon i:hover {
+    margin-bottom: 0;
+    color: #bf051e;
+}
+
+/* adding green to ticks in pricing section card */
+.fa-li i {
+    color: #5a9a5a;
+}
+/* carousel  for customer transformation  altered here */
+.carousel-before-after i {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+/* removed padding for socail links so they could be displayed on one line on mobile */
+#footer-social-links {
+    padding: 0rem;
+}
+
+.social-pet li a {
+    height: 2.2rem;
+    width: 2.3rem;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    line-height: 2.2rem;
+    background-color: #8e8e8f;
+
+}
+
+.social-pet li:nth-child(2) a {
+    background-color: #8e8e8f;
+}
+
+.social-pet li:nth-child(3) a {
+    background-color: #8e8e8f;
+}
+
+.social-pet li:nth-child(4) a {
+    background-color: #8e8e8f;
+}
+
+.social-pet li a:hover {
+    background-color: #bf051e;
+
+}
+
+
+
 /* buttons */
-/* used for all buttons */
+/*  button call to action */
 .btn-cta {
     background-color: #bf051e;
     color: #fff;
@@ -140,7 +204,7 @@ p {
     -o-transition: all 0.5s ease-in-out;
 }
 
-/* used for all buttons */
+/* buttons in hovered an active state */
 .btn-cta:link,
 .btn-cta:visited,
 .btn-cta:hover,
@@ -157,42 +221,42 @@ p {
 
 }
 
-/* used for navbar section button */
+/* used for navbar section button  only*/
 .btn-navbar {
     margin-top: 0.3rem;
 }
 
-/* used for navbar section button */
+/* used for navbar  pricing section  button  green color overrides red from btn cta*/
 .btn-pricing {
     display: block;
     margin: 0 auto;
     background-color: #5a9a5a;
 }
 
-/* used for modal section button */
+/* to stop btn in modal footer sticking to textbox */
 .btn-modal {
     margin-top: 0.45rem;
-    background-color: #bf051e;
-    color: #fff;
-    border-radius: 2.2rem;
+   
 }
 
-.btn-modal:link,
-.btn-modal:visited,
-.btn-modal:hover,
-.btn-modal:active {
-    color: #f2f2f2;
-    border-color: #fff;
-}
-
-.btn-footer {
+/* overriding some of cta class here to make modal btn fit in to modal footer in traning section modal videos */
+.modal-footer .btn {
     font-size: 1rem;
+    padding: 0.2rem
+}
+/* footer button */
+.btn-footer {
+    background-color: #8e8e8f;
 }
 
+.btn-footer:hover {
+    background-color: #bf051e;
+    border-color: #bf051e;
+}
 /* end buttons */
 
 /* Navbar */
-
+/* a border was added here to surround gym logo Image */
 .gym-logo {
     margin-left: 0.55rem;
     border: 0.25rem solid#bf051e;
@@ -209,6 +273,16 @@ added to override carosel z-index from testimonials section*/
     left: 0;
     width: 100%;
     z-index: 2;
+}
+/* adding opacity here for mobile tablets and small tablets to make navbar blend 
+with background call out image but still visable when scrolling page */
+.navbar {
+    background-color: black;
+    opacity: 0.7;
+}
+
+.navbar-toggler {
+    margin-right: 1.5rem;
 }
 
 /* targeting entire navbar links as a group */
@@ -240,7 +314,7 @@ added to override carosel z-index from testimonials section*/
 
 }
 
-/* targeting navlinks turning text green when hovered */
+/* targeting navlinks turning text green  enlarged an changed to italics when hovered */
 .nav-link:hover,
 .nav-link:active {
 
@@ -277,7 +351,7 @@ added to override carosel z-index from testimonials section*/
     background-color: black;
 }
 
-/* callout container image to cover entire view height flexbox added to target jumbotron */
+/* callout container image to cover entire view height flexbox added to  algin jumbotron elements */
 
 .callout-container {
 
@@ -321,6 +395,7 @@ added to override carosel z-index from testimonials section*/
     font-weight: 700;
     margin: 1.8rem;
 }
+
 /* removing background color jumbtron to have text displayed over background image */
 .jumbotron {
     background-color: transparent;
@@ -334,6 +409,7 @@ added to override carosel z-index from testimonials section*/
     letter-spacing: 1px;
     margin-top: 2.2rem;
 }
+
 /* targeting text guiding user to scroll down rest of page visable on mobile only */
 .mobile-only-callout-below-text {
     font-size: 1.7rem;
@@ -393,7 +469,7 @@ added to override carosel z-index from testimonials section*/
 /* Modified from a tutorial found at https://startbootstrap.com/snippets/pricing-table/ */
 
 .pricing .card {
-    background-color:lightgrey;
+    background-color: lightgrey;
     border: 0.4rem solid#272c2f;
     border-radius: 1rem;
 }
@@ -437,9 +513,7 @@ ul {
 
 }
 
-.fa-li i {
-    color: #5a9a5a;
-}
+
 
 /* end pricing section */
 
@@ -455,6 +529,7 @@ ul {
 .team-section {
     background-color: black;
 }
+
 /* background image added to team section to cover backgrond of entire section */
 .team-section {
     background: url('../images/larger-background-img.jpg') no-repeat fixed;
@@ -467,8 +542,8 @@ ul {
 }
 
 .main-header-team-section {
-font-size: 4rem;
-margin-bottom: 4rem;
+    font-size: 4rem;
+    margin-bottom: 4rem;
 }
 
 /* targeting button on teams section */
@@ -485,10 +560,12 @@ margin-bottom: 4rem;
     background-color: #bf051e;
     border-color: #bf051e;
 }
+
 /* padding on entire team section */
 .team-section {
     padding: 1.9rem 0;
 }
+
 /* making card text more visable adding white color */
 .backside .card-text {
     color: #fff;
@@ -581,29 +658,19 @@ margin-bottom: 4rem;
     font-size: 1.1rem;
     color: #fff !important;
 }
-/* adding transition timing effect to card links for a more subtle effect when hovered */
-.social-icon i {
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-}
-/* changing links to red when hovered */
-.social-icon i:hover {
-    margin-bottom: 0;
-    color: #bf051e;
-}
+
 
 .frontside .card .card-title,
 .backside .card .card-title {
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: #fff !important;
 }
+
 /* adjusting card image heights */
 .frontside .card .card-body img {
     height: 11rem;
     width: 100%;
-    
+
 }
 
 /* end team section */
@@ -611,52 +678,27 @@ margin-bottom: 4rem;
 
 /* Gym section */
 
-/* tranning-section-gym-sub-section */
-/* Modified from a tutorial found at https://mdbootstrap.com/plugins/jquery/gallery/ */
+/* traning-section-gym-sub-section */
 
 .our-gym-header {
-    margin: 2rem 0 2rem 0;
-    border: 1rem solid #bf051e;
     font-size: 50px;
 }
 
-.gym-section-text {
-    color: white;
-    font-family: "Barlow", sans-serif;
-    font-style: italic;
-}
-
-
-
+/* adding color to modal footer in trainning videos */
 .modal-footer-gym-section {
     background-color: black;
 }
-
+/* adding background color to the links */
 .modal-footer-gym-section a {
     background-color: #8e8e8f;
 
 
 }
 
-.modal-footer-gym-section i {
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    color: #fff;
-
-}
-
-.modal-footer-gym-section i:hover {
-    color: #bf051e;
-}
-
 /* end tranning-section-gym-sub-section */
 
-
-
 /*results section */
-
+/* Image .carousel has a  Z -index of 1 less than the nav bar so  is nit shown above nav when scrolling page */
 .img-carousel {
     z-index: 1;
     border-radius: 0rem;
@@ -670,10 +712,6 @@ margin-bottom: 4rem;
     border: 0.25rem solid red;
 }
 
-.carousel-before-after i {
-    font-size: 2.5rem;
-    font-weight: 900;
-}
 
 .test-section-customer-quotes {
     font-size: 1.3rem;
@@ -723,64 +761,10 @@ footer a {
     color: #ccc;
 }
 
-
 .social-pet li {
     display: inline-block;
     margin-right: 0.5rem;
 
-
-}
-
-#footer-social-links {
-    padding: 0rem;
-}
-
-.social-pet li a {
-    height: 2.2rem;
-    width: 2.3rem;
-    border-radius: 50%;
-    text-align: center;
-    display: block;
-    line-height: 2.2rem;
-    background-color: #8e8e8f;
-    color: #fff;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-}
-
-.social-pet li:nth-child(2) a {
-    background-color: #8e8e8f;
-}
-
-.social-pet li:nth-child(3) a {
-    background-color: #8e8e8f;
-}
-
-.social-pet li:nth-child(4) a {
-    background-color: #8e8e8f;
-}
-
-.social-pet li a:hover {
-    background-color: #bf051e;
-
-}
-
-.btn-footer {
-    background-color: #8e8e8f;
-}
-
-.btn-footer:hover {
-    background-color: #bf051e;
-    border-color: #bf051e;
-}
-
-.social-pet li a:hover i {
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
 }
 
 .f-address li {
@@ -819,24 +803,12 @@ footer a {
 
 /* media queries */
 
-/* targeting navbar on mobile only to make navlinks for visable */
-@media(max-width:568px) {
-    .navbar {
-        background-color: black;
-        opacity: 0.7;
-    }
-
-    .navbar-toggler {
-        margin-right: 1.5rem;
-    }
-}
-
-/* for tablets */
+/* for small tablets */
 
 @media(min-width:567px) and (max-width:991px) {
 
     /* navbar */
-
+/* adjusting the navbar to suit suit small tablets */
     .navbar {
         font-size: 2rem;
         padding: 7px 0;
@@ -854,7 +826,8 @@ footer a {
 
     /* callout section */
 
-    /* adjusting jumbuton for tablet */
+    /* adjusting jumbuton for small tablets  */
+   /* moving the entire jumbotron to take advanatage of longer tablet screens */
     .callout {
         margin-top: 7rem;
     }
@@ -873,7 +846,7 @@ footer a {
     }
 
     /* about section */
-
+/* adjustment to the about section headers and text to suit  small tablets */
     .main-header {
         font-size: 8rem;
     }
@@ -896,20 +869,20 @@ footer a {
     }
 
     /* pricing section */
-
+/* adjustment to the about pricing section  header to suit  small tablets */
     .pricing-header {
         font-size: 5rem;
 
     }
 
     /* team section */
-
+/* adjustment to the team section header  small tablets */
     .main-header-team-section {
         font-size: 9rem;
     }
 
     /* gym section */
-
+/* adjustment to the about gym headers to suit  small tablets */
     .our-gym-header {
         border: 1rem solid #bf051e;
         font-size: 9rem;
@@ -922,7 +895,7 @@ footer a {
 
 
     /* customer testimonials  section */
-
+/* adjustment to the testimonials section text to suit  small tablets */
     .test-section-customer-quotes {
         margin-top: 6rem;
     }
@@ -936,7 +909,7 @@ footer a {
 @media(min-width: 992px) and (max-width:1180px) {
 
     /* navbar */
-    /*targeting navbar an navitems on larger-tablets */
+    /*targeting navbar an navitems to suit larger-tablets */
     .mynavlinks {
         margin-left: 4rem;
         margin-top: 1.7rem;
@@ -954,7 +927,7 @@ footer a {
     }
 
     /* callout section */
-    /* adjusting jumbuton for ipad pro */
+    /* adjusting jumbuton for larger tablets */
     .callout {
         margin-top: 18rem;
     }
@@ -978,7 +951,7 @@ footer a {
     }
 
     /* about section */
-
+/*  adjusting about section headers  an text  for larger tablets */
     .main-header-about-section {
         font-size: 11rem;
     }
@@ -1006,12 +979,12 @@ footer a {
     }
 
     /* pricing section */
-
+   /*  adjusting  pricing section  header  for larger tablets */
     .pricing-header {
         font-size: 6rem;
 
     }
-
+/* adjustments to bottom of pricing section cards to have equal length on large tablets */
     #last-list-item-second-priceplan {
         margin-bottom: 3.9rem;
     }
@@ -1021,13 +994,13 @@ footer a {
     }
 
     /* team section */
-
+  /*  adjusting team  section  header  for larger tablets */
     .main-header-team-section {
         font-size: 12.5rem;
     }
 
     /* gym section */
-
+  /*  adjusting gym section  headers  for larger tablets */
     .our-gym-header {
         border: 1rem solid #bf051e;
         font-size: 13rem;
@@ -1040,7 +1013,7 @@ footer a {
 
 
     /* customer testimonials section */
-
+  /*  adjusting testimonials   header  for larger tablets */
     .test-section-customer-quotes {
         font-size: 2rem;
         line-height: 2.5rem;
@@ -1057,7 +1030,7 @@ footer a {
 @media(min-width: 1200px) {
 
     /*  navbar section  */
-
+/* adjusting navbar an nav items  for laptops */
     .gym-logo {
         height: 6rem;
         width: auto;
@@ -1069,21 +1042,18 @@ footer a {
         margin-left: 19.5rem;
 
     }
-
+/* toning down the navbar opacity here for laptops to make nav less visable on background image due to wider screen  an nav taking up more space   */
     .navbar {
-        background-color: black;
         opacity: 0.5;
     }
 
     .nav-item {
         font-size: 2rem;
         font-weight: 600;
-    }
-
-    .nav-item {
         margin: 0rem 0.625rem;
     }
 
+/* adjustments made here to align images with jumbotron on laptops and larger devices */
     .special-img-one {
         margin-left: 7rem;
     }
@@ -1112,8 +1082,7 @@ footer a {
     /* end callout section */
 
     /* about section */
-
-
+/* adjusting about section headers and text here for laptops an larger devices */
     .main-header-about-section {
         margin-top: 2.2rem;
         font-size: 15rem;
@@ -1142,15 +1111,13 @@ footer a {
 
     /* end about section */
 
-
-
     /* pricing section */
-
+/* adjusting  pricing  header here for laptops an larger devices */
     .pricing-header {
         font-size: 7.5rem;
 
     }
-
+/* adjustments to bottom of pricing section cards to have equal length on laptops and larger devices */
     #last-list-item-second-priceplan {
         margin-bottom: 3.9rem;
     }
@@ -1163,12 +1130,12 @@ footer a {
 
 
     /* team section */
-
+/* adjusting about team section header here for laptops an larger devices */
     .main-header-team-section {
         font-size: 11rem;
     }
 
-    /* team section cards size for mobile,laptops and up slighty narrow to aviod streched look */
+    /* team section cards size adjusted here  for laptops and larger devices  to slighty narrow to aviod streched look */
     .team-section-img-wrapper {
         width: 75%;
     }
@@ -1181,7 +1148,7 @@ footer a {
     /* end team section */
 
     /* gym section */
-
+/* adjusting gym  header here for laptops an larger devices */
     .our-gym-header {
         border: 16px solid #bf051e;
         font-size: 17rem;
@@ -1195,7 +1162,7 @@ footer a {
     /* end gym section */
 
     /* customer testimonials section */
-
+/* adjusting testimonials  text  here for laptops an larger devices */
     .test-section-customer-quotes {
         margin-top: 7rem;
         font-size: 2rem;
@@ -1206,7 +1173,7 @@ footer a {
 /* end for laptops */
 
 /* for large desktop */
-
+/* slight adjustments where made here for nav an call out sections for larger desktops  */
 @media(min-width:1400px) {
 
     .gym-logo {
