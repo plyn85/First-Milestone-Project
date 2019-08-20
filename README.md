@@ -110,7 +110,7 @@ ___
      where an (Error: Attribute ontouchstart not allowed on element div 
     at this point. was contained) which Is considered bad practice.
      I researched the subject and found this could be
-     corrected using JavaScript In the js file but as It beyond 
+     corrected using JavaScript In a  JavaScript  file but as It beyond 
     my capability at this point in the course 
     I would leave in the HTML file as felt it was an Important part of the our team section.
  ### Client testing stories
@@ -134,7 +134,7 @@ ___
      on the navbar where I submitted a question I had regarding the gym.
 
    ## Manual testing of all elements on website
-All sections of the website where tested trough out the project using chrome dev tools on all device sizes. When It was near completion 
+All sections of the website where tested through out the project using chrome dev tools on all device sizes. When It was near completion 
     I begin to test on many different browsers some of which Include Firefox,Edge,Opera,Safari an Internet explorer. The website was then sent to family an friends to gather 
     feedback on the look an functionality of the website on many different devices. 
     
@@ -173,7 +173,7 @@ All sections of the website where tested trough out the project using chrome dev
    6. Gym section-The gym section contains 3 subsections. 
    - The training section-This section was  originally taken and altered from a tutorial a link will be provided In the credit section below. It was tested across all devices using the dev tools. 
       Small alterations where made using the bootstrap grid to give the cards a better appearance.
-    - The facilities- This section This section was  originally taken and altered from a tutorial a link will be provided In the credit section below. It was tested across all devices an was found to to be 
+   - The facilities- This section This section was  originally taken and altered from a tutorial a link will be provided In the credit section below. It was tested across all devices an was found to to be 
       fully functional across all devices an browsers changes where not needed.   
    - The results-This section was originally taken and altered from a tutorial a link will be provided In the credit section below
       This was tested across all browsers and devices with no Issues found.
@@ -190,19 +190,19 @@ The site is hosted on GithHub Pages at [https://plyn85.github.io/First-Milestone
 branch was created in the repository by:
 
   1. On GitHub, navigate to your GitHub Pages site's repository.
-    2. Under your repository name, click  Settings.
-    3. Use the Select source drop-down menu to select master as your GitHub Pages publishing source.
-    4. Click Save
+  2. Under your repository name, click  Settings.
+  3. Use the Select source drop-down menu to select master as your GitHub Pages publishing source.
+  4. Click Save
 
 Should you wish to clone this:
 
    1. On GitHub, navigate to the main page of the repository.
-    2. Under the repository name, click Clone or download.
-    3. In the Clone with HTTPs section, click the copy icon to copy the clone URL for the repository.
-    4. Open terminal.
-    5. Change the current working directory to the location where you want the cloned directory to be made.
-    6. Type git clone, and then paste`[https://plyn85.github.io/First-Milestone-Project/](https://plyn85.github.io/First-Milestone-Project/)
-    7. Press Enter. Your local clone will be created.
+   2. Under the repository name, click Clone or download.
+   3. In the Clone with HTTPs section, click the copy icon to copy the clone URL for the repository.
+   4. Open terminal.
+   5. Change the current working directory to the location where you want the cloned directory to be made.
+   6. Type git clone, and then paste`[https://plyn85.github.io/First-Milestone-Project/](https://plyn85.github.io/First-Milestone-Project/)
+   7. Press Enter. Your local clone will be created.
 
 ## Credits
 
@@ -211,10 +211,10 @@ Should you wish to clone this:
 
 
 ### Media
-  Many of the Images where taken from google Images. 
-    Some Images and the gym logo where Designed by myself using [ https://www.canva.com/](https://www.canva.com/)
-    Ressources that where also used for Images where [https://unsplash.com/](https://unsplash.com/) and [https://pixabay.com/.](https://pixabay.com/.)
-    All videos in the trainning section of the website where taken from [https://www.youtube.com/](https://www.youtube.com/)
+Some of the Images where taken from google Images. 
+    Ohter  Images and the gym logo where Designed by myself using [ https://www.canva.com/](https://www.canva.com/)
+    Ressources that where also used for Images where [https://unsplash.com/](https://unsplash.com/) and  [https://pixabay.com/.](https://pixabay.com/.)
+    All videos in the trainning section of the website where taken from  [https://www.youtube.com/](https://www.youtube.com/)
 
 ### Acknowledgements
 
@@ -239,4 +239,3 @@ Should you wish to clone this:
 
    The content of this Website is for educational purposes only.
 
-#
