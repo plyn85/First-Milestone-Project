@@ -222,15 +222,15 @@ Some of the Images where taken from google Images.
    and  many modifications where made from a tutorial found at [https://startbootstrap.com/snippets/full-image-header/](https://startbootstrap.com/snippets/full-image-header/)
   - The code for the callout section was originally taken 
     and  many modifications where made from a tutorial found at[ https://plyn85.github.io/First-bootstrap-website/](https://plyn85.github.io/First-bootstrap-website/) 
-     - The code for the pricing section was originally taken 
-     and  many modifications where made from a tutorial found at[https://startbootstrap.com/snippets/pricing-table/](https://startbootstrap.com/snippets/pricing-table/)
-     - The code for the our gym subsection-videos section was originally taken 
+   - The code for the pricing section was originally taken 
+     and  many modifications where made from a tutorial found at [https://startbootstrap.com/snippets/pricing-table/](https://startbootstrap.com/snippets/pricing-table/)
+   - The code for the our gym subsection-videos section was originally taken 
      and  many modifications where made from a tutorial found at [https://mdbootstrap.com/plugins/jquery/gallery/]([https://mdbootstrap.com/plugins/jquery/gallery/)
-     - The code for the  gym subsection-gallery section was originally taken 
+   - The code for the  gym subsection-gallery section was originally taken 
      and  many modifications where made from a tutorial found at  [ athttps://bootsnipp.com/snippets/ZXyEz]([athttps://bootsnipp.com/snippets/ZXyEz)
-    - The code for the  gym subsection-customer testimonials section was originally taken  
+   - The code for the  gym subsection-customer testimonials section was originally taken  
      and  many modifications where made from a tutorial found at  [https://mdbootstrap.com/docs/jquery/sections/testimonials/](https://mdbootstrap.com/docs/jquery/sections/testimonials/) 
-    - The code for the  gym subsection-customer testimonials section was originally taken  
+   - The code for the  gym subsection-customer testimonials section was originally taken  
      and  many modifications where made from a tutorial found at  [https://colorlib.com/wp/bootstrap-footer/](https://colorlib.com/wp/bootstrap-footer/) 
 
    Inspiration for this website was taken from [https://athleanx.com/](https://athleanx.com/)
