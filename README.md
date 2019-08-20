@@ -37,14 +37,16 @@ For potential customers I wanted to provide them with an eye catching view of ev
 # Features
 
 ### Navbar
-The navbar is contained at the top of the page and has the gyms logo and five links to the rest of the page, plus a join 
-button which when pressed brings to the user to a modal. The navbar Is fixed to the top of the page with opacity see trough effect also added. 
+The navbar is contained at the top of the page and has the gyms logo and five links to the rest of the page, plus a join up 
+button which when pressed brings to the user to a modal.
+ The navbar Is fixed to the top of the page  over lapping the callout Image  with opacity see trough effect also added. This allows the user to see trough the navigation bar as they scroll 
+which Is especially useful on a mobile device so the user can use the dropdown menu navigation links to navigate the page will still being able to see trough the navigation bar to the website in the background.
 
 ### Callout
  The purpose of this section is to grab the customers attention providing them with the gym name,some pricing details and join us button.
-throughout the website there are several opportunities to access the modal through a join up button.
+Throughout the website there are several opportunities to access the modal through a join up button.
  I felt as the main goal of the website was to attract customers to join up it was important to give them 
- multiple opportunities. This section also has a background Image which is set to cover the entire view height of the screen.
+ multiple opportunities. This section also has a background Image which is set to cover the entire view height of the screen.Finally there is a jumbotron added which contains the gyms name an Inspirational quote, details of our cheapest joining price an another button with a chance to join up.
 
  ### About
 The about section  provides users with a description of the gym and Images of some of
@@ -52,7 +54,7 @@ The about section  provides users with a description of the gym and Images of so
  The goal here is to give the user a brief description of the gym an what its all about.
  
  ### Pricing
-   The pricing section which gives the user
+   The pricing section gives the user
    a chance to see the gyms prices. A further join up button is contained at the bottom of each
    pricing section. The goal here is to entice customers to join. A darker green Is used  here for the button to make It easier to focus on.
    
@@ -60,21 +62,21 @@ The about section  provides users with a description of the gym and Images of so
   The  our team section which Introduces the user
  to  the gyms trainers and provides a bio outlining each trainers experience. Each Trainer 
    Is on a card which spins around when hovered over or touched on mobile.
-    Which revels a bio about each trainer on the back. The purpose here is to Introduce each trainer in a friendly but professional manner. 
+    Which reveals a bio about each trainer on the back. The purpose here is to Introduce each trainer in a friendly but professional manner. 
    
   ### Gym
  This is followed by a gym section which has 3 subsections, which provide examples of training methods, 
  via Images of videos linked to a modal with each video.
-  The goal here is to provide the user with a view of the type of training the gym provides. Next the gyms facilities are shown with a gallery of rooms which changes to a carousel when an image is clicked. The results section has  an example of what a customer could hope to achieve upon joining the gym am taking part in a 12 week program.
+  The goal here is to provide the user with a view of the type of training the gym provides. Next the gyms facilities are shown with a gallery of rooms which changes to a modal carousel when an image is clicked. The results section has  an example of what a customer could hope to achieve upon joining the gym am taking part in a 12 week program.
 
 
 ## Existing Features
 - Navigation bar- Allows the user to easily navigate the website sections.
-- CTA button- allows to user to quickly contact the gym in order to make enquiry about joining. There located on the navbar,
+- CTA button- allows to user to quickly contact the gym in order to make enquiry about joining. They are located on the navbar,
   in the callout section and in both the pricing section an the 
   footer.
 - Modal- all join up  buttons are connected to a modal which asks for the user name, phone number and email address. There is also a text box with an opportunity for the user to ask a question. All contain the required attribute an the user will be Informed if the fail to fill out any of the required boxes.   
-- Social Icons- They are located In the footer, on the the video modal and on the back of the Trainer cards. At the moment these are not linked to any social media accounts. They currently have target="about_blank" so the user would be a guided to a a separate page when the social media accounts are added. As outlined below It is something I would like to change In the future.
+- Social Icons- They are located In the footer, on the the video modal and on the back of the Trainer cards. At the moment they  are not linked to any social media accounts. They currently have target="about_blank" so the user would be a guided to a a separate page when the social media accounts are added. As outlined below It is something I would like to change In the future.
 - Our Teams-allows user to view trainers an there backgrounds.
 - Training Videos-allows user to view training methods via a video modal. 
 - Gallery- allows user to view the different rooms the gym contains.
@@ -85,6 +87,7 @@ The about section  provides users with a description of the gym and Images of so
 - Smooth scrolling effect on all browsers- In the future I  would like to add a JavaScript that makes the 
    smooth scrolling effect work across all browsers.
 - Add JavaScript to- In the future I would like to remove the JavaScript  from the html teams section file an add a JavaScript Function to a separate js file which is best practice.
+- Add JavaScript- In the future I would like to add a JavaScript scroll spy plugin to change the color of the navigation  links as the user scrolls over each section to which It Is already  linked 
 - Social media Icons-In the future I would like to link all social media links to all social media account.
 - TimeTable Section-In the future I would I would like to add a timetable section to the website outlining the times of different classes and what days and times they are on.
 
@@ -137,7 +140,7 @@ All sections of the website where tested trough out the project using chrome dev
     
    1.  CTA button- This was tested on navbar, callout section, pricing section and
        footer to make sure all buttons linked to the modal correctly. 
-       -Navigation bar- Tested that all navigation links bring you to the correct part of the website.
+   2.  Navigation bar- Tested that all navigation links bring you to the correct part of the website.
      Continually tested navbar logo, main header an links through the building of this website. Constant 
      alterations where made to make the navbar items suited to all devices. This was done mainly
     trough the use of my own media queries to adjust sizes for the different devices. 
@@ -170,13 +173,13 @@ All sections of the website where tested trough out the project using chrome dev
    6. Gym section-The gym section contains 3 subsections. 
    - The training section-This section was  originally taken and altered from a tutorial a link will be provided In the credit section below. It was tested across all devices using the dev tools. 
       Small alterations where made using the bootstrap grid to give the cards a better appearance.
-      -The facilities- This section This section was  originally taken and altered from a tutorial a link will be provided In the credit section below. It was tested across all devices an was found to to be 
+    - The facilities- This section This section was  originally taken and altered from a tutorial a link will be provided In the credit section below. It was tested across all devices an was found to to be 
       fully functional across all devices an browsers changes where not needed.   
-      The results-This section was originally taken and altered from a tutorial a link will be provided In the credit section below
+   - The results-This section was originally taken and altered from a tutorial a link will be provided In the credit section below
       This was tested across all browsers and devices with no Issues found.
   
-   7. The footer- This section This section was  originally taken and altered from a tutorial a link will be provided In the credit section below.
-    This was tested across all browsers an adjusted accordingly.A Bug was found In the address 
+   8. The footer- This section This section was  originally taken and altered from a tutorial a link will be provided In the credit section below.
+     This was tested across all browsers an adjusted accordingly.A Bug was found In the address 
     section on the footer In which the col class from bootstrap was causing the text to condense. 
     The Issue was resolved by adding  -ms-flex: none; In to the effected class In the style.css.   
 
@@ -198,7 +201,7 @@ Should you wish to clone this:
     3. In the Clone with HTTPs section, click the copy icon to copy the clone URL for the repository.
     4. Open terminal.
     5. Change the current working directory to the location where you want the cloned directory to be made.
-    6. Type git clone, and then paste https://plyn85.github.io/First-Milestone-Project/
+    6. Type git clone, and then paste`[https://plyn85.github.io/First-Milestone-Project/](https://plyn85.github.io/First-Milestone-Project/)
     7. Press Enter. Your local clone will be created.
 
 ## Credits
@@ -215,19 +218,19 @@ Should you wish to clone this:
 
 ### Acknowledgements
 
-  -The code for the navigation bar was originally taken 
+  - The code for the navigation bar was originally taken 
    and  many modifications where made from a tutorial found at [https://startbootstrap.com/snippets/full-image-header/](https://startbootstrap.com/snippets/full-image-header/)
-  -The code for the callout section was originally taken 
+  - The code for the callout section was originally taken 
     and  many modifications where made from a tutorial found at[ https://plyn85.github.io/First-bootstrap-website/](https://plyn85.github.io/First-bootstrap-website/) 
-     -The code for the pricing section was originally taken 
+     - The code for the pricing section was originally taken 
      and  many modifications where made from a tutorial found at[https://startbootstrap.com/snippets/pricing-table/](https://startbootstrap.com/snippets/pricing-table/)
-     -The code for the our gym subsection-videos section was originally taken 
+     - The code for the our gym subsection-videos section was originally taken 
      and  many modifications where made from a tutorial found at [https://mdbootstrap.com/plugins/jquery/gallery/]([https://mdbootstrap.com/plugins/jquery/gallery/)
-     -The code for the  gym subsection-gallery section was originally taken 
+     - The code for the  gym subsection-gallery section was originally taken 
      and  many modifications where made from a tutorial found at  [ athttps://bootsnipp.com/snippets/ZXyEz]([athttps://bootsnipp.com/snippets/ZXyEz)
-    -The code for the  gym subsection-customer testimonials section was originally taken  
+    - The code for the  gym subsection-customer testimonials section was originally taken  
      and  many modifications where made from a tutorial found at  [https://mdbootstrap.com/docs/jquery/sections/testimonials/](https://mdbootstrap.com/docs/jquery/sections/testimonials/) 
-    -The code for the  gym subsection-customer testimonials section was originally taken  
+    - The code for the  gym subsection-customer testimonials section was originally taken  
      and  many modifications where made from a tutorial found at  [https://colorlib.com/wp/bootstrap-footer/](https://colorlib.com/wp/bootstrap-footer/) 
 
    Inspiration for this website was taken from [https://athleanx.com/](https://athleanx.com/)
