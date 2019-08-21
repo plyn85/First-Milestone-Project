@@ -403,7 +403,7 @@ with background call out image but still visable when scrolling page */
 /* about section */
 /* targeting all headers and text in about section */
 .main-header-about-section {
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-size: 3.5rem;
 }
 
@@ -659,7 +659,6 @@ ul {
 
 /* end team section */
 
-
 /* Gym section */
 
 /* traning-section-gym-sub-section */
@@ -672,8 +671,6 @@ ul {
 .modal-footer-gym-section {
     background-color: black;
 }
-
-
 
 /* end tranning-section-gym-sub-section */
 
@@ -896,6 +893,7 @@ footer a {
 
     /* navbar */
     /*targeting navbar an navitems to suit larger-tablets */
+  
     .mynavlinks {
         margin-left: 4rem;
         margin-top: 1.7rem;
@@ -1035,9 +1033,9 @@ footer a {
 
     }
 
-    /* toning down the navbar opacity here for laptops to make nav less visable on background image due to wider screen  an nav taking up more space   */
+    /* Imcreasing  the navbar opacity here for laptops to make nav more visable when scrolling page on laptops*/
     .navbar {
-        opacity: 0.5;
+        opacity: 0.9;
     }
 
     .nav-item {
