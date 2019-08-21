@@ -1217,6 +1217,87 @@ footer a {
 
 }
 
+/* these where added here to adjust callout section for mobile in landscape view */
+@media screen and (orientation:landscape)
+and (min-width:300px) and (max-width: 767px)
+ {
+     .gym-logo{
+         display: none;
+     }
+
+    .navbar{
+        height: 1.5rem;
+    }
+    .jumbotron-gymname{
+      margin-top: -7rem;
+        font-size: 2rem;
+    }
+
+    .jumbotron-quote{
+        display: none;
+    }
+
+    .offer-text{
+        margin-top: -2rem;
+        font-size: 1rem;
+    }
+    .btn-callout{
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
+
+   .navbar  .navbar-toggler-icon{
+       font-size:  1rem;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+
+}
+/* these where added here to adjust callout section for tablets  in landscape view */
+@media screen and (orientation:landscape)
+and (min-width:768px) and (max-width: 1023px)
+ {
+     .gym-logo{
+       height: 5rem;
+     }
+
+    .navbar{
+        height: 5rem;
+    }
+    .jumbotron-gymname{
+      margin-top: -7rem;
+        font-size: 3rem;
+    }
+
+    .jumbotron-quote{
+        display: none;
+    }
+
+    .offer-text{
+        margin-top: -2rem;
+        font-size: 1.5rem;
+    }
+    .btn-callout{
+        font-size: 2rem;
+        padding: 0.2rem;
+    }
+
+   .navbar  .navbar-toggler-icon{
+       font-size:  1rem;
+    }
+
+    .nav-link{
+        font-size: 1.5rem;
+    }
+
+    .special-img-one{ 
+        display: none;
+    }
+
+}
+
 
 
 
