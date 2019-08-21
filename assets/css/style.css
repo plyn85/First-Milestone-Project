@@ -7,7 +7,6 @@
 body,
 html {
     font-size: 16px;
-     /* overflow-x: hidden;  */
     scroll-behavior: smooth;
 }
 
@@ -110,8 +109,13 @@ p {
 
 /* targeting padding in  modal body in facilities only */
 
-.facilities  .modal-body {
+.facilities .modal-body {
     padding: 0;
+}
+
+/* styling the gym section text */
+.gym-section-text {
+    font-size: 1rem;
 }
 
 /* end reusable Components */
@@ -123,8 +127,8 @@ p {
 }
 
 /* adding transition timing effect to card  an footer social links  for a more subtle effect when hovered */
-.modal-footer-gym-section i ,
-.social-icon i ,
+.modal-footer-gym-section i,
+.social-icon i,
 .social-icon-footer-links {
     color: #fff;
     transition: all 0.5s ease-in-out;
@@ -144,10 +148,11 @@ p {
 .fa-li i {
     color: #5a9a5a;
 }
+
 /* adding background color to the links on trainning section modal  */
 .modal-footer-gym-section a {
     background-color: #8e8e8f;
-border-radius: 50%;
+    border-radius: 50%;
 
 }
 
@@ -156,6 +161,7 @@ border-radius: 50%;
     font-size: 2.5rem;
     font-weight: 900;
 }
+
 /* targeting footer icons  */
 .social-icon-footer-icon {
     font-size: 1.2rem;
@@ -164,9 +170,10 @@ border-radius: 50%;
     background-color: #bf051e;
 
 }
+
 /* targeting footer icon links on hover */
-.social-icon-footer-links:hover{
-color: grey;
+.social-icon-footer-links:hover {
+    color: grey;
 }
 
 /* buttons */
@@ -190,11 +197,10 @@ color: grey;
 .btn-navbar:link,
 .btn-navbar:visited,
 .btn-navbar:hover,
-.btn-navbar:active
-{
+.btn-navbar:active {
     color: #f2f2f2;
     border: 0.2rem solid #98ff98;
- 
+
 }
 
 /* used for callout section button */
@@ -552,7 +558,7 @@ ul {
 
 
 #team .card {
-    background:#272c2f;
+    background: #272c2f;
 }
 
 /* removing padding from cards so image width fits entire card */
@@ -753,7 +759,7 @@ footer a {
 
 .internet-explorer-fix {
     -webkit-box-flex: 0;
-            flex: none;
+    flex: none;
     -ms-flex: none;
 }
 
@@ -769,442 +775,457 @@ footer a {
     margin: 0 auto;
     background-color: #111;
     padding: 0.75rem 0;
-   
+
 }
 
 /* end copyright  */
 
 /* end footer */
-        
-        /* media queries */
-        
-        /* for small tablets */
-        
-        @media(min-width:567px) and (max-width:991px) {
-        
-            /* navbar */
-            /* adjusting the navbar to suit suit small tablets */
-            .navbar {
-                font-size: 2rem;
-                padding: 7px 0;
-            }
-        
-            .gym-logo {
-                margin-left: 0.5rem;
-                height: 5rem;
-            }
-        
-            .navbar-toggler {
-                font-size: 2rem;
-                margin-right: 2.25rem;
-            }
-        
-            /* callout section */
-        
-            /* adjusting jumbuton for small tablets  */
-            /* moving the entire jumbotron to take advanatage of longer tablet screens */
-            .callout {
-                margin-top: 7rem;
-            }
-        
-            .special-img-one {
-                margin-left: 0.6rem;
-            }
-        
-            .jumbotron-gymname {
-                font-size: 4rem;
-        
-            }
-        
-            .jumbotron-quote {
-                letter-spacing: 1px;
-            }
-        
-            /* about section */
-            /* adjustment to the about section headers and text to suit  small tablets */
-            .main-header {
-                font-size: 8rem;
-            }
-        
-            .about {
-                font-size: 4rem;
-            }
-        
-            .about-text {
-                font-size: 1.2rem;
-            }
-        
-        
-            .about-sub-header-two {
-                font-size: 4.5rem;
-            }
-        
-            .about-sub-header-three {
-                font-size: 3.5rem;
-            }
-        
-            /* pricing section */
-            /* adjustment to the about pricing section  header to suit  small tablets */
-            .pricing-header {
-                font-size: 5rem;
-        
-            }
-        
-            /* team section */
-            /* adjustment to the team section header  small tablets */
-            .main-header-team-section {
-                font-size: 9rem;
-            }
-        
-            /* gym section */
-            /* adjustment to the about gym headers to suit  small tablets */
-            .our-gym-header {
-                border: 1rem solid #bf051e;
-                font-size: 9rem;
-            }
-        
-            .gym-section-subheader {
-                font-size: 7rem;
-            }
-        
-        
-        
-            /* customer testimonials  section */
-            /* adjustment to the testimonials section text to suit  small tablets */
-            .test-section-customer-quotes {
-                margin-top: 6rem;
-            }
-        
-        }
-        
-        /* end for tablets */
-        
-        /* for larger tablets */
-        
-        @media(min-width: 992px) and (max-width:1180px) {
-        
-            /* navbar */
-            /*targeting navbar an navitems to suit larger-tablets */
-            .mynavlinks {
-                margin-left: 4rem;
-                margin-top: 1.7rem;
-            }
-        
-            .nav-item {
-                font-size: 2.5rem;
-                font-weight: 700;
-                padding: 0.6rem;
-            }
-        
-            .gym-logo {
-                margin-left: 0.5rem;
-                height: 7rem;
-            }
-        
-            /* callout section */
-            /* adjusting jumbuton for larger tablets */
-            .callout {
-                margin-top: 18rem;
-            }
-        
-            .special-img-one {
-                margin-left: 2.5rem;
-            }
-        
-            .jumbotron-gymname {
-                font-size: 5rem;
-        
-            }
-        
-            .jumbotron-quote {
-                font-size: 2rem;
-                letter-spacing: 1px;
-            }
-        
-            .offer-text {
-                font-size: 2rem;
-            }
-        
-            /* about section */
-            /*  adjusting about section headers  an text  for larger tablets */
-            .main-header-about-section {
-                font-size: 11rem;
-            }
-        
-            .about-text {
-                font-size: 1.7rem;
-            }
-        
-        
-            .sub-header {
-                font-size: 6.5rem;
-            }
-        
-            .about-sub-header-two {
-                font-size: 6rem;
-            }
-        
-        
-            .about-sub-header-three {
-                font-size: 4rem;
-            }
-        
-            .about-text {
-                margin-top: 1.1rem;
-            }
-        
-            /* pricing section */
-            /*  adjusting  pricing section  header  for larger tablets */
-            .pricing-header {
-                font-size: 6rem;
-        
-            }
-        
-            /* adjustments to bottom of pricing section cards to have equal length on large tablets */
-            #last-list-item-second-priceplan {
-                margin-bottom: 3.9rem;
-            }
-        
-            #last-list-item-third-priceplan {
-                margin-bottom: 2.3rem;
-            }
-        
-            /* team section */
-            /*  adjusting team  section  header  for larger tablets */
-            .main-header-team-section {
-                font-size: 12.5rem;
-            }
-        
-            /* gym section */
-            /*  adjusting gym section  headers  for larger tablets */
-            .our-gym-header {
-                border: 1rem solid #bf051e;
-                font-size: 13rem;
-            }
-        
-            .gym-section-subheader {
-                font-size: 10rem;
-        
-            }
-        
-        
-            /* customer testimonials section */
-            /*  adjusting testimonials   header  for larger tablets */
-            .test-section-customer-quotes {
-                font-size: 2rem;
-                line-height: 2.5rem;
-                margin-top: 6rem;
-            }
-        
-        }
-        
-        /* end for ipad pro */
-        
-        /* /* for laptops */
-        
-        
-        @media(min-width: 1200px) {
-        
-            /*  navbar section  */
-            /* adjusting navbar an nav items  for laptops */
-            .gym-logo {
-                height: 6rem;
-                width: auto;
-            }
-        
-        
-            .mynavlinks {
-                margin-top: 0.5rem;
-                margin-left: 19.5rem;
-        
-            }
-        
-            /* toning down the navbar opacity here for laptops to make nav less visable on background image due to wider screen  an nav taking up more space   */
-            .navbar {
-                opacity: 0.5;
-            }
-        
-            .nav-item {
-                font-size: 2rem;
-                font-weight: 600;
-                margin: 0rem 0.625rem;
-            }
-        
-            /* adjustments made here to align images with jumbotron on laptops and larger devices */
-            .special-img-one {
-                margin-left: 7rem;
-            }
-        
-            .offer-img {
-                margin-top: 18rem;
-            }
-        
-            /* end navbar section */
-        
-            /* callout section */
-            /* adjusting jumbuton for laptop */
-            .callout {
-                margin-top: 13rem;
-            }
-        
-            .jumbotron-gymname {
-                font-size: 4.5rem;
-        
-            }
-        
-            .jumbotron-quote {
-                letter-spacing: 1px;
-            }
-        
-            /* end callout section */
-        
-            /* about section */
-            /* adjusting about section headers and text here for laptops an larger devices */
-            .main-header-about-section {
-                margin-top: 2.2rem;
-                font-size: 15rem;
-            }
-        
-            .about-text {
-                font-size: 2rem;
-            }
-        
-        
-            .about-sub-header-one {
-                font-size: 8rem;
-        
-            }
-        
-            .about-sub-header-two {
-                font-size: 7rem;
-                margin-top: -10rem;
-            }
-        
-            .about-sub-header-three {
-                font-size: 5rem;
-                margin-top: -11rem;
-        
-            }
-        
-            /* end about section */
-        
-            /* pricing section */
-            /* adjusting  pricing  header here for laptops an larger devices */
-            .pricing-header {
-                font-size: 7.5rem;
-        
-            }
-        
-            /* adjustments to bottom of pricing section cards to have equal length on laptops and larger devices */
-            #last-list-item-second-priceplan {
-                margin-bottom: 3.9rem;
-            }
-        
-            #last-list-item-third-priceplan {
-                margin-bottom: 2.3rem;
-            }
-        
-            /* end pricing section */
-        
-        
-            /* team section */
-            /* adjusting about team section header here for laptops an larger devices */
-            .main-header-team-section {
-                font-size: 11rem;
-            }
-        
-            /* team section cards size adjusted here  for laptops and larger devices  to slighty narrow to aviod streched look */
-            .team-section-img-wrapper {
-                width: 75%;
-            }
-        
-            .frontside .card .card-title,
-            .backside .card .card-title {
-                font-size: 1.9rem;
-            }
-        
-            /* end team section */
-        
-            /* gym section */
-            /* adjusting gym  header here for laptops an larger devices */
-            .our-gym-header {
-                border: 16px solid #bf051e;
-                font-size: 17rem;
-            }
-        
-            .gym-section-subheader {
-                font-size: 11rem;
-        
-            }
-        
-            /* end gym section */
-        
-            /* customer testimonials section */
-            /* adjusting testimonials  text  here for laptops an larger devices */
-            .test-section-customer-quotes {
-                margin-top: 7rem;
-                font-size: 2rem;
-                line-height: 2.5rem;
-            }
-        }
-        
-        /* footer */
-        /* adding margin to social links for large tablets to give some space between them */
-        .social-icon-footer-links{
-        margin-right: 0.7rem;
-        }
-        
-        /* end for laptops */
-        
-        /* for large desktop */
-        /* slight adjustments where made here for navbar and call out sections for larger desktops  */
-        @media(min-width:1400px) {
-        
-            .gym-logo {
-                height: 8rem;
-                width: auto;
-            }
-        
-        
-            .mynavlinks {
-                margin-left: 22rem;
-            }
-        
-            .nav-item {
-                margin: 0rem 1.1rem;
-        
-            }
-        
-            .callout {
-                margin-top: 15rem;
-            }
-        
-            .special-img-one {
-                margin-left: 7rem;
-            }
-        
-            .offer-img {
-                margin-top: 22rem;
-            }
-        
-            .jumbotron-gymname {
-                font-size: 6.9rem;
-        
-            }
-        
-            .jumbotron-quote {
-                letter-spacing: 1px;
-            }
-        
-        }
-        
-           
-      
+
+/* media queries */
+
+/* for small tablets */
+
+@media(min-width:567px) and (max-width:991px) {
+
+    /* navbar */
+    /* adjusting the navbar to suit suit small tablets */
+    .navbar {
+        font-size: 2rem;
+        padding: 7px 0;
+    }
+
+    .gym-logo {
+        margin-left: 0.5rem;
+        height: 5rem;
+    }
+
+    .navbar-toggler {
+        font-size: 2rem;
+        margin-right: 2.25rem;
+    }
+
+    /* callout section */
+
+    /* adjusting jumbuton for small tablets  */
+    /* moving the entire jumbotron to take advanatage of longer tablet screens */
+    .callout {
+        margin-top: 7rem;
+    }
+
+    .special-img-one {
+        margin-left: 0.6rem;
+    }
+
+    .jumbotron-gymname {
+        font-size: 4rem;
+
+    }
+
+    .jumbotron-quote {
+        letter-spacing: 1px;
+    }
+
+    /* about section */
+    /* adjustment to the about section headers and text to suit  small tablets */
+    .main-header {
+        font-size: 8rem;
+    }
+
+    .about {
+        font-size: 4rem;
+    }
+
+    .about-text {
+        font-size: 1.2rem;
+    }
+
+
+    .about-sub-header-two {
+        font-size: 4.5rem;
+    }
+
+    .about-sub-header-three {
+        font-size: 3.5rem;
+    }
+
+    /* pricing section */
+    /* adjustment to the about pricing section  header to suit  small tablets */
+    .pricing-header {
+        font-size: 5rem;
+
+    }
+
+    /* team section */
+    /* adjustment to the team section header  small tablets */
+    .main-header-team-section {
+        font-size: 9rem;
+    }
+
+    /* gym section */
+    /* adjustment to the about gym headers to suit  small tablets */
+
+    /* styling the gym section text */
+.gym-section-text {
+    font-size: 1.3rem;
+}
+    .our-gym-header {
+        border: 1rem solid #bf051e;
+        font-size: 9rem;
+    }
+
+    .gym-section-subheader {
+        font-size: 7rem;
+    }
+
+
+
+    /* customer testimonials  section */
+    /* adjustment to the testimonials section text to suit  small tablets */
+    .test-section-customer-quotes {
+        margin-top: 6rem;
+    }
+
+}
+
+/* end for tablets */
+
+/* for larger tablets */
+
+@media(min-width: 992px) and (max-width:1180px) {
+
+    /* navbar */
+    /*targeting navbar an navitems to suit larger-tablets */
+    .mynavlinks {
+        margin-left: 4rem;
+        margin-top: 1.7rem;
+    }
+
+    .nav-item {
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding: 0.6rem;
+    }
+
+    .gym-logo {
+        margin-left: 0.5rem;
+        height: 7rem;
+    }
+
+    /* callout section */
+    /* adjusting jumbuton for larger tablets */
+    .callout {
+        margin-top: 18rem;
+    }
+
+    .special-img-one {
+        margin-left: 2.5rem;
+    }
+
+    .jumbotron-gymname {
+        font-size: 5rem;
+
+    }
+
+    .jumbotron-quote {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .offer-text {
+        font-size: 2rem;
+    }
+
+    /* about section */
+    /*  adjusting about section headers  an text  for larger tablets */
+    .main-header-about-section {
+        font-size: 11rem;
+    }
+
+    .about-text {
+        font-size: 1.7rem;
+    }
+
+
+    .sub-header {
+        font-size: 6.5rem;
+    }
+
+    .about-sub-header-two {
+        font-size: 6rem;
+    }
+
+
+    .about-sub-header-three {
+        font-size: 4rem;
+    }
+
+    .about-text {
+        margin-top: 1.1rem;
+    }
+
+    /* pricing section */
+    /*  adjusting  pricing section  header  for larger tablets */
+    .pricing-header {
+        font-size: 6rem;
+
+    }
+
+    /* adjustments to bottom of pricing section cards to have equal length on large tablets */
+    #last-list-item-second-priceplan {
+        margin-bottom: 3.9rem;
+    }
+
+    #last-list-item-third-priceplan {
+        margin-bottom: 2.3rem;
+    }
+
+    /* team section */
+    /*  adjusting team  section  header  for larger tablets */
+    .main-header-team-section {
+        font-size: 12.5rem;
+    }
+
+    /* gym section */
+    /*  adjusting gym section  headers  for larger tablets */
+    /* styling the gym section text */
+.gym-section-text {
+    font-size: 1.5rem;
+}
     
+    .our-gym-header {
+        border: 1rem solid #bf051e;
+        font-size: 13rem;
+    }
+
+    .gym-section-subheader {
+        font-size: 10rem;
+
+    }
+
+
+    /* customer testimonials section */
+    /*  adjusting testimonials   header  for larger tablets */
+    .test-section-customer-quotes {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top: 6rem;
+    }
+
+}
+
+/* end for ipad pro */
+
+/* /* for laptops */
+
+
+@media(min-width: 1200px) {
+
+    /*  navbar section  */
+    /* adjusting navbar an nav items  for laptops */
+    .gym-logo {
+        height: 6rem;
+        width: auto;
+    }
+
+
+    .mynavlinks {
+        margin-top: 0.5rem;
+        margin-left: 19.5rem;
+
+    }
+
+    /* toning down the navbar opacity here for laptops to make nav less visable on background image due to wider screen  an nav taking up more space   */
+    .navbar {
+        opacity: 0.5;
+    }
+
+    .nav-item {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0rem 0.625rem;
+    }
+
+    /* adjustments made here to align images with jumbotron on laptops and larger devices */
+    .special-img-one {
+        margin-left: 7rem;
+    }
+
+    .offer-img {
+        margin-top: 18rem;
+    }
+
+    /* end navbar section */
+
+    /* callout section */
+    /* adjusting jumbuton for laptop */
+    .callout {
+        margin-top: 13rem;
+    }
+
+    .jumbotron-gymname {
+        font-size: 4.5rem;
+
+    }
+
+    .jumbotron-quote {
+        letter-spacing: 1px;
+    }
+
+    /* end callout section */
+
+    /* about section */
+    /* adjusting about section headers and text here for laptops an larger devices */
+    .main-header-about-section {
+        margin-top: 2.2rem;
+        font-size: 15rem;
+    }
+
+    .about-text {
+        font-size: 2rem;
+    }
+
+
+    .about-sub-header-one {
+        font-size: 8rem;
+
+    }
+
+    .about-sub-header-two {
+        font-size: 7rem;
+        margin-top: -10rem;
+    }
+
+    .about-sub-header-three {
+        font-size: 5rem;
+        margin-top: -11rem;
+
+    }
+
+    /* end about section */
+
+    /* pricing section */
+    /* adjusting  pricing  header here for laptops an larger devices */
+    .pricing-header {
+        font-size: 7.5rem;
+
+    }
+
+    /* adjustments to bottom of pricing section cards to have equal length on laptops and larger devices */
+    #last-list-item-second-priceplan {
+        margin-bottom: 3.9rem;
+    }
+
+    #last-list-item-third-priceplan {
+        margin-bottom: 2.3rem;
+    }
+
+    /* end pricing section */
+
+
+    /* team section */
+    /* adjusting about team section header here for laptops an larger devices */
+    .main-header-team-section {
+        font-size: 11rem;
+    }
+
+    /* team section cards size adjusted here  for laptops and larger devices  to slighty narrow to aviod streched look */
+    .team-section-img-wrapper {
+        width: 75%;
+    }
+
+    .frontside .card .card-title,
+    .backside .card .card-title {
+        font-size: 1.9rem;
+    }
+
+    /* end team section */
+
+    /* gym section */
+    /* adjusting gym  header here for laptops an larger devices */
+   /* styling the gym section text */
+.gym-section-text {
+    font-size: 1.8rem;
+}
+   
+    .our-gym-header {
+        border: 16px solid #bf051e;
+        font-size: 17rem;
+    }
+
+    .gym-section-subheader {
+        font-size: 11rem;
+
+    }
+
+    /* end gym section */
+
+    /* customer testimonials section */
+    /* adjusting testimonials  text  here for laptops an larger devices */
+    .test-section-customer-quotes {
+        margin-top: 7rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+
+/* footer */
+/* adding margin to social links for large tablets to give some space between them */
+.social-icon-footer-links {
+    margin-right: 0.7rem;
+}
+
+/* end for laptops */
+
+/* for large desktop */
+/* slight adjustments where made here for navbar and call out sections for larger desktops  */
+@media(min-width:1400px) {
+
+    .gym-logo {
+        height: 8rem;
+        width: auto;
+    }
+
+
+    .mynavlinks {
+        margin-left: 22rem;
+    }
+
+    .nav-item {
+        margin: 0rem 1.1rem;
+
+    }
+
+    .callout {
+        margin-top: 15rem;
+    }
+
+    .special-img-one {
+        margin-left: 7rem;
+    }
+
+    .offer-img {
+        margin-top: 22rem;
+    }
+
+    .jumbotron-gymname {
+        font-size: 6.9rem;
+
+    }
+
+    .jumbotron-quote {
+        letter-spacing: 1px;
+    }
+
+}
+
+
+
+
 
 
 
 
 /*  {
     border: 1px solid #f00 !important;
-}      */
+} */

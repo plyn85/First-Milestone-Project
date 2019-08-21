@@ -69,6 +69,8 @@ The about section  provides users with a description of the gym and Images of so
  via Images of videos linked to a modal with each video.
   The goal here is to provide the user with a view of the type of training the gym provides. Next the gyms facilities are shown with a gallery of rooms which changes to a modal carousel when an image is clicked. The results section has  an example of what a customer could hope to achieve upon joining the gym am taking part in a 12 week program.
 
+### Social Links 
+Social link where added to the back of the trainer cards, the training section modals and the footer all link to relevant social media accounts.  
 
 ## Existing Features
 - Navigation bar- Allows the user to easily navigate the website sections.
@@ -88,7 +90,6 @@ The about section  provides users with a description of the gym and Images of so
    smooth scrolling effect work across all browsers.
 - Add JavaScript to- In the future I would like to remove the JavaScript  from the html teams section file an add a JavaScript Function to a separate js file which is best practice.
 - Add JavaScript- In the future I would like to add a JavaScript scroll spy plugin to change the color of the navigation  links as the user scrolls over each section to which It Is already  linked 
-- Social media Icons-In the future I would like to link all social media links to all social media account.
 - TimeTable Section-In the future I would I would like to add a timetable section to the website outlining the times of different classes and what days and times they are on.
 
 ## Technologies
@@ -182,7 +183,7 @@ All sections of the website where tested through out the project using chrome de
      This was tested across all browsers an adjusted accordingly.A Bug was found In both  the address and copyright 
     sections located in the footer. In which the col class from bootstrap was causing the text to condense. 
     The Issue was resolved by adding  -ms-flex: none; In to the effected class In the style.css.   
-
+  9. All social media links where tested to see if the access the relevant accounts. All brought me to the accounts provided.
       
 
 ## Deployment 
@@ -212,7 +213,7 @@ Should you wish to clone this:
 
 ### Media
 Some of the Images where taken from google Images. 
-    Ohter  Images and the gym logo where Designed by myself using [ https://www.canva.com/](https://www.canva.com/)
+    Other  Images and the gym logo where Designed by myself using [ https://www.canva.com/](https://www.canva.com/)
     Ressources that where also used for Images where [https://unsplash.com/](https://unsplash.com/) and  [https://pixabay.com/.](https://pixabay.com/.)
     All videos in the trainning section of the website where taken from  [https://www.youtube.com/](https://www.youtube.com/)
 
