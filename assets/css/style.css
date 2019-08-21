@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Oswald&display=swap:,300,500,600,700,800,900');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
+
 /* main body */
 
 /* scroll behaviour smooth added to give smooth scrolling
@@ -265,9 +266,12 @@ with background call out image but still visable when scrolling page */
     opacity: 0.7;
 }
 
-.navbar-toggler {
-    margin-right: 1.5rem;
-}
+/* targeting navbar toggle button */
+.navbar .navbar-toggler-icon{
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+    font-size: 2rem;
+    }
+
 
 /* targeting entire navbar links as a group */
 .mynavlinks {
@@ -313,11 +317,6 @@ with background call out image but still visable when scrolling page */
 /* targeting button in navabar only */
 #navbar-btn {
     padding: 8px;
-}
-
-/* targeting navbar toggle button */
-.navbar-toggler {
-    background-color: #bf051e;
 }
 
 /* end navbar */
@@ -597,6 +596,7 @@ ul {
 }
 
 .frontside {
+    cursor: pointer;
     position: relative;
     transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
