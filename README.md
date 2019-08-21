@@ -179,8 +179,8 @@ All sections of the website where tested through out the project using chrome de
       This was tested across all browsers and devices with no Issues found.
   
    8. The footer- This section This section was  originally taken and altered from a tutorial a link will be provided In the credit section below.
-     This was tested across all browsers an adjusted accordingly.A Bug was found In the address 
-    section on the footer In which the col class from bootstrap was causing the text to condense. 
+     This was tested across all browsers an adjusted accordingly.A Bug was found In both  the address and copyright 
+    sections located in the footer. In which the col class from bootstrap was causing the text to condense. 
     The Issue was resolved by adding  -ms-flex: none; In to the effected class In the style.css.   
 
       

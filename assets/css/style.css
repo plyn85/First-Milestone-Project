@@ -63,8 +63,6 @@ html {
     color: #8e8f8f;
 }
 
-
-
 /* end colors */
 
 /* Reusable Components */
@@ -192,9 +190,11 @@ color: grey;
 .btn-cta:link,
 .btn-cta:visited,
 .btn-cta:hover,
-.btn-cta:active {
+.btn-cta:active
+{
     color: #f2f2f2;
-    border-color: #98ff98;
+    border: 0.2rem solid #98ff98;
+ 
 }
 
 /* used for callout section button */
@@ -2010,7 +2010,7 @@ margin-right: 0.7rem;
             }
         
             .jumbotron-gymname {
-                font-size: 8rem;
+                font-size: 4rem;
         
             }
         
@@ -2075,9 +2075,9 @@ margin-right: 0.7rem;
         
         }
         
-        /* end for ipad */
+        /* end for tablets */
         
-        /* for ipad pro */
+        /* for larger tablets */
         
         @media(min-width: 992px) and (max-width:1180px) {
         
@@ -2110,17 +2110,17 @@ margin-right: 0.7rem;
             }
         
             .jumbotron-gymname {
-                font-size: 10rem;
+                font-size: 5rem;
         
             }
         
             .jumbotron-quote {
-                font-size: 4rem;
+                font-size: 2rem;
                 letter-spacing: 1px;
             }
         
             .offer-text {
-                font-size: 3rem;
+                font-size: 2rem;
             }
         
             /* about section */
@@ -2397,14 +2397,12 @@ margin-right: 0.7rem;
         }
         
            
-        /*  {
-            border: 1px solid #f00 !important;
-        }     */
-    }
+      
+    
 
-}
 
-   
-/*  {
+
+
+* {
     border: 1px solid #f00 !important;
-}     */
+}     
