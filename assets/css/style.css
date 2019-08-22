@@ -1221,13 +1221,15 @@ footer a {
 @media screen and (orientation:landscape)
 and (min-width:300px) and (max-width: 767px)
  {
+/* hiding gym logo on mobole landscape mode */
      .gym-logo{
          display: none;
      }
-
+/* adjusting havbra height */
     .navbar{
         height: 1.5rem;
     }
+
     .jumbotron-gymname{
       margin-top: -7rem;
         font-size: 2rem;
@@ -1249,9 +1251,16 @@ and (min-width:300px) and (max-width: 767px)
    .navbar  .navbar-toggler-icon{
        font-size:  1rem;
     }
-
+/* changing link size an padding so all can be viewed on mobile landscape  screen when toggler button presssed */
     .nav-link{
+        margin-right: 1.7rem;
+        padding: 0;
         font-size: 1rem;
+    }
+/* hiding navbar button */
+    .btn-navbar{
+        display: none;
+
     }
 
 }
@@ -1291,7 +1300,7 @@ and (min-width:768px) and (max-width: 1023px)
     .nav-link{
         font-size: 1.5rem;
     }
-
+/* blocking this is image as on small tablets in landscape mode it was being pushed down to the about section due to Increased screen height */
     .special-img-one{ 
         display: none;
     }

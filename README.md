@@ -152,7 +152,9 @@ All sections of the website where tested through out the project using chrome de
    The jumbotron text was adjusted many times trough 
     media queries for the different devices. No Images where displayed on smaller devices, one Image was displayed for ipads
      and two for laptops and desktops. For this feature bootstraps grid system was used. The background Image wont remain fixed when viewed on a chrome browser on android.
-      As it does not effect the overall flow of the website and I could not find a solution to the bug I decided to leave It in. 
+      As it does not effect the overall flow of the website and I could not find a solution to the bug I decided to leave It in. After deploying the website to git hub and seeing it on an mobile phone for 
+      the first time trough landscape mode on mobile, I discovered that the call out section contents  and the  navbar  In with the website where much too big In this mode 
+      an pushing down on to the about section making everything look terrible. I wrote some media queries and made adjustments. Adjustments where also made through media queries for small tablets in landscape mode.
   
   3. About section- The about sections responsiveness was tested on all devices. Both bootstrap an media queries where used.
       Bootstrap was used to show or block Images on different devices. 
