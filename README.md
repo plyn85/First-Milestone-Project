@@ -10,7 +10,7 @@ A live demo can be found [here](https://plyn85.github.io/First-Milestone-Project
 ___
 
 
-![Desktop Demo](assets/images/readme-reponsivie-img.png "Desktop Demo")
+![Desktop Demo](https://res.cloudinary.com/plyn85/image/upload/v1568293467/dumbell-fitness-images/images/readme-reponsivie-img_bco4dn.png "Desktop Demo")
 
 # UX
 
@@ -28,9 +28,9 @@ For potential customers I wanted to provide them with an eye catching view of ev
 ### Wireframe mockups:
   <table>
    <tr>
-    <td>Above 768px <img src="assets/images/wireframes-img-one.jpg" alt="wireframe mockup" style="width: 250px;"/> </td>
-    <td>Below 768px <img src="assets/images/wireframes-img-two.jpg" alt="wireframe mockup" style="width: 250px;"/> </td>
-     <td>Below 768px <img src="assets/images/wireframes-img-three.jpg" alt="wireframe mockup" style="width: 250px;"/> </td>
+    <td>Above 768px <img src="https://res.cloudinary.com/plyn85/image/upload/v1568293468/dumbell-fitness-images/images/wireframes-img-one_uyivrg.jpg" alt="wireframe mockup" style="width: 250px;"/> </td>
+    <td>Below 768px <img src="https://res.cloudinary.com/plyn85/image/upload/v1568293468/dumbell-fitness-images/images/wireframes-img-two_axqvsn.jpg" alt="wireframe mockup" style="width: 250px;"/> </td>
+     <td>Below 768px <img src="https://res.cloudinary.com/plyn85/image/upload/v1568293467/dumbell-fitness-images/images/wireframes-img-three_yrqyik.jpg" alt="wireframe mockup" style="width: 250px;"/> </td>
     </tr>
 </table>
 
