@@ -103,7 +103,7 @@ ___
 - jQuery - was used for the navbar pricing, and video sections. 
 - LightBox - Lightbox was used  In the galleries section a subsection of the gym section. 
 - canva - canva was used by me to make many of the different Images found on the website.This the allowed me to keep many of the Images Inline with the over color scheme chosen for the website.
-
+- Cloudinary - All images where deployed using the cloudinary caching server.
 
 ## Testing 
   I used WSC CSS Validation and HTML Markup Validation to validate the code. 
