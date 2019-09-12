@@ -4,7 +4,7 @@
 /* main body */
 
 /* scroll behaviour smooth added to give smooth scrolling
- effect an overflow x added to deal with any unwanted over flow */
+ effect*/
 body,
 html {
     font-size: 16px;
@@ -201,7 +201,6 @@ p {
 .btn-navbar:active {
     color: #f2f2f2;
     border: 0.2rem solid #98ff98;
-
 }
 
 /* used for callout section button */
@@ -209,9 +208,7 @@ p {
     display: block;
     margin: 0 auto;
     margin-top: 1.25rem;
-
 }
-
 
 /* used for navbar  pricing section  button  green color overrides red from btn cta*/
 .btn-pricing {
@@ -259,7 +256,7 @@ added to override carosel z-index from results section*/
     z-index: 2;
 }
 
-/* adding opacity here for mobile tablets and small tablets to make navbar blend 
+/* adding opacity here for mobile, tablets and small tablets to make navbar blend 
 with background call out image but still visable when scrolling page */
 .navbar {
     background-color: black;
@@ -267,10 +264,10 @@ with background call out image but still visable when scrolling page */
 }
 
 /* targeting navbar toggle button */
-.navbar .navbar-toggler-icon{
+.navbar .navbar-toggler-icon {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
     font-size: 2rem;
-    }
+}
 
 
 /* targeting entire navbar links as a group */
@@ -310,7 +307,6 @@ with background call out image but still visable when scrolling page */
     color: #98ff98;
     border-color: #98ff98;
     text-decoration: underline;
-
 
 }
 
@@ -496,8 +492,6 @@ ul {
 
 }
 
-
-
 /* end pricing section */
 
 /* Team section */
@@ -568,7 +562,6 @@ ul {
 .image-flip:hover .backside,
 .image-flip.hover .backside {
     -webkit-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
     transform: rotateY(0deg);
     border-radius: .25rem;
 }
@@ -589,7 +582,6 @@ ul {
     -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
-    -o-transition: 1s;
     transition: 1s;
     transform-style: preserve-3d;
     position: relative;
@@ -610,7 +602,6 @@ ul {
     top: 0;
     left: 0;
     -webkit-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
     -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
     box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
@@ -837,7 +828,6 @@ footer a {
         font-size: 1.2rem;
     }
 
-
     .about-sub-header-two {
         font-size: 4.5rem;
     }
@@ -863,9 +853,10 @@ footer a {
     /* adjustment to the about gym headers to suit  small tablets */
 
     /* styling the gym section text */
-.gym-section-text {
-    font-size: 1.3rem;
-}
+    .gym-section-text {
+        font-size: 1.3rem;
+    }
+
     .our-gym-header {
         border: 1rem solid #bf051e;
         font-size: 9rem;
@@ -874,8 +865,6 @@ footer a {
     .gym-section-subheader {
         font-size: 7rem;
     }
-
-
 
     /* customer testimonials  section */
     /* adjustment to the testimonials section text to suit  small tablets */
@@ -893,7 +882,7 @@ footer a {
 
     /* navbar */
     /*targeting navbar an navitems to suit larger-tablets */
-  
+
     .mynavlinks {
         margin-left: 4rem;
         margin-top: 1.7rem;
@@ -987,10 +976,10 @@ footer a {
     /* gym section */
     /*  adjusting gym section  headers  for larger tablets */
     /* styling the gym section text */
-.gym-section-text {
-    font-size: 1.5rem;
-}
-    
+    .gym-section-text {
+        font-size: 1.5rem;
+    }
+
     .our-gym-header {
         border: 1rem solid #bf051e;
         font-size: 13rem;
@@ -1000,7 +989,6 @@ footer a {
         font-size: 10rem;
 
     }
-
 
     /* customer testimonials section */
     /*  adjusting testimonials   header  for larger tablets */
@@ -1015,7 +1003,6 @@ footer a {
 /* end for ipad pro */
 
 /* /* for laptops */
-
 
 @media(min-width: 1200px) {
 
@@ -1141,11 +1128,11 @@ footer a {
 
     /* gym section */
     /* adjusting gym  header here for laptops an larger devices */
-   /* styling the gym section text */
-.gym-section-text {
-    font-size: 1.8rem;
-}
-   
+    /* styling the gym section text */
+    .gym-section-text {
+        font-size: 1.8rem;
+    }
+
     .our-gym-header {
         border: 16px solid #bf051e;
         font-size: 17rem;
@@ -1218,102 +1205,96 @@ footer a {
 }
 
 /* these where added here to adjust callout section for mobile in landscape view */
-@media screen and (orientation:landscape)
-and (min-width:300px) and (max-width: 767px)
- {
-/* hiding gym logo on mobole landscape mode */
-     .gym-logo{
-         display: none;
-     }
-/* adjusting havbra height */
-    .navbar{
-        height: 1.5rem;
-    }
+@media screen and (orientation:landscape) and (min-width:300px) and (max-width: 767px) {
 
-    .jumbotron-gymname{
-      margin-top: -7rem;
-        font-size: 2rem;
-    }
-
-    .jumbotron-quote{
+    /* hiding gym logo on mobile landscape mode */
+    .gym-logo {
         display: none;
     }
 
-    .offer-text{
+    /* adjusting navbar height */
+    .navbar {
+        height: 1.5rem;
+    }
+
+    .jumbotron-gymname {
+        margin-top: -7rem;
+        font-size: 2rem;
+    }
+
+    .jumbotron-quote {
+        display: none;
+    }
+
+    .offer-text {
         margin-top: -2rem;
         font-size: 1rem;
     }
-    .btn-callout{
+
+    .btn-callout {
         font-size: 1rem;
         padding: 0.2rem;
     }
 
-   .navbar  .navbar-toggler-icon{
-       font-size:  1rem;
+    .navbar .navbar-toggler-icon {
+        font-size: 1rem;
     }
-/* changing link size an padding so all can be viewed on mobile landscape  screen when toggler button presssed */
-    .nav-link{
+
+    /* changing link size an padding so all can be viewed on mobile landscape  screen when toggler button presssed */
+    .nav-link {
         margin-right: 1.7rem;
         padding: 0;
         font-size: 1rem;
     }
-/* hiding navbar button */
-    .btn-navbar{
+
+    /* hiding navbar button */
+    .btn-navbar {
         display: none;
 
     }
 
 }
-/* these where added here to adjust callout section for tablets  in landscape view */
-@media screen and (orientation:landscape)
-and (min-width:768px) and (max-width: 1023px)
- {
-     .gym-logo{
-       height: 5rem;
-     }
 
-    .navbar{
+/* these where added here to adjust callout section for tablets  in landscape view */
+@media screen and (orientation:landscape) and (min-width:768px) and (max-width: 1023px) {
+    .gym-logo {
         height: 5rem;
     }
-    .jumbotron-gymname{
-      margin-top: -7rem;
+
+    .navbar {
+        height: 5rem;
+    }
+
+    .jumbotron-gymname {
+        margin-top: -7rem;
         font-size: 3rem;
     }
 
-    .jumbotron-quote{
+    .jumbotron-quote {
         display: none;
     }
 
-    .offer-text{
+    .offer-text {
         margin-top: -2rem;
         font-size: 1.5rem;
     }
-    .btn-callout{
+
+    .btn-callout {
         font-size: 2rem;
         padding: 0.2rem;
     }
 
-   .navbar  .navbar-toggler-icon{
-       font-size:  1rem;
+    .navbar .navbar-toggler-icon {
+        font-size: 1rem;
     }
 
-    .nav-link{
+    .nav-link {
         font-size: 1.5rem;
     }
-/* blocking this is image as on small tablets in landscape mode it was being pushed down to the about section due to Increased screen height */
-    .special-img-one{ 
+
+    /* blocking this  image as on small tablets in landscape mode it was being pushed down to the about section due to  screen height */
+    .special-img-one {
         display: none;
     }
 
 }
-
-
-
-
-
-
-
-
-/*  {
-    border: 1px solid #f00 !important;
-} */
