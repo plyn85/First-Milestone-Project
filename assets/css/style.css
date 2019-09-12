@@ -150,7 +150,7 @@ p {
     color: #5a9a5a;
 }
 
-/* adding background color to the links on trainning section modal  */
+/* adding background color to the links on training section modal  */
 .modal-footer-gym-section a {
     background-color: #8e8e8f;
     border-radius: 50%;
@@ -335,7 +335,7 @@ with background call out image but still visable when scrolling page */
 .callout-container {
 
     height: 100vh;
-    background: url('../images/background-img-two.jpg') no-repeat fixed;
+    background: url('https://res.cloudinary.com/plyn85/image/upload/v1568293461/dumbell-fitness-images/images/background-img-two_ry1eyj.jpg') no-repeat fixed;
     background-position-x: 50%;
     background-size: cover;
     -webkit-background-size: cover;
@@ -509,7 +509,7 @@ ul {
 
 /* background image added to team section to cover backgrond of entire section */
 .team-section {
-    background: url('../images/larger-background-img.jpg') no-repeat fixed;
+    background: url('https://res.cloudinary.com/plyn85/image/upload/v1568293464/dumbell-fitness-images/images/larger-background-img_e8ipyd.jpg') no-repeat fixed;
     background-position-x: 50%;
     background-size: cover;
     -webkit-background-size: cover;
