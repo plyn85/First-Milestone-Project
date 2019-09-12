@@ -9,6 +9,8 @@ body,
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    /* added for ios devices */
+    -webkit-overflow-scrolling: touch;
 }
 
 /* removing all margins and padding from bootsrap rows an cols */
